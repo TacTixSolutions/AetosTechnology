@@ -15,9 +15,9 @@ function HeroSection() {
         className="w-full h-full absolute object-cover"
       />
       {/* container */}
-      <div className="pt-32 w-9/10 gap-4 h-full mx-auto relative flex flex-col lg:flex-row items-center justify-between">
+      <div className="pt-32 w-8/10 gap-4 h-full mx-auto relative flex flex-col lg:flex-row items-center justify-between">
         <div className="flex flex-col w-full lg:w-1/2">
-          <p className="text-base md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-poppins font-bold uppercase">
+          <p className="text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-poppins font-bold uppercase">
             Votre activité mérite la{" "}
             <span className="text-brand">performance digitale</span>
           </p>
@@ -37,8 +37,8 @@ function HeroSection() {
           <Image
             src="/heroSectionImage.webp"
             alt="Hero Section Illustration"
-            width={500}
-            height={500}
+            width={450}
+            height={450}
             className=" relative"
           />
           <div className="absolute -bottom-4 -left-12 animate-float">

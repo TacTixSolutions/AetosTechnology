@@ -34,7 +34,6 @@ import {
   Factory,
   ClipboardCheck,
   Plus,
-  X,
 } from "lucide-react";
 import Image from "next/image";
 
