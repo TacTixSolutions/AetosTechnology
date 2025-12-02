@@ -1,0 +1,8 @@
+{
+  "test": {
+    "poppins": "Ceci est un texte de test avec la police Poppins",
+    "isotek": "Ceci est un texte de test avec la police Isotek",
+    "inter": "Ceci est un texte de test avec la police Inter",
+    "switchLanguage": "Passer à l'anglais"
+  }
+}

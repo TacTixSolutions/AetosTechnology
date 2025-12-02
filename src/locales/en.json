@@ -1,0 +1,8 @@
+{
+  "test": {
+    "poppins": "This is a test text with Poppins font",
+    "isotek": "This is a test text with Isotek font",
+    "inter": "This is a test text with Inter font",
+    "switchLanguage": "Switch to French"
+  }
+}
