@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter, poppins, isotek } from "@/lib/fonts";
+import { inter, poppins, isotek, spaceGrotesk } from "@/lib/fonts";
 import { getDictionary } from "@/lib/get-dictionary";
 import { Locale } from "@/lib/i18n-config";
 import Navbar from "@/components/navbar";
@@ -23,7 +23,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body
-        className={`${inter.variable} ${poppins.variable} ${isotek.variable} antialiased`}
+        className={`${inter.variable} ${poppins.variable} ${isotek.variable} ${spaceGrotesk.variable} antialiased`}
       >
         <Navbar dict={dict.navbar} lang={lang} />
         {children}

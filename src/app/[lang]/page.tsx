@@ -1,6 +1,7 @@
 import { getDictionary } from "@/lib/get-dictionary";
 import { Locale } from "@/lib/i18n-config";
-import HeroSection from "./_components/heroSection";
+import HeroSection from "./_components/heroSection/heroSection";
+import ClientsCarousel from "./_components/clientsCarousel/clientsCarousel";
 
 export default async function Home({
   params,
@@ -13,6 +14,7 @@ export default async function Home({
   return (
     <div>
       <HeroSection />
+      <ClientsCarousel />
     </div>
   );
 }
