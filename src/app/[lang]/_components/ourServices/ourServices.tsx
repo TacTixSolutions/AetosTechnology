@@ -101,7 +101,7 @@ function OurServices() {
                     <h2 className="text-3xl font-isotek lg:text-4xl font-bold text-gray-900">
                       {service.title}
                     </h2>
-                    <p className="text-gray-600 font-isotek text-base md:text-lg leading-relaxed w-1/2">
+                    <p className="text-gray-600 font-isotek text-base md:text-lg leading-relaxed w-full xl:w-1/2">
                       {service.description}
                     </p>
                   </div>
