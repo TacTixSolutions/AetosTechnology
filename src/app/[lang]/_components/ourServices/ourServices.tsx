@@ -8,6 +8,7 @@ import {
   CarouselItem,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 function OurServices() {
   const [api, setApi] = useState<CarouselApi>();
@@ -79,6 +80,13 @@ function OurServices() {
             align: "center",
             loop: true,
           }}
+          plugins={[
+            Autoplay({
+              delay: 3000,
+              stopOnInteraction: false,
+              stopOnMouseEnter: true,
+            }),
+          ]}
           className="w-full mt-20"
         >
           <CarouselContent>
