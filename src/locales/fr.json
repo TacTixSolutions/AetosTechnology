@@ -4,5 +4,32 @@
     "isotek": "Ceci est un texte de test avec la police Isotek",
     "inter": "Ceci est un texte de test avec la police Inter",
     "switchLanguage": "Passer à l'anglais"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "solutions": "Solutions",
+    "insights": "Insights",
+    "partners": "Partenaires",
+    "contactUs": "Contactez-nous",
+    "products": {
+      "title": "PRODUIT",
+      "flowup": "Flowup",
+      "flowupDescription": "L'efficacité sans effort",
+      "supervisor": "SuperVisor",
+      "visualMerchandising": "Visual Merchandising",
+      "shiftMaster": "ShiftMaster",
+      "communication": "Communication",
+      "flowHR": "FlowHR",
+      "microLearning": "Micro-Learning",
+      "optiStock": "OptiStock"
+    },
+    "sectors": {
+      "title": "SECTEURS",
+      "hospitality": "Hospitalité",
+      "retail": "Retail",
+      "fashionBoutiques": "Boutiques de Mode & d'Habillement",
+      "industryProduction": "Industrie & Production",
+      "audit": "Audit"
+    }
   }
 }

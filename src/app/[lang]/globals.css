@@ -8,6 +8,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-brand: #306d7e;
   --font-inter: var(--font-inter);
   --font-poppins: var(--font-poppins);
   --font-isotek: var(--font-isotek);
@@ -121,5 +122,62 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .card-shadow {
+    @apply border border-gray-200 shadow-sm;
+  }
+  .debug-border {
+    border: 1px solid red;
+  }
+  .debug-bg {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+
+  .glass {
+    @apply bg-white/10 bg-clip-padding backdrop-filter backdrop-blur-md;
+  }
+  .glass-sm {
+    @apply bg-white/10 bg-clip-padding backdrop-filter backdrop-blur-sm;
+  }
+  .glass-xs {
+    @apply bg-white/10 bg-clip-padding backdrop-filter backdrop-blur-xs;
+  }
+  .glass-lg {
+    @apply bg-white/10 bg-clip-padding backdrop-filter backdrop-blur-lg;
+  }
+  .glass-xl {
+    @apply bg-white/10 bg-clip-padding backdrop-filter backdrop-blur-xl;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+  .animate-float-1 {
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  .animate-float-2 {
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+  .animate-float-3 {
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 0.5s;
   }
 }

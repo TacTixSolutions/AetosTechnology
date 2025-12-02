@@ -4,5 +4,32 @@
     "isotek": "This is a test text with Isotek font",
     "inter": "This is a test text with Inter font",
     "switchLanguage": "Switch to French"
+  },
+  "navbar": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "insights": "Insights",
+    "partners": "Partners",
+    "contactUs": "Contact us",
+    "products": {
+      "title": "PRODUCT",
+      "flowup": "Flowup",
+      "flowupDescription": "Effortless efficiency",
+      "supervisor": "SuperVisor",
+      "visualMerchandising": "Visual Merchandising",
+      "shiftMaster": "ShiftMaster",
+      "communication": "Communication",
+      "flowHR": "FlowHR",
+      "microLearning": "Micro-Learning",
+      "optiStock": "OptiStock"
+    },
+    "sectors": {
+      "title": "SECTEURS",
+      "hospitality": "Hospitality",
+      "retail": "Retail",
+      "fashionBoutiques": "Fashion & Clothing Boutiques",
+      "industryProduction": "Industry & Production",
+      "audit": "Audit"
+    }
   }
 }
