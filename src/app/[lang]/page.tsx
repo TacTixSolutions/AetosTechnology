@@ -5,6 +5,7 @@ import ClientsCarousel from "./_components/clientsCarousel/clientsCarousel";
 import OurServices from "./_components/ourServices/ourServices";
 import WhyUsSection from "./_components/whyUs/whyUs";
 import BrandHeroCarousel from "./_components/brandHeroCarousel/brandHeroCarousel";
+import TestimonialsSection from "./_components/testimonialsSection/testimonialsSection";
 
 export default async function Home({
   params,
@@ -21,6 +22,7 @@ export default async function Home({
       <WhyUsSection />
       <OurServices />
       <BrandHeroCarousel />
+      <TestimonialsSection />
     </div>
   );
 }
