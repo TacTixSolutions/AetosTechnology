@@ -53,7 +53,7 @@ function OurServices() {
     <div className="w-full py-16 relative">
       <div className="w-9/10 mx-auto">
         {/* Fixed Header with Indicators */}
-        <div className="absolute top-4 left-1/2 -translate-x-1/2 md:top-28 lg:top-40 md:left-[12%] md:translate-x-0 z-10 flex flex-col items-center gap-1">
+        <div className="absolute top-4 left-1/2 -translate-x-1/2 md:top-28 lg:top-32 2xl:top-40  md:left-[10%] 2xl:left-[13%] md:translate-x-0 z-10 flex flex-col items-center gap-1">
           <h3 className="font-isotek font-bold text-brand tracking-wider uppercase">
             OUR SERVICES
           </h3>
@@ -97,11 +97,11 @@ function OurServices() {
               >
                 <div className="bg-[#E8F4F8] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 min-h-[400px]">
                   {/* Text Content */}
-                  <div className="flex-1 space-y-4">
-                    <h2 className="text-3xl font-isotek lg:text-4xl font-bold text-gray-900">
+                  <div className="flex-1 space-y-2">
+                    <h2 className="text-2xl font-isotek lg:text-4xl font-bold text-gray-900">
                       {service.title}
                     </h2>
-                    <p className="text-gray-600 font-isotek text-base md:text-lg leading-relaxed w-full xl:w-1/2">
+                    <p className="text-gray-600 font-isotek text-base md:text-lg w-full xl:w-1/2">
                       {service.description}
                     </p>
                   </div>
