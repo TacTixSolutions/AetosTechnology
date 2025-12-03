@@ -22,7 +22,7 @@ function ClientsCarousel() {
   ];
 
   return (
-    <div className="w-full  py-12">
+    <div className="w-full  py-16">
       <div className="w-9/10 mx-auto bg-[#FAFAFA] rounded-2xl p-2">
         <h2 className="text-center mt-2 font-space text-gray-500 text-lg mb-2">
           Clients that trust us
@@ -47,7 +47,7 @@ function ClientsCarousel() {
             ]}
             className="w-full"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent>
               {clients.map((client, index) => (
                 <CarouselItem
                   key={index}

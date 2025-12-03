@@ -6,7 +6,7 @@ import IconTitleCard from "./iconTitleCard";
 
 function HeroSection() {
   return (
-    <div className="w-full relative aspect-auto pb-6 lg:aspect-1920/800">
+    <div className="w-full relative aspect-auto pb-6 mb-8 lg:aspect-1920/800">
       <Image
         src="/heroSectionCover.webp"
         alt="Hero Section Cover"

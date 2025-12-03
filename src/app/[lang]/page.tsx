@@ -3,6 +3,7 @@ import { Locale } from "@/lib/i18n-config";
 import HeroSection from "./_components/heroSection/heroSection";
 import ClientsCarousel from "./_components/clientsCarousel/clientsCarousel";
 import OurServices from "./_components/ourServices/ourServices";
+import WhyUsSection from "./_components/whyUs/whyUs";
 
 export default async function Home({
   params,
@@ -16,7 +17,7 @@ export default async function Home({
     <div>
       <HeroSection />
       <ClientsCarousel />
-      {/* why us section */}
+      <WhyUsSection />
       <OurServices />
     </div>
   );
