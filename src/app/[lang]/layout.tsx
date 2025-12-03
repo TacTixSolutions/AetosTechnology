@@ -4,6 +4,7 @@ import { getDictionary } from "@/lib/get-dictionary";
 import { Locale } from "@/lib/i18n-config";
 import Navbar from "@/components/navbar";
 import "./globals.css";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Aetos Technology",
@@ -27,6 +28,7 @@ export default async function RootLayout({
       >
         <Navbar dict={dict.navbar} lang={lang} />
         {children}
+        <Footer />
       </body>
     </html>
   );
