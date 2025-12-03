@@ -7,6 +7,7 @@ import WhyUsSection from "./_components/whyUs/whyUs";
 import BrandHeroCarousel from "./_components/brandHeroCarousel/brandHeroCarousel";
 import TestimonialsSection from "./_components/testimonialsSection/testimonialsSection";
 import FaqSection from "./_components/faqSection/faqSection";
+import CTASection from "./_components/ctaSection/ctaSection";
 
 export default async function Home({
   params,
@@ -25,6 +26,7 @@ export default async function Home({
       <BrandHeroCarousel />
       <TestimonialsSection />
       <FaqSection />
+      <CTASection />
     </div>
   );
 }
