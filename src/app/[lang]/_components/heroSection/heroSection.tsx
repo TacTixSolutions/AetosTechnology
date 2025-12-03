@@ -21,30 +21,30 @@ function HeroSection() {
             Votre activité mérite la{" "}
             <span className="text-brand">performance digitale</span>
           </p>
-          <p className="font-poppins  text-sm sm:text-base md:text-lg  xl:text-xl mt-4 uppercase">
+          <p className="font-poppins  text-sm sm:text-base md:text-base xl:text-lg mt-4 uppercase">
             Nous créons des solutions puissantes et adaptées à votre réalité
             métier pour gagner du temps, réduire les erreurs et améliorer votre
             productivité.
           </p>
           <Button
             size={"lg"}
-            className="bg-brand rounded-lg hover:bg-brand/90 lg:w-72 lg:h-12 text-lg text-white px-6 mt-6"
+            className="bg-brand border border-[#024E63] rounded-lg hover:bg-brand/90 lg:w-72 lg:h-12 font-inter text-white px-6 mt-6"
           >
-            Contact Us
+            Découvrir nos solutions
           </Button>
         </div>
         <div className="flex relative flex-col scale-75 lg:scale-100 mr-0 lg:mr-6 items-center justify-center w-auto">
           <Image
             src="/heroSectionImage.webp"
             alt="Hero Section Illustration"
-            width={450}
-            height={450}
+            width={420}
+            height={420}
             className=" relative"
           />
           <div className="absolute -bottom-4 -left-12 animate-float">
             <PieChartCard />
           </div>
-          <div className="absolute bottom-3 -right-18 animate-float-1">
+          <div className="absolute bottom-3 -right-28 animate-float-1">
             <SalesCard />
           </div>
           <div className="absolute -top-8 -right-18 animate-float-2">

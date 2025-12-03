@@ -155,12 +155,12 @@ function BrandHeroCarousel() {
           align: "center",
           loop: true,
         }}
-        className="w-full"
+        className="w-full font-isotek"
       >
         <CarouselContent>
           {slides.map((slide, index) => (
             <CarouselItem className="pl-0" key={index}>
-              <div className="relative w-full h-[600px] md:h-[500px]">
+              <div className="relative w-full h-[650px] md:h-[648px]">
                 {/* Background image*/}
                 <div className="absolute inset-0">
                   <Image
@@ -170,13 +170,12 @@ function BrandHeroCarousel() {
                     className="object-cover"
                     priority={index === 0}
                   />
-                  <div className="absolute inset-0 bg-black/50" />
                 </div>
 
-                {/* container contnt */}
+                {/* container contnet */}
                 <div className="relative h-full w-9/10 mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 py-12">
-                  <div className="flex-1 text-white space-y-4 max-w-2xl">
-                    <h2 className="text-4xl md:text-5xl font-bold">
+                  <div className="flex-1 text-white space-y-4 p-4 pt-6 max-w-2xl">
+                    <h2 className="text-3xl md:text-4xl font-bold">
                       {slide.title}
                     </h2>
                     <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
@@ -196,7 +195,9 @@ function BrandHeroCarousel() {
                   </div>
 
                   {/* Phone with Stats */}
-                  <PhoneWithStats stats={slide.stats} />
+                  <div className="mr-16">
+                    <PhoneWithStats stats={slide.stats} />
+                  </div>
                 </div>
               </div>
             </CarouselItem>

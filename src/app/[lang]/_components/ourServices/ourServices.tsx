@@ -51,9 +51,9 @@ function OurServices() {
 
   return (
     <div className="w-full py-16 relative">
-      <div className="w-9/10 mx-auto">
+      <div className="w-85/100 mx-auto">
         {/* Fixed Header with Indicators */}
-        <div className="absolute top-4 left-1/2 -translate-x-1/2 md:top-28 lg:top-32 2xl:top-40  md:left-[10%] 2xl:left-[13%] md:translate-x-0 z-10 flex flex-col items-center gap-1">
+        <div className="absolute top-4 left-1/2 -translate-x-1/2 md:top-28 lg:top-32 2xl:top-32  md:left-[12%] 2xl:left-[15%] md:translate-x-0 z-10 flex flex-col items-center gap-1">
           <h3 className="font-isotek font-bold text-brand tracking-wider uppercase">
             OUR SERVICES
           </h3>
@@ -95,20 +95,22 @@ function OurServices() {
                 key={index}
                 className="md:basis-1/1 lg:basis-1/1 px-4 2xl:px-24"
               >
-                <div className="bg-[#E8F4F8] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 min-h-[400px]">
+                <div className="bg-[#E8F4F8] rounded-[40px] p-8 md:p-12 px-12 flex flex-col md:flex-row items-center justify-between gap-8 h-[410px] min-h-[350px]">
                   {/* Text Content */}
-                  <div className="flex-1 space-y-2">
-                    <h2 className="text-2xl font-isotek lg:text-4xl font-bold text-gray-900">
-                      {service.title}
-                    </h2>
-                    <p className="text-gray-600 font-isotek text-base md:text-lg w-full 2xl:w-1/2">
-                      {service.description}
-                    </p>
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col w-8/10">
+                      <h2 className="text-2xl font-isotek lg:text-[40px] font-bold text-gray-900">
+                        {service.title}
+                      </h2>
+                      <p className="text-gray-600 font-isotek text-base md:text-lg w-full 2xl:w-1/2">
+                        {service.description}
+                      </p>
+                    </div>
                   </div>
 
                   {/* Image */}
-                  <div className="shrink-0 w-full md:w-[320px] lg:w-[500px]">
-                    <div className="relative aspect-4/3 rounded-2xl overflow-hidden">
+                  <div className="shrink-0 w-full md:w-[320px] lg:w-[400px]">
+                    <div className="relative aspect-4/3 rounded-[40px] overflow-hidden">
                       <Image
                         src={service.image}
                         alt={service.title}

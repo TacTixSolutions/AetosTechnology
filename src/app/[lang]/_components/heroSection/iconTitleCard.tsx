@@ -1,6 +1,6 @@
 function IconTitleCard() {
   return (
-    <div className="bg-white max-w-64 font-poppins card-shadow gap-4 p-4 rounded-2xl flex flex-row">
+    <div className="bg-white max-w-56 font-poppins card-shadow gap-4 p-4 rounded-2xl flex flex-row">
       <div className="bg-brand shrink-0 flex items-center w-10 h-10 justify-around rounded-lg">
         <svg
           width="20"
@@ -19,7 +19,7 @@ function IconTitleCard() {
         </svg>
       </div>
       <div>
-        <h2 className="font-light text-md  text-[#060336]">
+        <h2 className="font-medium text-md  text-[#060336]">
           Valeur ajoutée pour vos clients
         </h2>
       </div>

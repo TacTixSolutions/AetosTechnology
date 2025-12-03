@@ -22,17 +22,23 @@ function ClientsCarousel() {
   ];
 
   return (
-    <div className="w-full  py-16">
-      <div className="w-9/10 mx-auto bg-[#FAFAFA] rounded-2xl p-2">
-        <h2 className="text-center mt-2 font-space text-gray-500 text-lg mb-2">
+    <div className="w-full py-16 relative">
+      {/* Background Image */}
+      <div className="absolute w-9/10 mx-auto inset-0 -z-10">
+        <Image
+          src="/clientCarouselBg.png"
+          alt="Clients carousel background"
+          fill
+          className="object-contain"
+        />
+      </div>
+
+      <div className="w-9/10 mx-auto">
+        <h2 className="text-center font-space text-[#73779C] text-xl">
           Clients that trust us
         </h2>
 
-        <div className="relative rounded-2xl glass py-8 overflow-hidden">
-          {/* Gradient overlays for fade effect */}
-          {/* <div className="absolute left-0 top-0 bottom-0 w-20 bg-linear-to-r from-white/80 to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-linear-to-l from-white/80 to-transparent z-10 pointer-events-none" /> */}
-
+        <div className="relative rounded-2xl py-8 overflow-hidden">
           <Carousel
             opts={{
               align: "start",
@@ -45,21 +51,21 @@ function ClientsCarousel() {
                 stopOnMouseEnter: true,
               }),
             ]}
-            className="w-full"
+            className="w-full px-12"
           >
             <CarouselContent>
               {clients.map((client, index) => (
                 <CarouselItem
                   key={index}
-                  className="pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6"
+                  className="pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6 xl:basis-1/7"
                 >
-                  <div className="flex items-center justify-center h-24">
+                  <div className="flex items-center justify-center h-16">
                     <Image
                       src={client.logo}
                       alt={`${client.name} logo`}
-                      width={120}
-                      height={60}
-                      className="object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 max-w-full h-auto"
+                      width={100}
+                      height={40}
+                      className="object-contain h-16 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 max-w-full"
                     />
                   </div>
                 </CarouselItem>

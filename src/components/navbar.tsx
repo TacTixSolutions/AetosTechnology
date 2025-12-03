@@ -287,7 +287,7 @@ function Navbar({ dict, lang }: NavbarProps) {
           <Image
             src="/logoWithText.png"
             alt="Aetos Technology Logo"
-            width={120}
+            width={100}
             height={30}
           />
         </Link>
@@ -443,7 +443,7 @@ function Navbar({ dict, lang }: NavbarProps) {
         </div>
 
         <Link href={`/${lang}/contact`}>
-          <Button className="bg-[#024E63] hover:bg-[#024E63]/90 text-white rounded-lg px-6">
+          <Button className=" font-inter bg-[#024E63] hover:bg-[#024E63]/90 rounded-[7px] text-white px-8 h-10">
             {dict.contactUs}
           </Button>
         </Link>

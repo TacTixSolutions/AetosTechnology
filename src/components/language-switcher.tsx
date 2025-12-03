@@ -68,7 +68,7 @@ function LanguageChanger({ isDark = true }: { isDark?: boolean }) {
           <LanguageIcon size={18} color={isDark ? "#000000" : "#ffffff"} />
         </div>
         <div className="hidden md:block">
-          <LanguageIcon size={24} color={isDark ? "#000000" : "#ffffff"} />
+          <LanguageIcon size={20} color={isDark ? "#000000" : "#ffffff"} />
         </div>
       </DropdownMenuTrigger>
 
