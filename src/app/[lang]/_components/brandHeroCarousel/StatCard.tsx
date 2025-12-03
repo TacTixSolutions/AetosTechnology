@@ -3,14 +3,9 @@ import { CircularProgress } from "@/components/ui/circular-progress";
 interface StatCardProps {
   percentage: string;
   description: string;
-  isPositive?: boolean;
 }
 
-function StatCard({
-  percentage,
-  description,
-  isPositive = true,
-}: StatCardProps) {
+function StatCard({ percentage, description }: StatCardProps) {
   const numericValue = Math.abs(parseFloat(percentage));
 
   return (
@@ -18,14 +13,12 @@ function StatCard({
       <div className="mb-2">
         <CircularProgress
           value={numericValue}
-          size={80}
-          strokeWidth={7}
+          size={100}
+          strokeWidth={10}
           showLabel
-          progressClassName={isPositive ? "stroke-brand" : "stroke-red-500"}
-          className={isPositive ? "stroke-brand/25" : "stroke-red-500/25"}
-          labelClassName={`font-bold text-sm ${
-            isPositive ? "text-brand" : "text-red-500"
-          }`}
+          progressClassName="stroke-[#274fb3]"
+          className="stroke-transparent"
+          labelClassName="font-bold text-base text-black"
           renderLabel={() => percentage}
         />
       </div>

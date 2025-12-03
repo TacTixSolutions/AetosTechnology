@@ -190,7 +190,6 @@ function BrandHeroCarousel() {
                           key={statIndex}
                           percentage={stat.percentage}
                           description={stat.description}
-                          isPositive={stat.isPositive}
                         />
                       ))}
                     </div>

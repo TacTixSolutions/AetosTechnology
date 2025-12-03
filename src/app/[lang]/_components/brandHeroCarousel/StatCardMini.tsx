@@ -3,14 +3,9 @@ import { CircularProgress } from "@/components/ui/circular-progress";
 interface StatCardMiniProps {
   percentage: string;
   description: string;
-  isPositive?: boolean;
 }
 
-function StatCardMini({
-  percentage,
-  description,
-  isPositive = true,
-}: StatCardMiniProps) {
+function StatCardMini({ percentage, description }: StatCardMiniProps) {
   const numericValue = Math.abs(parseFloat(percentage));
 
   return (
@@ -21,11 +16,9 @@ function StatCardMini({
           size={64}
           strokeWidth={6}
           showLabel
-          progressClassName={isPositive ? "stroke-brand" : "stroke-red-500"}
-          className={isPositive ? "stroke-brand/25" : "stroke-red-500/25"}
-          labelClassName={`font-bold text-[10px] ${
-            isPositive ? "text-brand" : "text-red-500"
-          }`}
+          progressClassName="stroke-brand"
+          className="stroke-transparent"
+          labelClassName="font-bold text-[10px] text-brand"
           renderLabel={() => percentage}
         />
       </div>

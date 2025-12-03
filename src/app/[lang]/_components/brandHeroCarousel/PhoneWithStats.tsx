@@ -26,7 +26,6 @@ function PhoneWithStats({ stats }: PhoneWithStatsProps) {
           <StatCard
             percentage={stats[0].percentage}
             description={stats[0].description}
-            isPositive={stats[0].isPositive}
           />
         </div>
 
@@ -35,7 +34,6 @@ function PhoneWithStats({ stats }: PhoneWithStatsProps) {
           <StatCard
             percentage={stats[1].percentage}
             description={stats[1].description}
-            isPositive={stats[1].isPositive}
           />
         </div>
 
@@ -44,7 +42,6 @@ function PhoneWithStats({ stats }: PhoneWithStatsProps) {
           <StatCard
             percentage={stats[2].percentage}
             description={stats[2].description}
-            isPositive={stats[2].isPositive}
           />
         </div>
 
@@ -53,7 +50,6 @@ function PhoneWithStats({ stats }: PhoneWithStatsProps) {
           <StatCard
             percentage={stats[3].percentage}
             description={stats[3].description}
-            isPositive={stats[3].isPositive}
           />
         </div>
       </div>
