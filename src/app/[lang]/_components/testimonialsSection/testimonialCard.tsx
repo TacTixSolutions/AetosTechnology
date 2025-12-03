@@ -13,16 +13,18 @@ interface Testimonial {
 }
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
-    <CarouselItem className="md:basis-1/2 h-[500px] lg:basis-1/3 pb-8 relative">
-      <div className="flex flex-col pt-12 h-[360px] items-center justify-center bg-white rounded-[36px] border border-[#EBEBEB] p-6 pb-16  max-w-[500px]">
+    <CarouselItem className="md:basis-1/2 h-[500px] lg:basis-1/3 pb-4 relative">
+      <div className="flex w-95/100 mx-auto flex-col h-[300px] items-center justify-center bg-white rounded-[36px] border border-[#EBEBEB] px-4 pt-8 pb-16  max-w-[500px]">
         <QuoteIcon />
-        <p className="font-isotek text-sm mt-6">{testimonial.content}</p>
+        <p className="font-isotek text-sm mt-6 text-[#575757]">
+          {testimonial.content}
+        </p>
         <div className="flex items-center mt-4">
           {Array.from({ length: 5 }).map((_, i) => (
             <svg
               key={i}
               className={`w-5 h-5 ${
-                i < testimonial.rating ? "text-yellow-400" : "text-gray-300"
+                i < testimonial.rating ? "text-[#FF9900]" : "text-gray-300"
               }`}
               fill="currentColor"
               viewBox="0 0 20 20"

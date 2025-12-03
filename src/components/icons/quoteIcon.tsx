@@ -5,6 +5,7 @@ function QuoteIcon() {
       height="37"
       viewBox="0 0 42 37"
       fill="none"
+      className="shrink-0"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
