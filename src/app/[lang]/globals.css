@@ -137,6 +137,9 @@
     background-color: rgba(255, 0, 0, 0.1);
   }
 
+  .glass-white {
+    @apply bg-white/50 bg-clip-padding backdrop-filter backdrop-blur-md;
+  }
   .glass {
     @apply bg-white/10 bg-clip-padding backdrop-filter backdrop-blur-md;
   }
