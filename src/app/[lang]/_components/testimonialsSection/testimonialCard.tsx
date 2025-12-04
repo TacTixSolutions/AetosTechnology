@@ -3,10 +3,10 @@ import { CarouselItem } from "@/components/ui/carousel";
 import Image from "next/image";
 
 interface Testimonial {
-  id: number;
+  _id: string;
   name: string;
   role: string;
-  company: string;
+  company?: string;
   content: string;
   rating: number;
   logo: string;
