@@ -25,7 +25,7 @@ export default async function Home({
       <OurServices />
       <BrandHeroCarousel />
       <TestimonialsSection />
-      <FaqSection />
+      <FaqSection lang={lang} />
       <CTASection />
     </div>
   );

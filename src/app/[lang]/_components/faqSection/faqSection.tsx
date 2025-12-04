@@ -9,11 +9,14 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 import { MinusIcon, PlusIcon } from "lucide-react";
+import { client } from "@/lib/sanity";
 
 interface FAQ {
-  id: number;
-  question: string;
-  answer: string;
+  _id: string;
+  questionEn: string;
+  questionFr: string;
+  answerEn: string;
+  answerFr: string;
 }
 
 // Custom trigger with plus/minus icons for FAQ section only
@@ -42,39 +45,31 @@ function FaqAccordionTrigger({
   );
 }
 
-function FaqSection() {
-  const faqs: FAQ[] = [
-    {
-      id: 1,
-      question: "What is SuperVisor?",
-      answer:
-        "SuperVisor is a comprehensive retail management platform designed to streamline operations, improve communication, and enhance efficiency across your retail network.",
-    },
-    {
-      id: 2,
-      question: "How does SuperVisor improve store operations?",
-      answer:
-        "SuperVisor provides real-time visibility, digital checklists, and automated reporting to help you coordinate better and execute faster in your stores.",
-    },
-    {
-      id: 3,
-      question: "Can I customize the platform for my needs?",
-      answer:
-        "Yes, SuperVisor is fully customizable to match your specific business processes, workflows, and operational requirements.",
-    },
-    {
-      id: 4,
-      question: "What kind of support do you provide?",
-      answer:
-        "We offer comprehensive support including onboarding, training, technical assistance, and ongoing consultation to ensure your success.",
-    },
-    {
-      id: 5,
-      question: "How long does implementation take?",
-      answer:
-        "Implementation typically takes 2-4 weeks depending on your requirements, with full support from our team throughout the process.",
-    },
-  ];
+function FaqSection({ lang }: { lang: string }) {
+  const [faqs, setFaqs] = React.useState<FAQ[]>([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const fetchFaqs = async () => {
+      try {
+        const query = `*[_type == "faq"] {
+          _id,
+          questionEn,
+          questionFr,
+          answerEn,
+          answerFr
+        }`;
+        const data = await client.fetch(query);
+        setFaqs(data);
+      } catch (error) {
+        console.error("Error fetching FAQs:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFaqs();
+  }, []);
 
   return (
     <div className="w-8/10 mx-auto py-16">
@@ -84,26 +79,38 @@ function FaqSection() {
             <h2 className="text-3xl font-poppins md:text-4xl font-semibold text-center mb-12">
               Frequently Asked Questions
             </h2>
-            <Accordion
-              type="single"
-              collapsible
-              className="w-full space-y-4 font-inter"
-            >
-              {faqs.map((faq) => (
-                <AccordionItem
-                  key={faq.id}
-                  value={`item-${faq.id}`}
-                  className="bg-white rounded-lg border py-4 card-shadow border-gray-200 px-6 data-[state=open]:bg-brand"
-                >
-                  <FaqAccordionTrigger className="text-left text-[#1B1139] hover:no-underline py-4 text-xl font-semibold data-[state=open]:text-white">
-                    {faq.question}
-                  </FaqAccordionTrigger>
-                  <AccordionContent className="text-white font-medium pb-4 data-[state=open]:text-white">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            {loading ? (
+              <div className="text-center py-8">
+                <p className="text-gray-600">Loading FAQs...</p>
+              </div>
+            ) : faqs.length === 0 ? (
+              <div className="text-center py-8">
+                <p className="text-gray-600">
+                  No FAQs available at the moment.
+                </p>
+              </div>
+            ) : (
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full space-y-4 font-inter"
+              >
+                {faqs.map((faq) => (
+                  <AccordionItem
+                    key={faq._id}
+                    value={`item-${faq._id}`}
+                    className="bg-white rounded-lg border py-4 card-shadow border-gray-200 px-6 data-[state=open]:bg-brand"
+                  >
+                    <FaqAccordionTrigger className="text-left text-[#1B1139] hover:no-underline py-4 text-xl font-semibold data-[state=open]:text-white">
+                      {lang === "fr" ? faq.questionFr : faq.questionEn}
+                    </FaqAccordionTrigger>
+                    <AccordionContent className="text-white font-medium pb-4 data-[state=open]:text-white">
+                      {lang === "fr" ? faq.answerFr : faq.answerEn}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            )}
           </section>
         </div>
       </div>
