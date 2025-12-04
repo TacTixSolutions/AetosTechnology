@@ -184,9 +184,7 @@ export function PhoneInput({
             <CommandList>
               <CommandEmpty>No country found.</CommandEmpty>
               <ScrollArea
-                className={
-                  "[&>[data-radix-scroll-area-viewport]]:max-h-[300px]"
-                }
+                className={"*:data-radix-scroll-area-viewport:max-h-[300px]"}
               >
                 <CommandGroup>
                   {countries.map((country) => {

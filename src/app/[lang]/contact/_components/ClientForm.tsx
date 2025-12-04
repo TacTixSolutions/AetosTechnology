@@ -37,7 +37,7 @@ export default function ClientForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 font-inter">
-      <p className="text-sm font-poppins mb-4">
+      <p className="font-medium font-poppins mb-4">
         Give us a short intro to your business
       </p>
 

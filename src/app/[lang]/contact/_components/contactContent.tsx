@@ -95,7 +95,7 @@ export default function ContactContent() {
                 priority
               />
             </div>
-            <div className="absolute bottom-8 left-8 text-white space-y-2  font-poppins">
+            <div className="absolute bottom-8 left-8 text-white space-y-2 font-light font-poppins">
               <div className="flex items-center gap-2">
                 <div className="flex items-center justify-center p-1 bg-brand rounded-md">
                   <CheckIcon className="w-5 h-5" strokeWidth={3} />
@@ -175,7 +175,10 @@ export default function ContactContent() {
       {/* testimonials section */}
       {testimonials.length > 0 && (
         <div className="px-8 w-full xl:w-9/10 2xl:w-8/10 mx-auto pb-16 pt-8 relative">
-          <div className="absolute top-1/2 left-1/2 bg-blue-300 blur-[120px] -translate-x-1/2 -translate-y-1/2 w-7/10 h-24 -z-10" />
+          <div
+            id="goopman"
+            className="absolute top-1/2 left-1/2 bg-blue-300 blur-[120px] -translate-x-1/2 -translate-y-1/2 w-7/10 h-24 z-0"
+          />
 
           <h2 className="text-3xl font-poppins md:text-4xl font-semibold text-center mb-12">
             What our {activeTab === "join" ? "team members" : `${activeTab}s`}{" "}
