@@ -24,7 +24,7 @@ export default async function Home({
       <WhyUsSection />
       <OurServices />
       <BrandHeroCarousel />
-      <TestimonialsSection />
+      <TestimonialsSection lang={lang} />
       <FaqSection lang={lang} />
       <CTASection />
     </div>
