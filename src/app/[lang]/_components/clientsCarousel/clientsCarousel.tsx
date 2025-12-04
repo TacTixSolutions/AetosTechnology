@@ -24,7 +24,7 @@ function ClientsCarousel() {
   return (
     <div className="w-full py-16 relative">
       {/* Background Image */}
-      <div className="absolute w-9/10 mx-auto inset-0 -z-10">
+      <div className="absolute hidden md:block w-9/10 mx-auto inset-0 -z-10">
         <Image
           src="/clientCarouselBg.png"
           alt="Clients carousel background"
@@ -33,7 +33,7 @@ function ClientsCarousel() {
         />
       </div>
 
-      <div className="w-9/10 mx-auto">
+      <div className="w-full md:w-9/10 bg-[#fefefe] md:bg-transparent mx-auto">
         <h2 className="text-center font-space text-[#73779C] text-xl">
           Clients that trust us
         </h2>
@@ -51,7 +51,7 @@ function ClientsCarousel() {
                 stopOnMouseEnter: true,
               }),
             ]}
-            className="w-full px-12"
+            className="w-full px-2 lg:px-12"
           >
             <CarouselContent>
               {clients.map((client, index) => (

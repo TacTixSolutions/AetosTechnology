@@ -4,19 +4,29 @@ import Image from "next/image";
 function CTASection() {
   return (
     <div className="w-full py-16 mb-16">
-      <div className="bg-[#dde8eb] flex flex-col items-center justify-center h-96 rounded-3xl w-8/10 mx-auto relative">
+      <div className="bg-[#dde8eb] flex flex-col items-center justify-center h-96 rounded-3xl w-9/10 lg:w-8/10 mx-auto relative">
         <div className="relative flex items-center justify-center">
-          <Image
-            src="/glassPill.png"
-            alt="glass pill"
-            width={420}
-            height={120}
-          />
-          <p className="text-6xl font-semibold absolute inset-0 flex items-center justify-center">
+          <div className="block lg:hidden">
+            <Image
+              src="/glassPill.png"
+              alt="glass pill"
+              width={320}
+              height={120}
+            />
+          </div>
+          <div className="lg:block hidden">
+            <Image
+              src="/glassPill.png"
+              alt="glass pill"
+              width={420}
+              height={120}
+            />
+          </div>
+          <p className="text-4xl lg:text-6xl font-semibold absolute inset-0 flex items-center justify-center">
             Want to start
           </p>
         </div>
-        <p className="text-6xl font-semibold">a project?</p>
+        <p className="text-4xl lg:text-6xl font-semibold">a project?</p>
         <div className=" cursor-pointer hover:bg-brand/80 transition-colors w-64 h-16 flex flex-row items-center justify-between bg-brand rounded-full mt-8">
           <div className="w-8" />
           <p className="font-poppins font-medium text-lg text-white">
@@ -29,7 +39,7 @@ function CTASection() {
             />
           </button>
         </div>
-        <div className="absolute -top-12 -left-24 animate-float">
+        <div className="hidden lg:block absolute -top-12 -left-24 animate-float">
           <Image
             src="/cta/cta1.png"
             alt="cta decoration"
@@ -37,7 +47,7 @@ function CTASection() {
             height={300}
           />
         </div>
-        <div className="absolute -bottom-16 right-8 animate-float-1">
+        <div className="hidden lg:block absolute -bottom-16 right-8 animate-float-1">
           <Image
             src="/cta/cta4.png"
             alt="cta decoration"
@@ -45,7 +55,7 @@ function CTASection() {
             height={300}
           />
         </div>
-        <div className="absolute -bottom-26 left-18 animate-float-2">
+        <div className="hidden lg:block absolute -bottom-26 left-18 animate-float-2">
           <Image
             src="/cta/cta3.png"
             alt="cta decoration"
@@ -53,7 +63,7 @@ function CTASection() {
             height={250}
           />
         </div>
-        <div className="absolute top-2 -right-18 animate-float-2">
+        <div className="hidden lg:block absolute top-2 -right-18 animate-float-2">
           <Image
             src="/cta/cta2.png"
             alt="cta decoration"

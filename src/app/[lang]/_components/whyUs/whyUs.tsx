@@ -62,7 +62,7 @@ function WhyUsSection() {
           </div>
 
           {/* Image Section - Hidden on md and below, shown on lg+ */}
-          <div className="hidden lg:flex w-1/2 gap-4">
+          <div className="flex w-full lg:w-1/2 gap-4">
             {/* Left image */}
             <div className="flex-1 relative h-[420px] rounded-3xl overflow-hidden">
               <Image

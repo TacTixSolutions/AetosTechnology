@@ -284,12 +284,22 @@ function Navbar({ dict, lang }: NavbarProps) {
           </Sheet>
         )}
         <Link href={`/${lang}`}>
-          <Image
-            src="/logoWithText.png"
-            alt="Aetos Technology Logo"
-            width={100}
-            height={30}
-          />
+          <div className="block md:hidden">
+            <Image
+              src="/logoWithText.png"
+              alt="Aetos Technology Logo"
+              width={90}
+              height={30}
+            />
+          </div>
+          <div className="md:block hidden">
+            <Image
+              src="/logoWithText.png"
+              alt="Aetos Technology Logo"
+              width={100}
+              height={30}
+            />
+          </div>
         </Link>
       </div>
 

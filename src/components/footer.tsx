@@ -20,7 +20,7 @@ function Footer() {
       <div className="w-9/10 mx-auto pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Logo and Description */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
             <Image
               src="/logoWithTextWhite.png"
               alt="Aetos Technology"
@@ -36,10 +36,10 @@ function Footer() {
           </div>
 
           {/* Get in Touch */}
-          <div>
+          <div className="text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
             <h3 className="font-bold text-lg mb-4">Get in Touch</h3>
             <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-2">
+              <div className="flex items-start gap-2 justify-center md:justify-center lg:justify-start">
                 <svg
                   className="w-5 h-5 mt-0.5 shrink-0"
                   fill="none"
@@ -111,7 +111,7 @@ function Footer() {
           </div>
 
           {/* Secteurs */}
-          <div>
+          <div className="text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
             <h3 className="font-bold text-lg mb-4">Secteurs</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -158,7 +158,7 @@ function Footer() {
           </div>
 
           {/* Contactez-nous */}
-          <div>
+          <div className="text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
             <h3 className="font-bold text-lg mb-4">Contactez-nous</h3>
             <ul className="space-y-2 text-sm mb-6">
               <li>
@@ -188,7 +188,7 @@ function Footer() {
             </ul>
           </div>
           {/* Social Media Icons */}
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center md:items-center lg:items-start">
             <div className="flex flex-row gap-3">
               <a
                 href="https://linkedin.com"

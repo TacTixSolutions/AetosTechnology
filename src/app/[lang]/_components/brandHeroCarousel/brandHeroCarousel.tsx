@@ -160,7 +160,7 @@ function BrandHeroCarousel() {
         <CarouselContent>
           {slides.map((slide, index) => (
             <CarouselItem className="pl-0" key={index}>
-              <div className="relative w-full h-[650px] md:h-[648px]">
+              <div className="relative w-full max-[450px]:h-[750px] h-[700px] md:h-[648px]">
                 {/* Background image*/}
                 <div className="absolute inset-0">
                   <Image
@@ -181,21 +181,10 @@ function BrandHeroCarousel() {
                     <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
                       {slide.description}
                     </p>
-
-                    {/* Stats mobile view */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-0 pb-8 lg:hidden">
-                      {slide.stats.map((stat, statIndex) => (
-                        <StatCardMini
-                          key={statIndex}
-                          percentage={stat.percentage}
-                          description={stat.description}
-                        />
-                      ))}
-                    </div>
                   </div>
 
                   {/* Phone with Stats */}
-                  <div className="mr-16">
+                  <div className="mr-0 lg:mr-16">
                     <PhoneWithStats stats={slide.stats} />
                   </div>
                 </div>
