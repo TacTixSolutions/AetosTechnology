@@ -3,15 +3,9 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { sendContactEmail } from "@/app/actions/sendContactEmail";
 import { UploadCloudIcon, FileIcon, XIcon } from "lucide-react";
+import { PhoneInput } from "@/components/phone-input";
 
 export default function JoinUsForm() {
   const [loading, setLoading] = useState(false);
@@ -64,7 +58,7 @@ export default function JoinUsForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4 font-inter">
       <p className="text-sm font-poppins mb-4">
         Give us a short intro to your business
       </p>
@@ -89,24 +83,12 @@ export default function JoinUsForm() {
         <label className="text-sm font-medium mb-1 block">
           Numéro de téléphone
         </label>
-        <div className="grid grid-cols-3 gap-2">
-          <Select name="countryCode" defaultValue="+216">
-            <SelectTrigger className="bg-white">
-              <SelectValue placeholder="Country" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="+216">+216</SelectItem>
-              <SelectItem value="+33">+33</SelectItem>
-              <SelectItem value="+1">+1</SelectItem>
-            </SelectContent>
-          </Select>
-          <Input
-            name="phone"
-            required
-            placeholder="+216"
-            className="col-span-2"
-          />
-        </div>
+        <PhoneInput
+          name="phone"
+          defaultCountry="TN"
+          required
+          placeholder="Value"
+        />
       </div>
 
       <div>

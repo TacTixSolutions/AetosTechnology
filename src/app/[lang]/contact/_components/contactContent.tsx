@@ -73,19 +73,19 @@ export default function ContactContent() {
               <TabsList className="flex-1 w-full grid grid-cols-3 mb-6 bg-white gap-2">
                 <TabsTrigger
                   value="client"
-                  className="data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
+                  className="font-inter data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
                 >
                   Client
                 </TabsTrigger>
                 <TabsTrigger
                   value="partner"
-                  className="data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
+                  className="font-inter data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
                 >
                   Partner
                 </TabsTrigger>
                 <TabsTrigger
                   value="join"
-                  className="data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
+                  className="font-inter data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
                 >
                   Join us
                 </TabsTrigger>
