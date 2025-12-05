@@ -95,14 +95,14 @@ function InfoSectionCard({
 
           {/* Floating Component One - Top Right */}
           {floatingComponentOne && (
-            <div className="absolute top-2 -right-4 z-10">
+            <div className="absolute top-8 -right-4 z-10">
               {floatingComponentOne}
             </div>
           )}
 
           {/* Floating Component Two - Bottom Left */}
           {floatingComponentTwo && (
-            <div className="absolute bottom-4 -left-4 z-10">
+            <div className="absolute bottom-12 left-12 z-10">
               {floatingComponentTwo}
             </div>
           )}

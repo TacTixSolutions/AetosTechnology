@@ -153,7 +153,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                       "flex w-full items-center rounded-md px-4 py-3 text-base font-medium transition-colors hover:bg-[#024E63]/10 hover:text-[#024E63] cursor-pointer no-underline",
                       pathname === `/${lang}`
                         ? "bg-[#024E63]/10 text-[#024E63]"
-                        : "text-gray-700"
+                        : "text-gray-900"
                     )}
                     href={`/${lang}`}
                   >
@@ -335,7 +335,7 @@ function Navbar({ dict, lang }: NavbarProps) {
               <NavigationMenuTrigger
                 className={cn(
                   "h-10 px-4 py-2 font-inter text-base font-medium bg-transparent hover:text-[#024E63] data-[state=open]:bg-[#024E63]/10 data-[state=open]:text-[#024E63]",
-                  "text-gray-700"
+                  "text-gray-900"
                 )}
               >
                 {dict.solutions}
@@ -451,7 +451,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                   "group font-inter inline-flex rounded-md h-10 w-max items-center justify-center px-4 py-2 text-base font-medium transition-colors hover:text-[#024E63] focus:text-[#024E63] focus:outline-none disabled:pointer-events-none disabled:opacity-50 cursor-pointer no-underline",
                   pathname === `/${lang}/partners`
                     ? "bg-[#024E63]/10 text-[#024E63]"
-                    : "text-gray-700"
+                    : "text-gray-900"
                 )}
                 href={`/${lang}/partners`}
               >
