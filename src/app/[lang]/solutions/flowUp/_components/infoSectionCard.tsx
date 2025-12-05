@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 
 interface InfoSectionCardProps {
   id?: string;
@@ -23,16 +25,50 @@ function InfoSectionCard({
   floatingComponentTwo,
 }: InfoSectionCardProps) {
   const isTextLeft = layout === "text-left";
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      }
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <div id={id} className="w-full scroll-mt-28">
+    <div id={id} ref={cardRef} className="w-full scroll-mt-28">
       <div
         className={`flex flex-col ${
           isTextLeft ? "lg:flex-row" : "lg:flex-row-reverse"
         } items-center gap-8 lg:gap-16`}
       >
         {/* Text Content */}
-        <div className="flex-1 space-y-6">
+        <div
+          className={`flex-1 space-y-6 transition-all duration-1000 ease-out ${
+            isVisible
+              ? "opacity-100 translate-x-0"
+              : `opacity-0 ${isTextLeft ? "-translate-x-12" : "translate-x-12"}`
+          }`}
+        >
           <h2 className="text-3xl md:text-[42px] font-poppins font-semibold text-gray-900">
             {title}
           </h2>
@@ -42,8 +78,12 @@ function InfoSectionCard({
         </div>
 
         {/* Image Content */}
-        <div className="flex-1 relative">
-          <div className="relative flex items-center justify-center  w-full aspect-4/3 rounded-2xl overflow-hidden">
+        <div
+          className={`flex-1 relative transition-all duration-1000 ease-out delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+          }`}
+        >
+          <div className="relative flex items-center justify-center w-full aspect-4/3 rounded-2xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
             <Image
               src={imageSrc}
               alt={imageAlt}
