@@ -171,21 +171,26 @@ function Navbar({ dict, lang }: NavbarProps) {
                             </h3>
                             <div className="space-y-1">
                               {/* Flowup - Featured */}
-                              <div className="flex items-start gap-3 p-3 rounded-lg bg-[#1e3a8a]/5 mx-2">
-                                <div className="w-10 h-10 rounded-lg bg-[#1e3a8a] flex items-center justify-center shrink-0">
-                                  <span className="text-white font-bold text-base">
-                                    F
-                                  </span>
+                              <Link href={`/${lang}/solutions/flowUp`}>
+                                <div className="flex items-start gap-3 p-3 rounded-lg cursor-pointer bg-[#26326c]/5 mx-2">
+                                  <div className="w-10 h-10 rounded-lg bg-[#26326c] flex items-center justify-center shrink-0">
+                                    <Image
+                                      src={"/flowupLogo.png"}
+                                      alt="Flowup Logo"
+                                      width={28}
+                                      height={28}
+                                    />
+                                  </div>
+                                  <div>
+                                    <h4 className="font-semibold text-sm text-gray-900">
+                                      {dict.products.flowup}
+                                    </h4>
+                                    <p className="text-xs text-gray-500">
+                                      {dict.products.flowupDescription}
+                                    </p>
+                                  </div>
                                 </div>
-                                <div>
-                                  <h4 className="font-semibold text-sm text-gray-900">
-                                    {dict.products.flowup}
-                                  </h4>
-                                  <p className="text-xs text-gray-500">
-                                    {dict.products.flowupDescription}
-                                  </p>
-                                </div>
-                              </div>
+                              </Link>
 
                               {/* Other Products */}
                               {products.map((product, index) => (
@@ -339,21 +344,26 @@ function Navbar({ dict, lang }: NavbarProps) {
                     </h3>
                     <div className="space-y-1.5">
                       {/* Flowup - Featured */}
-                      <div className="flex items-start gap-3 p-2 rounded-lg bg-[#1e3a8a]/5">
-                        <div className="w-12 h-12 rounded-lg bg-[#1e3a8a] flex items-center justify-center shrink-0">
-                          <span className="text-white font-bold text-lg">
-                            F
-                          </span>
+                      <Link href={`/${lang}/solutions/flowUp`}>
+                        <div className="flex items-start gap-3 p-2 cursor-pointer rounded-lg bg-[#26326c]/5">
+                          <div className="w-12 h-12 rounded-lg bg-[#26326c] flex items-center justify-center shrink-0">
+                            <Image
+                              src={"/flowupLogo.png"}
+                              alt="Flowup Logo"
+                              width={28}
+                              height={28}
+                            />
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-gray-900">
+                              {dict.products.flowup}
+                            </h4>
+                            <p className="text-sm text-gray-500">
+                              {dict.products.flowupDescription}
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <h4 className="font-semibold text-gray-900">
-                            {dict.products.flowup}
-                          </h4>
-                          <p className="text-sm text-gray-500">
-                            {dict.products.flowupDescription}
-                          </p>
-                        </div>
-                      </div>
+                      </Link>
 
                       {/* Other Products */}
                       {products.map((product, index) => (
