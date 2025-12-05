@@ -102,13 +102,17 @@ function Navbar({ dict, lang }: NavbarProps) {
   }, []);
 
   const products = [
-    { name: dict.products.supervisor, icon: Plus },
-    { name: dict.products.visualMerchandising, icon: Plus },
-    { name: dict.products.shiftMaster, icon: Plus },
-    { name: dict.products.communication, icon: Plus },
-    { name: dict.products.flowHR, icon: Plus },
-    { name: dict.products.microLearning, icon: Plus },
-    { name: dict.products.optiStock, icon: Plus },
+    { name: dict.products.supervisor, icon: Plus, id: "supervisor" },
+    {
+      name: dict.products.visualMerchandising,
+      icon: Plus,
+      id: "visual-merchandising",
+    },
+    { name: dict.products.shiftMaster, icon: Plus, id: "shiftmaster" },
+    { name: dict.products.communication, icon: Plus, id: "communication" },
+    { name: dict.products.flowHR, icon: Plus, id: "flowhr" },
+    { name: dict.products.microLearning, icon: Plus, id: "micro-learning" },
+    { name: dict.products.optiStock, icon: Plus, id: "optistock" },
   ];
 
   return (
@@ -194,15 +198,16 @@ function Navbar({ dict, lang }: NavbarProps) {
 
                               {/* Other Products */}
                               {products.map((product, index) => (
-                                <div
+                                <Link
                                   key={index}
-                                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors mx-2"
+                                  href={`/${lang}/solutions/flowUp#${product.id}`}
+                                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors mx-2 no-underline"
                                 >
                                   <Plus size={14} className="text-gray-400" />
                                   <span className="text-sm text-gray-700">
                                     {product.name}
                                   </span>
-                                </div>
+                                </Link>
                               ))}
                             </div>
                           </div>
@@ -367,15 +372,16 @@ function Navbar({ dict, lang }: NavbarProps) {
 
                       {/* Other Products */}
                       {products.map((product, index) => (
-                        <div
+                        <Link
                           key={index}
-                          className="ml-14 flex items-center gap-2 px-3 py-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors"
+                          href={`/${lang}/solutions/flowUp#${product.id}`}
+                          className="ml-14 flex items-center gap-2 px-3 py-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors no-underline"
                         >
                           <Plus size={16} className="text-gray-400" />
                           <span className="text-sm text-gray-700">
                             {product.name}
                           </span>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   </div>

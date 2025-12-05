@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 
 interface InfoSectionCardProps {
+  id?: string;
   title: string;
   description: string;
   imageSrc: string;
@@ -12,6 +13,7 @@ interface InfoSectionCardProps {
 }
 
 function InfoSectionCard({
+  id,
   title,
   description,
   imageSrc,
@@ -23,7 +25,7 @@ function InfoSectionCard({
   const isTextLeft = layout === "text-left";
 
   return (
-    <div className="w-full">
+    <div id={id} className="w-full scroll-mt-28">
       <div
         className={`flex flex-col ${
           isTextLeft ? "lg:flex-row" : "lg:flex-row-reverse"

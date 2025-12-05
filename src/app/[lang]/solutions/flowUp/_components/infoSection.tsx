@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import InfoSectionCard from "./infoSectionCard";
 
 interface InfoCardData {
+  id?: string;
   title: string;
   description: string;
   imageSrc: string;
@@ -21,6 +22,7 @@ function InfoSection({ cards }: InfoSectionProps) {
         {cards.map((card, index) => (
           <InfoSectionCard
             key={index}
+            id={card.id}
             title={card.title}
             description={card.description}
             imageSrc={card.imageSrc}

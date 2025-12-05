@@ -9,6 +9,7 @@ import Image from "next/image";
 
 export const infoCards = [
   {
+    id: "supervisor",
     title: "SuperVisor",
     description:
       "SuperVisor streamlines field operations with smart checklists, optimized schedules, and real-time reporting. Built for multisite teams, it speeds up daily work, improves execution, and supports better decisions.",
@@ -16,6 +17,7 @@ export const infoCards = [
     imageAlt: "SuperVisor",
   },
   {
+    id: "visual-merchandising",
     title: "Visual Merchandising",
     description:
       "The Visual Merchandising module lets you control in-store execution with clear guidelines, before/after photos, and instant tracking. It ensures brand consistency, improves HQ-to-field communication, and delivers a uniform customer experience across all stores.",
@@ -34,6 +36,7 @@ export const infoCards = [
     ),
   },
   {
+    id: "shiftmaster",
     title: "ShiftMaster",
     description:
       "Organize and optimize staff schedules with a smart, easy-to-use module. Create and adjust shifts in a few clicks, balance workloads, prevent conflicts, and ensure optimal coverage based on operational needs.",
@@ -80,6 +83,7 @@ export const infoCards = [
     ),
   },
   {
+    id: "communication",
     title: "Communication",
     description:
       "Create a real internal social network that transforms team collaboration. The Communication module centralizes messaging, workgroups, news feed, and built-in calls in one modern, intuitive space that connects your entire organization.",
@@ -98,6 +102,7 @@ export const infoCards = [
     ),
   },
   {
+    id: "flowhr",
     title: "FlowHR",
     description:
       "HRFlow is a complete, intuitive module that centralizes daily HR tracking. It manages absences, leave, presence, evaluations, and employee journeys while giving clear, up-to-date insights. A simple and structured tool to support teams and HR decisions.",
@@ -110,6 +115,7 @@ export const infoCards = [
     ),
   },
   {
+    id: "micro-learning",
     title: "Micro-Learning",
     description:
       "Give your teams a fast, interactive, anytime learning experience. The Micro-Learning module delivers short training capsules, videos, quizzes, and targeted paths to build field skills continuously. A modern and flexible way to boost skills without disrupting operations.",
@@ -128,6 +134,7 @@ export const infoCards = [
     ),
   },
   {
+    id: "optistock",
     title: "OptiStock",
     description:
       "OptiStock optimizes stock levels with an AI-driven analysis engine that tracks sales and inventory across each store. It detects imbalances, suggests transfers, and anticipates needs to prevent stockouts, overstock, and lost sales.",
