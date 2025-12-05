@@ -40,7 +40,7 @@ function TestimonialsSection({ lang }: { lang: string }) {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const query = `*[_type == "testimonial"] {
+        const query = `*[_type == "testimonial"  && type == "client"] {
           _id,
           type,
           textEn,
@@ -75,9 +75,9 @@ function TestimonialsSection({ lang }: { lang: string }) {
   }, [api]);
 
   return (
-    <div className="w-9/10 mx-auto py-16 relative overflow-hidden">
+    <div className="w-full md:w-9/10 mx-auto py-16 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 bg-blue-300 blur-[120px] -translate-x-1/2 -translate-y-1/2 w-7/10 h-24 -z-10" />
-      <div className="w-9/10 mx-auto">
+      <div className="w-full md:w-9/10 mx-auto">
         <h2 className="text-3xl font-poppins md:text-4xl font-semibold text-center mb-12">
           Our successful clients
         </h2>
@@ -123,14 +123,14 @@ function TestimonialsSection({ lang }: { lang: string }) {
               </CarouselContent>
 
               {/* Custom indicators */}
-              <div className="flex justify-center items-center gap-2 mt-8">
+              <div className="flex justify-center items-center -mt-12 gap-2">
                 {Array.from({ length: count }).map((_, index) => (
                   <button
                     key={index}
                     onClick={() => api?.scrollTo(index)}
                     className={`h-2 rounded-full transition-all ${
                       index === current
-                        ? "w-5 h-5 bg-[#024e63]"
+                        ? "w-4 h-4 bg-[#024e63]"
                         : "w-3 h-3 bg-[#99bcc6]"
                     }`}
                     aria-label={`Go to slide ${index + 1}`}

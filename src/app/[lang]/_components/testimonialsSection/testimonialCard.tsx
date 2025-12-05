@@ -13,7 +13,7 @@ interface Testimonial {
 }
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
-    <CarouselItem className="md:basis-1/2 h-[500px] lg:basis-1/3 pb-4 relative">
+    <CarouselItem className="sm:basis-1/2 h-[500px] lg:basis-1/2 xl:basis-1/3 relative">
       <div className="flex w-95/100 mx-auto flex-col h-[300px] items-center justify-center bg-white rounded-[36px] border border-[#EBEBEB] px-4 pt-8 pb-16  max-w-[500px]">
         <QuoteIcon />
         <p className="font-isotek text-sm mt-6 text-[#575757]">
@@ -35,10 +35,10 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         </div>
       </div>
       <div
-        className="h-20 w-full max-w-[500px] relative"
+        className="w-full max-w-[600px] bg-red-400 relative flex items-center justify-center mt-4"
         style={{ zIndex: 1000 }}
       >
-        <div className="absolute font-isotek left-1/2 transform -translate-x-1/2 -top-12 w-full h-auto flex items-center justify-start flex-col gap-2">
+        <div className="absolute font-isotek -top-16 w-full h-auto flex items-center justify-start flex-col gap-2">
           <div className="">
             <Image
               src={testimonial.logo}

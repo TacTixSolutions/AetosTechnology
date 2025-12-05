@@ -174,7 +174,7 @@ export default function ContactContent() {
       </div>
       {/* testimonials section */}
       {testimonials.length > 0 && (
-        <div className="px-8 w-full xl:w-9/10 2xl:w-8/10 mx-auto pb-16 pt-8 relative">
+        <div className="w-full md:w-9/10 xl:w-9/10 2xl:w-8/10 mx-auto pb-16 pt-8 relative">
           <div
             id="goopman"
             className="absolute top-1/2 left-1/2 bg-blue-300 blur-[120px] -translate-x-1/2 -translate-y-1/2 w-7/10 h-24 z-0"
@@ -212,14 +212,14 @@ export default function ContactContent() {
             </CarouselContent>
 
             {/* Custom indicators */}
-            <div className="flex justify-center items-center gap-2 mt-8">
+            <div className="flex justify-center items-center gap-2 -mt-12">
               {Array.from({ length: count }).map((_, index) => (
                 <button
                   key={index}
                   onClick={() => api?.scrollTo(index)}
                   className={`h-2 rounded-full transition-all ${
                     index === current
-                      ? "w-5 h-5 bg-[#024e63]"
+                      ? "w-4 h-4 bg-[#024e63]"
                       : "w-3 h-3 bg-[#99bcc6]"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
