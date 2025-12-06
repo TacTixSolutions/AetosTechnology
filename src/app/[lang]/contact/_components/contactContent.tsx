@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ClientForm from "./ClientForm";
 import PartnerForm from "./PartnerForm";
-import JoinUsForm from "./JoinUsForm";
 import { CheckIcon } from "lucide-react";
 import { client } from "@/lib/sanity";
 import { createImageUrlBuilder } from "@sanity/image-url";
@@ -134,7 +133,7 @@ export default function ContactContent() {
                     Tell us who you are
                   </h1>
 
-                  <TabsList className="flex-1 w-full grid grid-cols-3 mb-6 bg-white gap-2">
+                  <TabsList className="flex-1 w-full grid grid-cols-2 mb-6 bg-white gap-2">
                     <TabsTrigger
                       value="client"
                       className="font-inter data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
@@ -147,12 +146,6 @@ export default function ContactContent() {
                     >
                       Partner
                     </TabsTrigger>
-                    <TabsTrigger
-                      value="join"
-                      className="font-inter data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
-                    >
-                      Join us
-                    </TabsTrigger>
                   </TabsList>
                 </div>
 
@@ -162,10 +155,6 @@ export default function ContactContent() {
 
                 <TabsContent value="partner">
                   <PartnerForm />
-                </TabsContent>
-
-                <TabsContent value="join">
-                  <JoinUsForm />
                 </TabsContent>
               </Tabs>
             </div>

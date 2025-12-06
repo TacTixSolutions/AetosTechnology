@@ -13,7 +13,6 @@ export default defineType({
         list: [
           {title: 'Client', value: 'client'},
           {title: 'Partner', value: 'partner'},
-          {title: 'Member', value: 'member'},
         ],
         layout: 'radio',
       },
