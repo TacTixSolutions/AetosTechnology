@@ -19,14 +19,14 @@ export default async function Home({
 
   return (
     <div>
-      <HeroSection />
-      <ClientsCarousel />
-      <WhyUsSection />
-      <OurServices />
-      <BrandHeroCarousel />
-      <TestimonialsSection lang={lang} />
-      <FaqSection lang={lang} />
-      <CTASection />
+      <HeroSection dict={dict.hero} />
+      <ClientsCarousel dict={dict.clients} />
+      <WhyUsSection dict={dict.whyUs} />
+      <OurServices dict={dict.services} />
+      <BrandHeroCarousel dict={dict.brandCarousel} />
+      <TestimonialsSection lang={lang} dict={dict.testimonials} />
+      <FaqSection lang={lang} dict={dict.faq} />
+      <CTASection dict={dict.cta} />
     </div>
   );
 }

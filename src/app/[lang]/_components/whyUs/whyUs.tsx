@@ -1,22 +1,35 @@
 import Image from "next/image";
 import { Plus } from "lucide-react";
 
-function WhyUsSection() {
+interface WhyUsDict {
+  title: string;
+  subtitle: string;
+  description: string;
+  imageAlt: string;
+  reasons: {
+    simplicity: { title: string; description: string };
+    speed: { title: string; description: string };
+    support: { title: string; description: string };
+  };
+}
+
+interface WhyUsSectionProps {
+  dict: WhyUsDict;
+}
+
+function WhyUsSection({ dict }: WhyUsSectionProps) {
   const reasons = [
     {
-      title: "Expertise terrain",
-      description:
-        "Une compréhension concrète de vos défis pour créer des solutions réellement utiles.",
+      title: dict.reasons.simplicity.title,
+      description: dict.reasons.simplicity.description,
     },
     {
-      title: "Technologie éprouvée",
-      description:
-        "Des outils fiables qui améliorent les performances et réduisent les erreurs opérationnelles.",
+      title: dict.reasons.speed.title,
+      description: dict.reasons.speed.description,
     },
     {
-      title: "Proximité client",
-      description:
-        "Un accompagnement continu pour accélérer la prise de décision au quotidien.",
+      title: dict.reasons.support.title,
+      description: dict.reasons.support.description,
     },
   ];
 
@@ -27,17 +40,15 @@ function WhyUsSection() {
           <div className="w-full font-isotek lg:w-1/2 ">
             <div className="space-y-2 xl:w-8/10">
               <h3 className="text-sm font-semibold text-brand tracking-wider uppercase">
-                Pourquoi nous
+                {dict.title}
               </h3>
 
               <h2 className="text-3xl font-isotek md:text-4xl font-bold text-gray-900 leading-tight">
-                Digitalisation adaptée à votre réalité
+                {dict.subtitle}
               </h2>
 
               <p className="text-gray-600 font-isotek text-base leading-relaxed">
-                Aetos Technology aide les entreprises à digitaliser leurs
-                opérations avec des solutions simples, rapides et conçues pour
-                les besoins métier du terrain.
+                {dict.description}
               </p>
 
               {/* Reasons list with plus icons */}
@@ -67,7 +78,7 @@ function WhyUsSection() {
             <div className="flex-1 relative h-[420px] rounded-3xl overflow-hidden">
               <Image
                 src="/whyUsPic.webp"
-                alt="Digital workspace"
+                alt={dict.imageAlt}
                 fill
                 className="object-contain"
               />

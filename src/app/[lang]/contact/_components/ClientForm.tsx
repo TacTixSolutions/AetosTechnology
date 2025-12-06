@@ -6,7 +6,26 @@ import { Button } from "@/components/ui/button";
 import { sendContactEmail } from "@/app/actions/sendContactEmail";
 import { PhoneInput } from "@/components/phone-input";
 
-export default function ClientForm() {
+interface ClientFormProps {
+  dict: {
+    intro: string;
+    firstName: string;
+    lastName: string;
+    jobTitle?: string;
+    businessEmail: string;
+    phoneNumber: string;
+    company: string;
+    locations: string;
+    employees: string;
+    placeholder: string;
+    footer: string;
+    footerLink: string;
+    submit: string;
+    submitting: string;
+  };
+}
+
+export default function ClientForm({ dict }: ClientFormProps) {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -37,33 +56,41 @@ export default function ClientForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 font-inter">
-      <p className="font-medium font-poppins mb-4">
-        Give us a short intro to your business
-      </p>
+      <p className="font-medium font-poppins mb-4">{dict.intro}</p>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="text-sm font-medium mb-1 block">First name</label>
+          <label className="text-sm font-medium mb-1 block">
+            {dict.firstName}
+          </label>
           <Input name="firstName" required placeholder="Value" />
         </div>
         <div>
-          <label className="text-sm font-medium mb-1 block">Last name</label>
+          <label className="text-sm font-medium mb-1 block">
+            {dict.lastName}
+          </label>
           <Input name="lastName" required placeholder="Value" />
         </div>
       </div>
 
       <div>
-        <label className="text-sm font-medium mb-1 block">Job title</label>
+        <label className="text-sm font-medium mb-1 block">
+          {dict.jobTitle || "Job title"}
+        </label>
         <Input name="jobTitle" required placeholder="Value" />
       </div>
 
       <div>
-        <label className="text-sm font-medium mb-1 block">Business email</label>
+        <label className="text-sm font-medium mb-1 block">
+          {dict.businessEmail}
+        </label>
         <Input name="email" type="email" required placeholder="Value" />
       </div>
 
       <div>
-        <label className="text-sm font-medium mb-1 block">Phone number</label>
+        <label className="text-sm font-medium mb-1 block">
+          {dict.phoneNumber}
+        </label>
         <PhoneInput
           name="phone"
           defaultCountry="TN"
@@ -73,27 +100,26 @@ export default function ClientForm() {
       </div>
 
       <div>
-        <label className="text-sm font-medium mb-1 block">Company</label>
+        <label className="text-sm font-medium mb-1 block">{dict.company}</label>
         <Input name="company" required placeholder="Value" />
       </div>
 
       <div>
         <label className="text-sm font-medium mb-1 block">
-          Number of locations
+          {dict.locations}
         </label>
         <Input name="locations" type="number" required placeholder="Value" />
       </div>
 
       <div>
         <label className="text-sm font-medium mb-1 block">
-          Number of frontline employees
+          {dict.employees}
         </label>
         <Input name="employees" type="number" required placeholder="Value" />
       </div>
 
       <p className="text-xs text-gray-600">
-        <span className="font-bold">Already a AETOS customer?</span> Please
-        reach out to our customer support team
+        <span className="font-bold">{dict.footer}</span> {dict.footerLink}
       </p>
 
       <Button
@@ -101,7 +127,7 @@ export default function ClientForm() {
         disabled={loading}
         className="w-full bg-[#024E63] hover:bg-[#024E63]/90"
       >
-        {loading ? "Sending..." : "Send"}
+        {loading ? dict.submitting : dict.submit}
       </Button>
 
       {message && (

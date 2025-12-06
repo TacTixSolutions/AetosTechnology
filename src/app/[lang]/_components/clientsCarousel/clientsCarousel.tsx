@@ -8,7 +8,16 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-function ClientsCarousel() {
+interface ClientsCarouselDict {
+  title: string;
+  logoAlt: string;
+}
+
+interface ClientsCarouselProps {
+  dict: ClientsCarouselDict;
+}
+
+function ClientsCarousel({ dict }: ClientsCarouselProps) {
   const clients = [
     { name: "quick silver", logo: "/clients/quicksilver.png" },
     { name: "kiabi", logo: "/clients/kiabi.png" },
@@ -35,7 +44,7 @@ function ClientsCarousel() {
 
       <div className="w-full md:w-9/10 bg-[#fefefe] md:bg-transparent mx-auto">
         <h2 className="text-center font-space text-[#73779C] text-xl">
-          Clients that trust us
+          {dict.title}
         </h2>
 
         <div className="relative rounded-2xl py-8 overflow-hidden">
@@ -62,7 +71,7 @@ function ClientsCarousel() {
                   <div className="flex items-center justify-center h-16">
                     <Image
                       src={client.logo}
-                      alt={`${client.name} logo`}
+                      alt={dict.logoAlt}
                       width={100}
                       height={40}
                       className="object-contain h-16 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 max-w-full"

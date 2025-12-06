@@ -7,27 +7,49 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-export const infoCards = [
+interface ModuleDict {
+  title: string;
+  description: string;
+  id: string;
+  card1Title?: string;
+  card1Subtitle?: string;
+  card2Title?: string;
+  card2Subtitle?: string;
+  cardTitle?: string;
+  cardSubtitle?: string;
+  statValue?: string;
+  statLabel?: string;
+}
+
+interface ModulesDict {
+  supervisor: ModuleDict;
+  visualMerchandising: ModuleDict;
+  shiftMaster: ModuleDict;
+  communication: ModuleDict;
+  flowHR: ModuleDict;
+  microLearning: ModuleDict;
+  optiStock: ModuleDict;
+}
+
+export const getInfoCards = (modules: ModulesDict) => [
   {
-    id: "supervisor",
-    title: "SuperVisor",
-    description:
-      "SuperVisor streamlines field operations with smart checklists, optimized schedules, and real-time reporting. Built for multisite teams, it speeds up daily work, improves execution, and supports better decisions.",
+    id: modules.supervisor.id,
+    title: modules.supervisor.title,
+    description: modules.supervisor.description,
     imageSrc: "/flowup/infosection1.png",
-    imageAlt: "SuperVisor",
+    imageAlt: modules.supervisor.title,
   },
   {
-    id: "visual-merchandising",
-    title: "Visual Merchandising",
-    description:
-      "The Visual Merchandising module lets you control in-store execution with clear guidelines, before/after photos, and instant tracking. It ensures brand consistency, improves HQ-to-field communication, and delivers a uniform customer experience across all stores.",
+    id: modules.visualMerchandising.id,
+    title: modules.visualMerchandising.title,
+    description: modules.visualMerchandising.description,
     imageSrc: "/flowup/infosection2.png",
-    imageAlt: "Visual Merchandising",
+    imageAlt: modules.visualMerchandising.title,
     floatingComponentTwo: (
       <div className="animate-float">
         <Image
           src="/graphFlowup.png"
-          alt="FlowUp Hero Image"
+          alt={modules.visualMerchandising.title}
           className="shadow-lg rounded"
           width={130}
           height={150}
@@ -36,20 +58,23 @@ export const infoCards = [
     ),
   },
   {
-    id: "shiftmaster",
-    title: "ShiftMaster",
-    description:
-      "Organize and optimize staff schedules with a smart, easy-to-use module. Create and adjust shifts in a few clicks, balance workloads, prevent conflicts, and ensure optimal coverage based on operational needs.",
+    id: modules.shiftMaster.id,
+    title: modules.shiftMaster.title,
+    description: modules.shiftMaster.description,
     imageSrc: "/flowup/infosection3.png",
-    imageAlt: "ShiftMaster",
+    imageAlt: modules.shiftMaster.title,
     floatingComponentOne: (
       <div className="bg-white rounded-2xl px-6 py-4 shadow-lg flex items-center gap-3 animate-float">
         <div className="bg-[#024E63] rounded-lg p-2">
           <CheckIcon className="w-6 h-6 text-white" strokeWidth={3} />
         </div>
         <div>
-          <p className="text-sm font-semibold text-gray-900">Flux de travail</p>
-          <p className="text-xs text-gray-600">simple</p>
+          <p className="text-sm font-semibold text-gray-900">
+            {modules.shiftMaster.card1Title}
+          </p>
+          <p className="text-xs text-gray-600">
+            {modules.shiftMaster.card1Subtitle}
+          </p>
         </div>
       </div>
     ),
@@ -75,39 +100,43 @@ export const infoCards = [
         </div>
         <div>
           <p className="text-sm font-semibold text-gray-900">
-            Moins de conflits,
+            {modules.shiftMaster.card2Title}
           </p>
-          <p className="text-xs text-gray-600">plus d&apos;efficacité</p>
+          <p className="text-xs text-gray-600">
+            {modules.shiftMaster.card2Subtitle}
+          </p>
         </div>
       </div>
     ),
   },
   {
-    id: "communication",
-    title: "Communication",
-    description:
-      "Create a real internal social network that transforms team collaboration. The Communication module centralizes messaging, workgroups, news feed, and built-in calls in one modern, intuitive space that connects your entire organization.",
+    id: modules.communication.id,
+    title: modules.communication.title,
+    description: modules.communication.description,
     imageSrc: "/flowup/infosection4.png",
-    imageAlt: "Communication",
+    imageAlt: modules.communication.title,
     floatingComponentOne: (
       <div className="bg-white rounded-2xl px-6 py-4 shadow-lg flex items-center gap-3 animate-float">
         <div className="bg-[#024E63] rounded-lg p-2">
           <TrendingUpIcon className="w-6 h-6 text-white" strokeWidth={2.5} />
         </div>
         <div>
-          <p className="text-lg font-bold text-gray-900">+45%</p>
-          <p className="text-xs text-gray-600">Engagement des équipes</p>
+          <p className="text-lg font-bold text-gray-900">
+            {modules.communication.statValue}
+          </p>
+          <p className="text-xs text-gray-600">
+            {modules.communication.statLabel}
+          </p>
         </div>
       </div>
     ),
   },
   {
-    id: "flowhr",
-    title: "FlowHR",
-    description:
-      "HRFlow is a complete, intuitive module that centralizes daily HR tracking. It manages absences, leave, presence, evaluations, and employee journeys while giving clear, up-to-date insights. A simple and structured tool to support teams and HR decisions.",
+    id: modules.flowHR.id,
+    title: modules.flowHR.title,
+    description: modules.flowHR.description,
     imageSrc: "/flowup/infosection5.png",
-    imageAlt: "FlowHR",
+    imageAlt: modules.flowHR.title,
     floatingComponentOne: (
       <div className="animate-float">
         <PieChartCard />
@@ -115,39 +144,43 @@ export const infoCards = [
     ),
   },
   {
-    id: "micro-learning",
-    title: "Micro-Learning",
-    description:
-      "Give your teams a fast, interactive, anytime learning experience. The Micro-Learning module delivers short training capsules, videos, quizzes, and targeted paths to build field skills continuously. A modern and flexible way to boost skills without disrupting operations.",
+    id: modules.microLearning.id,
+    title: modules.microLearning.title,
+    description: modules.microLearning.description,
     imageSrc: "/flowup/infosection6.png",
-    imageAlt: "Micro-Learning",
+    imageAlt: modules.microLearning.title,
     floatingComponentOne: (
       <div className="bg-white rounded-2xl px-6 py-4 shadow-lg flex items-center gap-3 animate-float">
         <div className="bg-white border-2 border-[#024E63] rounded-full p-2">
           <TargetIcon className="w-6 h-6 text-[#024E63]" strokeWidth={2.5} />
         </div>
         <div>
-          <p className="text-sm font-semibold text-gray-900">Quizzes</p>
-          <p className="text-xs text-gray-600">Smart learning</p>
+          <p className="text-sm font-semibold text-gray-900">
+            {modules.microLearning.cardTitle}
+          </p>
+          <p className="text-xs text-gray-600">
+            {modules.microLearning.cardSubtitle}
+          </p>
         </div>
       </div>
     ),
   },
   {
-    id: "optistock",
-    title: "OptiStock",
-    description:
-      "OptiStock optimizes stock levels with an AI-driven analysis engine that tracks sales and inventory across each store. It detects imbalances, suggests transfers, and anticipates needs to prevent stockouts, overstock, and lost sales.",
+    id: modules.optiStock.id,
+    title: modules.optiStock.title,
+    description: modules.optiStock.description,
     imageSrc: "/flowup/infosection7.png",
-    imageAlt: "OptiStock",
+    imageAlt: modules.optiStock.title,
     floatingComponentOne: (
       <div className="bg-white rounded-2xl px-6 py-4 shadow-lg flex items-center gap-3 animate-float">
         <div className="bg-[#024E63] rounded-lg p-2">
           <BarChart3Icon className="w-6 h-6 text-white" strokeWidth={2.5} />
         </div>
         <div>
-          <p className="text-lg font-bold text-gray-900">70%</p>
-          <p className="text-xs text-gray-600">Smart tracking</p>
+          <p className="text-lg font-bold text-gray-900">
+            {modules.optiStock.statValue}
+          </p>
+          <p className="text-xs text-gray-600">{modules.optiStock.statLabel}</p>
         </div>
       </div>
     ),

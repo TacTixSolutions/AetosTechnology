@@ -31,5 +31,325 @@
       "industryProduction": "Industrie & Production",
       "audit": "Audit"
     }
+  },
+  "hero": {
+    "title": "Votre activité mérite la",
+    "titleHighlight": "performance digitale",
+    "description": "Nous créons des solutions puissantes et adaptées à votre réalité métier pour gagner du temps, réduire les erreurs et améliorer votre productivité.",
+    "ctaButton": "Commencer",
+    "imageAlt": "Illustration de la section héroïque",
+    "brandImageAlt": "Marque Aetos Technology",
+    "addedValue": "Valeur ajoutée pour vos clients"
+  },
+  "brandCarousel": {
+    "title": "Notre succès avec ",
+    "kiabi": {
+      "brand": "Kiabi",
+      "description": "Une meilleure exécution en magasin grâce à un suivi clair, structuré et harmonisé sur l'ensemble du réseau.",
+      "stat1Label": "de temps perdu sur les reporting manuels",
+      "stat2Label": "de visibilité dans la résolution des incidents",
+      "stat3Label": "de visites terrain réalisées dans les délais"
+    },
+    "gemo": {
+      "brand": "Gemo",
+      "description": "Optimisation des opérations retail avec un suivi en temps réel des performances magasin.",
+      "stat1Label": "de temps d'administration",
+      "stat2Label": "de conformité standards",
+      "stat3Label": "de satisfaction équipes"
+    },
+    "bodySoul": {
+      "brand": "Body & Soul",
+      "description": "Digitalisation complète des processus magasin pour une expérience client optimale.",
+      "stat1Label": "de productivité équipes",
+      "stat2Label": "de suivi qualité",
+      "stat3Label": "de réactivité incidents"
+    },
+    "quiksilver": {
+      "brand": "Quiksilver",
+      "description": "Transformation digitale des opérations pour une gestion retail moderne et efficace.",
+      "stat1Label": "de délais résolution",
+      "stat2Label": "de visibilité opérationnelle",
+      "stat3Label": "d'exécution des processus"
+    }
+  },
+  "services": {
+    "header": "NOS SERVICES",
+    "digitalSolutions": {
+      "title": "Solutions Digitales",
+      "description": "Transformez vos opérations avec nos outils numériques de pointe conçus pour les entreprises modernes."
+    },
+    "customSoftware": {
+      "title": "Logiciels Sur Mesure",
+      "description": "Développement de logiciels personnalisés qui correspondent parfaitement à vos besoins commerciaux uniques."
+    },
+    "processOptimization": {
+      "title": "Optimisation des Processus",
+      "description": "Rationalisez vos flux de travail et augmentez l'efficacité avec nos services d'optimisation experts."
+    },
+    "fullCompanionship": {
+      "title": "Un Accompagnement complet",
+      "description": "Un déploiement rapide, une formation adaptée et un accompagnement continu, avec des solutions fiables et personnalisées qui évoluent avec vous."
+    }
+  },
+  "whyUs": {
+    "title": "Pourquoi nous",
+    "subtitle": "Digitalisation adaptée à votre réalité",
+    "description": "Aetos Technology aide les entreprises à digitaliser leurs opérations avec des solutions simples, rapides et conçues pour les besoins métier du terrain.",
+    "imageAlt": "Illustration de collaboration",
+    "reasons": {
+      "simplicity": {
+        "title": "Simplicité d'abord",
+        "description": "Des outils intuitifs que vos équipes peuvent utiliser dès le premier jour"
+      },
+      "speed": {
+        "title": "Déploiement rapide",
+        "description": "Solutions opérationnelles en quelques semaines, pas des mois"
+      },
+      "support": {
+        "title": "Support continu",
+        "description": "Nous restons à vos côtés tout au long de votre transformation digitale"
+      }
+    }
+  },
+  "cta": {
+    "title": "Envie de démarrer",
+    "titleHighlight": "votre projet?",
+    "button": "Discutons!",
+    "imageAlt": "Illustration d'appel à l'action"
+  },
+  "clients": {
+    "title": "Clients qui nous font confiance",
+    "logoAlt": "Logo de l'entreprise cliente"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "loading": "Chargement des FAQ...",
+    "empty": "Aucune FAQ disponible pour le moment."
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "loading": "Chargement des témoignages...",
+    "empty": "Aucun témoignage disponible."
+  },
+  "contact": {
+    "hero": {
+      "title": "Prenez Contact",
+      "address": "B02 Immeube Nessma, AV UMA La Soukra Ariana"
+    },
+    "tabs": {
+      "client": "Client",
+      "partner": "Partenaire",
+      "join": "Nous Rejoindre"
+    },
+    "formIntro": {
+      "demo": "Dites-nous qui vous êtes",
+      "features": {
+        "demo": "Démo construite autour de vos besoins.",
+        "access": "Accès instantané aux outils que vous pouvez commencer à utiliser maintenant",
+        "answers": "Réponses directes à vos questions, sans jargon"
+      }
+    },
+    "clientForm": {
+      "intro": "Donnez-nous une brève introduction à votre entreprise",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "jobTitle": "Titre du poste",
+      "businessEmail": "Email professionnel",
+      "phoneNumber": "Numéro de téléphone",
+      "company": "Entreprise",
+      "locations": "Nombre d'emplacements",
+      "employees": "Nombre d'employés de première ligne",
+      "placeholder": "Entrez votre",
+      "footer": "Déjà client AETOS?",
+      "footerLink": "Veuillez contacter notre équipe de support client",
+      "submit": "Prendre contact",
+      "submitting": "Envoi en cours..."
+    },
+    "partnerForm": {
+      "intro": "Donnez-nous une brève introduction à votre entreprise",
+      "lastName": "Nom",
+      "firstName": "Prénom",
+      "company": "Nom de l'entreprise",
+      "country": "Pays",
+      "phoneNumber": "Numéro de téléphone",
+      "email": "Adresse e-mail",
+      "website": "Site web (optionnel)",
+      "sector": "Secteur d'activité",
+      "hasClients": "Avez-vous déjà des clients intéressés?",
+      "yes": "Oui",
+      "no": "Non",
+      "submit": "Soumettre la demande de partenariat",
+      "submitting": "Envoi en cours..."
+    },
+    "joinForm": {
+      "intro": "Parlez-nous de vous",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "position": "Poste pour lequel vous postulez",
+      "experience": "Années d'expérience",
+      "linkedin": "Profil LinkedIn (optionnel)",
+      "portfolio": "Portfolio/Site web (optionnel)",
+      "cv": "Téléchargez votre CV",
+      "cvPlaceholder": "Choisissez un fichier ou glissez-déposez",
+      "cvSelected": "Fichier sélectionné:",
+      "motivation": "Pourquoi voulez-vous rejoindre Aetos Technology?",
+      "availability": "Quand pouvez-vous commencer?",
+      "submit": "Soumettre la candidature",
+      "submitting": "Envoi en cours..."
+    },
+    "testimonialsSection": {
+      "clientsTitle": "Ce que disent nos clients",
+      "partnersTitle": "Ce que disent nos partenaires",
+      "teamTitle": "Ce que disent les membres de notre équipe"
+    }
+  },
+  "partners": {
+    "hero": {
+      "title": "Ensemble pour aller plus loin",
+      "description": "Rejoignez un réseau de partenaires d'innovation engagés dans la transformation digitale",
+      "ctaButton": "Découvrez comment collaborer",
+      "floatingCard1": "Alliance stratégique",
+      "floatingCard2": "Croissance mutuelle",
+      "imageAlt": "Collaboration partenariat"
+    },
+    "list": {
+      "title": "Nos Partenaires de Confiance",
+      "quantumLeap": {
+        "name": "Quantum Leap",
+        "description": "Quantum Leap est un cabinet de conseil et de transformation digitale spécialisé dans les solutions technologiques innovantes. Avec leur expertise dans les technologies émergentes, ils aident les entreprises à moderniser leur infrastructure et à adopter des outils de pointe pour une croissance durable."
+      },
+      "smartVolarity": {
+        "name": "Smart Volarity",
+        "description": "Smart Volarity est un partenaire technologique spécialisé dans l'automatisation intelligente et les solutions d'analyse de données. Ils permettent aux entreprises d'exploiter la puissance de l'IA et du machine learning pour optimiser les opérations et prendre des décisions basées sur les données."
+      }
+    },
+    "collaboration": {
+      "title": "Pourquoi collaborer avec nous?",
+      "imageAlt": "Poignée de main de collaboration",
+      "reasons": {
+        "innovation": {
+          "title": "Développement commercial",
+          "description": "Accédez à de nouvelles opportunités et élargissez votre marché grâce à notre réseau."
+        },
+        "growth": {
+          "title": "Visibilité et crédibilité",
+          "description": "Bénéficiez de la notoriété d’Aetos Technology et renforcez votre image auprès de nos clients."
+        },
+        "expertise": {
+          "title": "Innovation commune",
+          "description": "Construisez avec nous des solutions innovantes adaptées aux besoins de vos clients"
+        },
+        "network": {
+          "title": "Support et accompagnement",
+          "description": "Profitez d’un suivi personnalisé, d’une formation et d’un support dédié pour réussir votre partenariat."
+        }
+      }
+    },
+    "cta": {
+      "title": "Intéressé par une collaboration avec nous?",
+      "description": "Nous vous aiderons à atteindre vos objectifs commerciaux",
+      "button": "Contactez-nous",
+      "imageAlt": "Opportunité de partenariat"
+    },
+    "testimonials": {
+      "title": "Ce que disent nos partenaires",
+      "loading": "Chargement des témoignages...",
+      "empty": "Aucun témoignage disponible."
+    }
+  },
+  "flowUp": {
+    "hero": {
+      "title": "FlowUp",
+      "subtitle": "L'efficacité sans effort",
+      "imageAlt": "Interface de la plateforme FlowUp"
+    },
+    "cta": {
+      "title": "Envie de démarrer",
+      "titleHighlight": "votre projet?",
+      "button": "Discutons!",
+      "imageAlt": "Illustration d'appel à l'action"
+    },
+    "modules": {
+      "supervisor": {
+        "title": "SuperVisor",
+        "description": "Rationalisez les opérations en magasin avec la gestion des tâches en temps réel et le suivi des performances pour une productivité accrue.",
+        "id": "supervisor"
+      },
+      "visualMerchandising": {
+        "title": "Visual Merchandising",
+        "description": "Transformez vos présentations retail avec des outils de merchandising visuel alimentés par l'IA qui stimulent les ventes et améliorent l'expérience client.",
+        "id": "visual-merchandising"
+      },
+      "shiftMaster": {
+        "title": "ShiftMaster",
+        "description": "Optimisez la planification du personnel avec une gestion intelligente des quarts de travail qui équilibre les besoins des employés et les exigences de l'entreprise.",
+        "id": "shiftmaster",
+        "card1Title": "Flux de travail",
+        "card1Subtitle": "simple",
+        "card2Title": "Moins de conflits,",
+        "card2Subtitle": "plus d'efficacité"
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Centralisez la communication d'équipe avec la messagerie instantanée, les annonces et le partage de documents sur une seule plateforme.",
+        "id": "communication",
+        "statValue": "+45%",
+        "statLabel": "Engagement des équipes"
+      },
+      "flowHR": {
+        "title": "FlowHR",
+        "description": "Simplifiez la gestion RH avec l'intégration automatisée, le suivi du temps et la surveillance des performances des employés.",
+        "id": "flowhr"
+      },
+      "microLearning": {
+        "title": "Micro-Learning",
+        "description": "Responsabilisez votre équipe avec des modules de formation en petites doses et des expériences d'apprentissage gamifiées pour un développement continu.",
+        "id": "micro-learning",
+        "cardTitle": "Quizzes",
+        "cardSubtitle": "Smart learning"
+      },
+      "optiStock": {
+        "title": "OptiStock",
+        "description": "Maximisez l'efficacité des stocks avec le suivi en temps réel et les suggestions de réapprovisionnement intelligentes.",
+        "id": "optistock",
+        "statValue": "70%",
+        "statLabel": "Smart tracking"
+      }
+    }
+  },
+  "footer": {
+    "getInTouch": "Prenez Contact",
+    "address": "B02 Immeube Nessma, AV UMA La Soukra Ariana",
+    "sectors": {
+      "title": "Secteurs",
+      "hospitality": "Hospitalité",
+      "retail": "Retail",
+      "fashionBoutiques": "Boutiques de Mode & d'Habillement",
+      "industryProduction": "Industrie & Production",
+      "audit": "Audit"
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "client": "Client",
+      "partner": "Partenaire",
+      "joinUs": "Nous Rejoindre"
+    },
+    "social": {
+      "follow": "Suivez-nous pour rester informé de nos actualités."
+    },
+    "copyright": "Copyright Aetos technology 2025"
+  },
+  "common": {
+    "menu": "Menu",
+    "language": {
+      "en": "Anglais",
+      "fr": "Français"
+    },
+    "stats": {
+      "sales": "Ventes",
+      "comparedTo": "Comparé à {value} l'année dernière!"
+    }
   }
 }

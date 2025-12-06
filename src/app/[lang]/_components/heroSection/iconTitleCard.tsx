@@ -1,4 +1,4 @@
-function IconTitleCard() {
+function IconTitleCard({ text }: { text: string }) {
   return (
     <div className="bg-white max-w-56 font-poppins card-shadow gap-4 p-4 rounded-2xl flex flex-row">
       <div className="bg-brand shrink-0 flex items-center w-10 h-10 justify-around rounded-lg">
@@ -19,9 +19,7 @@ function IconTitleCard() {
         </svg>
       </div>
       <div>
-        <h2 className="font-medium text-md  text-[#060336]">
-          Valeur ajoutée pour vos clients
-        </h2>
+        <h2 className="font-medium text-md  text-[#060336]">{text}</h2>
       </div>
     </div>
   );

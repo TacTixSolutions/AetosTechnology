@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import {
   Carousel,
@@ -8,10 +7,8 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi,
 } from "@/components/ui/carousel";
 import PhoneWithStats from "./PhoneWithStats";
-import StatCardMini from "./StatCardMini";
 
 interface BrandSlide {
   brand: string;
@@ -25,122 +22,152 @@ interface BrandSlide {
   }>;
 }
 
-function BrandHeroCarousel() {
-  const [api, setApi] = useState<CarouselApi>();
+interface BrandHeroCarouselDict {
+  title: string;
+  kiabi: {
+    brand: string;
+    description: string;
+    stat1Label: string;
+    stat2Label: string;
+    stat3Label: string;
+  };
+  gemo: {
+    brand: string;
+    description: string;
+    stat1Label: string;
+    stat2Label: string;
+    stat3Label: string;
+  };
+  bodySoul: {
+    brand: string;
+    description: string;
+    stat1Label: string;
+    stat2Label: string;
+    stat3Label: string;
+  };
+  quiksilver: {
+    brand: string;
+    description: string;
+    stat1Label: string;
+    stat2Label: string;
+    stat3Label: string;
+  };
+}
 
+interface BrandHeroCarouselProps {
+  dict: BrandHeroCarouselDict;
+}
+
+function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
   const slides: BrandSlide[] = [
     {
-      brand: "Jules",
+      brand: dict.kiabi.brand,
       backgroundImage: "/brandHeroCarousel/julesBg.webp",
-      title: "Our Success with Jules",
-      description:
-        "Une meilleure exécution en magasin grâce à un suivi clair, structuré et harmonisé sur l'ensemble du réseau.",
+      title: dict.title,
+      description: dict.kiabi.description,
       stats: [
         {
           percentage: "-35%",
-          description: "de temps perdu sur les reporting manuels",
+          description: dict.kiabi.stat1Label,
           isPositive: false,
         },
         {
           percentage: "+28%",
-          description: "de visibilité dans la résolution des incidents",
+          description: dict.kiabi.stat2Label,
           isPositive: true,
         },
         {
           percentage: "+42%",
-          description: "de visites terrain réalisées dans les délais",
+          description: dict.kiabi.stat3Label,
           isPositive: true,
         },
         {
-          percentage: "+30%",
-          description: "d'engagement opérationnel en magasin",
+          percentage: "+42%",
+          description: dict.kiabi.stat3Label,
           isPositive: true,
         },
       ],
     },
     {
-      brand: "Gemo",
+      brand: dict.gemo.brand,
       backgroundImage: "/brandHeroCarousel/gemoBg.webp",
-      title: "Our Success with Gemo",
-      description:
-        "Optimisation des opérations retail avec un suivi en temps réel des performances magasin.",
+      title: dict.title,
+      description: dict.gemo.description,
       stats: [
         {
-          percentage: "+45%",
-          description: "d'efficacité opérationnelle",
-          isPositive: true,
-        },
-        {
           percentage: "-28%",
-          description: "de temps d'administration",
+          description: dict.gemo.stat1Label,
           isPositive: false,
         },
         {
           percentage: "+38%",
-          description: "de conformité standards",
+          description: dict.gemo.stat2Label,
           isPositive: true,
         },
         {
           percentage: "+52%",
-          description: "de satisfaction équipes",
+          description: dict.gemo.stat3Label,
+          isPositive: true,
+        },
+        {
+          percentage: "+42%",
+          description: dict.kiabi.stat3Label,
           isPositive: true,
         },
       ],
     },
     {
-      brand: "Body & Soul",
+      brand: dict.bodySoul.brand,
       backgroundImage: "/brandHeroCarousel/bodynsoulBg.webp",
-      title: "Our Success with Body & Soul",
-      description:
-        "Digitalisation complète des processus magasin pour une expérience client optimale.",
+      title: dict.title,
+      description: dict.bodySoul.description,
       stats: [
         {
           percentage: "+62%",
-          description: "de productivité équipes",
+          description: dict.bodySoul.stat1Label,
           isPositive: true,
         },
         {
-          percentage: "-32%",
-          description: "d'erreurs opérationnelles",
-          isPositive: false,
-        },
-        {
           percentage: "+48%",
-          description: "de suivi qualité",
+          description: dict.bodySoul.stat2Label,
           isPositive: true,
         },
         {
           percentage: "+35%",
-          description: "de réactivité incidents",
+          description: dict.bodySoul.stat3Label,
+          isPositive: true,
+        },
+        {
+          percentage: "+42%",
+          description: dict.kiabi.stat3Label,
           isPositive: true,
         },
       ],
     },
     {
-      brand: "Quiksilver",
+      brand: dict.quiksilver.brand,
       backgroundImage: "/brandHeroCarousel/quiksilverBg.webp",
-      title: "Our Success with Quiksilver",
-      description:
-        "Transformation digitale des opérations pour une gestion retail moderne et efficace.",
+      title: dict.title,
+      description: dict.quiksilver.description,
       stats: [
         {
-          percentage: "+55%",
-          description: "d'amélioration processus",
-          isPositive: true,
-        },
-        {
           percentage: "-40%",
-          description: "de délais résolution",
+          description: dict.quiksilver.stat1Label,
           isPositive: false,
         },
         {
           percentage: "+41%",
-          description: "de visibilité opérationnelle",
+          description: dict.quiksilver.stat2Label,
           isPositive: true,
         },
         {
           percentage: "+33%",
-          description: "d'engagement terrain",
+          description: dict.quiksilver.stat3Label,
+          isPositive: true,
+        },
+        {
+          percentage: "+42%",
+          description: dict.kiabi.stat3Label,
           isPositive: true,
         },
       ],
@@ -150,7 +177,6 @@ function BrandHeroCarousel() {
   return (
     <div className="w-full relative py-16">
       <Carousel
-        setApi={setApi}
         opts={{
           align: "center",
           loop: true,
@@ -176,7 +202,7 @@ function BrandHeroCarousel() {
                 <div className="relative h-full w-9/10 mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 py-12">
                   <div className="flex-1 text-white space-y-4 p-4 pt-6 max-w-2xl">
                     <h2 className="text-3xl md:text-4xl font-bold">
-                      {slide.title}
+                      {slide.title} {slide.brand}
                     </h2>
                     <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
                       {slide.description}

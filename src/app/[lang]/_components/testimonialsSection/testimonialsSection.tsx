@@ -30,7 +30,18 @@ interface Testimonial {
   company?: string;
 }
 
-function TestimonialsSection({ lang }: { lang: string }) {
+interface TestimonialsSectionDict {
+  title: string;
+  loading: string;
+  empty: string;
+}
+
+interface TestimonialsSectionProps {
+  lang: string;
+  dict: TestimonialsSectionDict;
+}
+
+function TestimonialsSection({ lang, dict }: TestimonialsSectionProps) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -79,16 +90,16 @@ function TestimonialsSection({ lang }: { lang: string }) {
       <div className="absolute top-1/2 left-1/2 bg-blue-300 blur-[120px] -translate-x-1/2 -translate-y-1/2 w-7/10 h-24 -z-10" />
       <div className="w-full md:w-9/10 mx-auto">
         <h2 className="text-3xl font-poppins md:text-4xl font-semibold text-center mb-12">
-          Our successful clients
+          {dict.title}
         </h2>
 
         {loading ? (
           <div className="text-center py-8">
-            <p className="text-gray-600">Loading testimonials...</p>
+            <p className="text-gray-600">{dict.loading}</p>
           </div>
         ) : testimonials.length === 0 ? (
           <div className="text-center py-8">
-            <p className="text-gray-600">No testimonials available.</p>
+            <p className="text-gray-600">{dict.empty}</p>
           </div>
         ) : (
           <>

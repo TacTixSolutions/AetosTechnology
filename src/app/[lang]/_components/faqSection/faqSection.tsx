@@ -45,7 +45,18 @@ function FaqAccordionTrigger({
   );
 }
 
-function FaqSection({ lang }: { lang: string }) {
+interface FaqSectionDict {
+  title: string;
+  loading: string;
+  empty: string;
+}
+
+interface FaqSectionProps {
+  lang: string;
+  dict: FaqSectionDict;
+}
+
+function FaqSection({ lang, dict }: FaqSectionProps) {
   const [faqs, setFaqs] = React.useState<FAQ[]>([]);
   const [loading, setLoading] = React.useState(true);
 
@@ -77,17 +88,15 @@ function FaqSection({ lang }: { lang: string }) {
         <div className="grid grid-cols-1 gap-8">
           <section className="lg:col-span-3">
             <h2 className="text-3xl font-poppins md:text-4xl font-semibold text-center mb-12">
-              Frequently Asked Questions
+              {dict.title}
             </h2>
             {loading ? (
               <div className="text-center py-8">
-                <p className="text-gray-600">Loading FAQs...</p>
+                <p className="text-gray-600">{dict.loading}</p>
               </div>
             ) : faqs.length === 0 ? (
               <div className="text-center py-8">
-                <p className="text-gray-600">
-                  No FAQs available at the moment.
-                </p>
+                <p className="text-gray-600">{dict.empty}</p>
               </div>
             ) : (
               <Accordion

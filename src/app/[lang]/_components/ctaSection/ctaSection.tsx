@@ -1,7 +1,21 @@
+"use client";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useParams } from "next/navigation";
 
-function CTASection() {
+interface CTASectionDict {
+  title: string;
+  titleHighlight: string;
+  button: string;
+  imageAlt: string;
+}
+
+interface CTASectionProps {
+  dict: CTASectionDict;
+}
+
+function CTASection({ dict }: CTASectionProps) {
+  const { lang } = useParams();
   return (
     <div className="w-full py-16 mb-16">
       <div className="bg-[#dde8eb] flex flex-col items-center justify-center h-96 rounded-3xl w-9/10 lg:w-8/10 mx-auto relative">
@@ -9,7 +23,7 @@ function CTASection() {
           <div className="block lg:hidden">
             <Image
               src="/glassPill.png"
-              alt="glass pill"
+              alt={dict.imageAlt}
               width={320}
               height={120}
             />
@@ -17,20 +31,28 @@ function CTASection() {
           <div className="lg:block hidden">
             <Image
               src="/glassPill.png"
-              alt="glass pill"
+              alt={dict.imageAlt}
               width={420}
               height={120}
             />
           </div>
-          <p className="text-4xl lg:text-6xl font-semibold absolute inset-0 flex items-center justify-center">
-            Want to start
+          <p
+            className={`text-4xl ${
+              lang === "en" ? "lg:text-6xl" : "lg:text-5xl"
+            } font-semibold absolute inset-0 flex items-center justify-center`}
+          >
+            {dict.title}
           </p>
         </div>
-        <p className="text-4xl lg:text-6xl font-semibold">a project?</p>
+        <p
+          className={`text-4xl ${lang === "en" ? "lg:text-6xl" : "lg:text-5xl"} font-semibold`}
+        >
+          {dict.titleHighlight}
+        </p>
         <div className=" cursor-pointer hover:bg-brand/80 transition-colors w-64 h-16 flex flex-row items-center justify-between bg-brand rounded-full mt-8">
           <div className="w-8" />
           <p className="font-poppins font-medium text-lg text-white">
-            Lets talk!
+            {dict.button}
           </p>
           <button className="h-15 w-15 mr-0.5 rounded-full bg-white border-2 border-black">
             <ArrowRight
@@ -42,7 +64,7 @@ function CTASection() {
         <div className="hidden lg:block absolute -top-12 -left-24 animate-float">
           <Image
             src="/cta/cta1.png"
-            alt="cta decoration"
+            alt={dict.imageAlt}
             width={400}
             height={300}
           />
@@ -50,7 +72,7 @@ function CTASection() {
         <div className="hidden lg:block absolute -bottom-16 right-8 animate-float-1">
           <Image
             src="/cta/cta4.png"
-            alt="cta decoration"
+            alt={dict.imageAlt}
             width={300}
             height={300}
           />
@@ -58,7 +80,7 @@ function CTASection() {
         <div className="hidden lg:block absolute -bottom-26 left-18 animate-float-2">
           <Image
             src="/cta/cta3.png"
-            alt="cta decoration"
+            alt={dict.imageAlt}
             width={250}
             height={250}
           />
@@ -66,7 +88,7 @@ function CTASection() {
         <div className="hidden lg:block absolute top-2 -right-18 animate-float-2">
           <Image
             src="/cta/cta2.png"
-            alt="cta decoration"
+            alt={dict.imageAlt}
             width={300}
             height={300}
           />
@@ -74,7 +96,7 @@ function CTASection() {
         <div className="absolute top-2 right-64 animate-float">
           <Image
             src="/logoNoText.png"
-            alt="cta decoration"
+            alt={dict.imageAlt}
             width={80}
             height={80}
           />
@@ -82,7 +104,7 @@ function CTASection() {
         <div className="absolute bottom-32 left-4 animate-float-3">
           <Image
             src="/logoNoText.png"
-            alt="cta decoration"
+            alt={dict.imageAlt}
             className="blur-xs"
             width={80}
             height={80}

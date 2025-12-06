@@ -1,14 +1,23 @@
 import CTASection from "../../_components/ctaSection/ctaSection";
 import FlowUpHero from "./_components/flowUpHero";
 import InfoSection from "./_components/infoSection";
-import { infoCards } from "./_components/infoSectionData";
+import { getInfoCards } from "./_components/infoSectionData";
+import { getDictionary } from "@/lib/get-dictionary";
 
-function FlowUpPage() {
+async function FlowUpPage({
+  params,
+}: {
+  params: Promise<{ lang: "en" | "fr" }>;
+}) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+  const infoCards = getInfoCards(dict.flowUp.modules);
+
   return (
     <div className="mb-24 mt-28">
-      <FlowUpHero />
+      <FlowUpHero dict={dict.flowUp.hero} />
       <InfoSection cards={infoCards} />
-      <CTASection />
+      <CTASection dict={dict.flowUp.cta} />
     </div>
   );
 }

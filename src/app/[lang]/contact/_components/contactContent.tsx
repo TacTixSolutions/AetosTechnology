@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import TestimonialCard from "@/app/[lang]/_components/testimonialsSection/testimonialCard";
+import { Locale } from "@/lib/i18n-config";
 
 const builder = createImageUrlBuilder(client);
 
@@ -36,7 +37,56 @@ interface Testimonial {
   company?: string;
 }
 
-export default function ContactContent() {
+interface ContactContentProps {
+  dict: {
+    hero: { title: string; address: string };
+    tabs: { client: string; partner: string; join: string };
+    formIntro: {
+      demo: string;
+      features: { demo: string; access: string; answers: string };
+    };
+    clientForm: {
+      intro: string;
+      firstName: string;
+      lastName: string;
+      jobTitle?: string;
+      businessEmail: string;
+      phoneNumber: string;
+      company: string;
+      locations: string;
+      employees: string;
+      placeholder: string;
+      footer: string;
+      footerLink: string;
+      submit: string;
+      submitting: string;
+    };
+    partnerForm: {
+      intro: string;
+      lastName: string;
+      firstName: string;
+      company: string;
+      country: string;
+      phoneNumber: string;
+      email: string;
+      website: string;
+      sector: string;
+      hasClients: string;
+      yes: string;
+      no: string;
+      submit: string;
+      submitting: string;
+    };
+    testimonialsSection: {
+      clientsTitle: string;
+      partnersTitle: string;
+      teamTitle: string;
+    };
+  };
+  lang: Locale;
+}
+
+export default function ContactContent({ dict, lang }: ContactContentProps) {
   const [activeTab, setActiveTab] = useState<"client" | "partner" | "join">(
     "client"
   );
@@ -80,7 +130,7 @@ export default function ContactContent() {
           <div className="hidden lg:flex lg:w-1/2 relative">
             <Image
               src="/contactPageBg.webp"
-              alt="Contact background"
+              alt={dict.hero.title}
               fill
               className="object-cover rounded-l-xl"
               priority
@@ -88,7 +138,7 @@ export default function ContactContent() {
             <div className="absolute top-8 h-16 w-full">
               <Image
                 src="/logoWithTextWhite.png"
-                alt="Contact background"
+                alt="Aetos Technology"
                 fill
                 className="object-contain"
                 priority
@@ -99,21 +149,19 @@ export default function ContactContent() {
                 <div className="flex items-center justify-center p-1 bg-brand rounded-md">
                   <CheckIcon className="w-5 h-5" strokeWidth={3} />
                 </div>
-                <span>Demo built around your needs.</span>
+                <span>{dict.formIntro.features.demo}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="flex items-center justify-center p-1 bg-brand rounded-md">
                   <CheckIcon className="w-5 h-5" strokeWidth={3} />
                 </div>
-                <span>Instant access to tools you can start using now</span>
+                <span>{dict.formIntro.features.access}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="flex items-center justify-center p-1 bg-brand rounded-md">
                   <CheckIcon className="w-5 h-5" strokeWidth={3} />
                 </div>
-                <span>
-                  Straight answers to your questions, without buzzwords
-                </span>
+                <span>{dict.formIntro.features.answers}</span>
               </div>
             </div>
           </div>
@@ -130,7 +178,7 @@ export default function ContactContent() {
               >
                 <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-between">
                   <h1 className="text-xl font-poppins font-medium mb-4">
-                    Tell us who you are
+                    {dict.formIntro.demo}
                   </h1>
 
                   <TabsList className="flex-1 w-full grid grid-cols-2 mb-6 bg-white gap-2">
@@ -138,23 +186,23 @@ export default function ContactContent() {
                       value="client"
                       className="font-inter data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
                     >
-                      Client
+                      {dict.tabs.client}
                     </TabsTrigger>
                     <TabsTrigger
                       value="partner"
                       className="font-inter data-[state=active]:bg-[#024E63] data-[state=active]:text-white data-[state=inactive]:bg-gray-200 data-[state=inactive]:text-gray-700 rounded-md"
                     >
-                      Partner
+                      {dict.tabs.partner}
                     </TabsTrigger>
                   </TabsList>
                 </div>
 
                 <TabsContent value="client">
-                  <ClientForm />
+                  <ClientForm dict={dict.clientForm} />
                 </TabsContent>
 
                 <TabsContent value="partner">
-                  <PartnerForm />
+                  <PartnerForm dict={dict.partnerForm} />
                 </TabsContent>
               </Tabs>
             </div>
@@ -170,8 +218,11 @@ export default function ContactContent() {
           />
 
           <h2 className="text-3xl font-poppins md:text-4xl font-semibold text-center mb-12">
-            What our {activeTab === "join" ? "team members" : `${activeTab}s`}{" "}
-            say
+            {activeTab === "client"
+              ? dict.testimonialsSection.clientsTitle
+              : activeTab === "partner"
+                ? dict.testimonialsSection.partnersTitle
+                : dict.testimonialsSection.teamTitle}
           </h2>
           <Carousel
             setApi={setApi}
@@ -193,7 +244,10 @@ export default function ContactContent() {
                   key={testimonial._id}
                   testimonial={{
                     ...testimonial,
-                    content: testimonial.textEn,
+                    content:
+                      lang === "fr" && testimonial.textFr
+                        ? testimonial.textFr
+                        : testimonial.textEn,
                     logo: urlFor(testimonial.image).url(),
                   }}
                 />

@@ -64,6 +64,9 @@ interface NavbarProps {
       industryProduction: string;
       audit: string;
     };
+    common: {
+      menu: string;
+    };
   };
   lang: string;
 }
@@ -140,7 +143,9 @@ function Navbar({ dict, lang }: NavbarProps) {
                       height={30}
                     />
                   </Link>
-                  <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                  <SheetTitle className="sr-only">
+                    {dict.common.menu}
+                  </SheetTitle>
                 </div>
               </SheetHeader>
 

@@ -10,7 +10,19 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-function OurServices() {
+interface OurServicesDict {
+  header: string;
+  digitalSolutions: { title: string; description: string };
+  customSoftware: { title: string; description: string };
+  processOptimization: { title: string; description: string };
+  fullCompanionship: { title: string; description: string };
+}
+
+interface OurServicesProps {
+  dict: OurServicesDict;
+}
+
+function OurServices({ dict }: OurServicesProps) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -26,25 +38,23 @@ function OurServices() {
 
   const services = [
     {
-      title: "Consulting & Analyse métier",
-      description:
-        "Comprendre vos besoins et vous orienter vers les solutions les plus efficaces.",
+      title: dict.digitalSolutions.title,
+      description: dict.digitalSolutions.description,
       image: "/services/consulting.png",
     },
     {
-      title: "Solutions innovantes",
-      description: "Moderniser vos opérations grâce à nos solutions digitales.",
+      title: dict.customSoftware.title,
+      description: dict.customSoftware.description,
       image: "/services/solutions.png",
     },
     {
-      title: "Développement spécifique",
-      description: "Création de modules et fonctionnalités sur mesure.",
+      title: dict.processOptimization.title,
+      description: dict.processOptimization.description,
       image: "/services/development.png",
     },
     {
-      title: "Un Accompagnement complet",
-      description:
-        "Un déploiement rapide, une formation adaptée et un accompagnement continu, avec des solutions fiables et personnalisées qui évoluent avec vous.",
+      title: dict.fullCompanionship.title,
+      description: dict.fullCompanionship.description,
       image: "/services/support.png",
     },
   ];
@@ -55,7 +65,7 @@ function OurServices() {
         {/* Fixed Header with Indicators */}
         <div className="absolute top-24 left-[15%] md:top-28 lg:top-32 2xl:top-32  md:left-[12%] 2xl:left-[15%] md:translate-x-0 z-10 flex flex-col items-center gap-1">
           <h3 className="font-isotek font-bold text-brand tracking-wider uppercase">
-            OUR SERVICES
+            {dict.header}
           </h3>
 
           {/* Custom Carousel Indicators */}

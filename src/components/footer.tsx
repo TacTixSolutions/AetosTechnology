@@ -4,7 +4,33 @@ import LinkedinIcon from "./icons/linkedinIcon";
 import FacebookLogo from "./icons/facebookLogo";
 import InstagramIcon from "./icons/instagramIcon";
 
-function Footer() {
+interface FooterProps {
+  dict: {
+    getInTouch: string;
+    address: string;
+    sectors: {
+      title: string;
+      hospitality: string;
+      retail: string;
+      fashionBoutiques: string;
+      industryProduction: string;
+      audit: string;
+    };
+    contact: {
+      title: string;
+      client: string;
+      partner: string;
+      joinUs: string;
+    };
+    social: {
+      follow: string;
+    };
+    copyright: string;
+  };
+  lang: string;
+}
+
+function Footer({ dict, lang }: FooterProps) {
   return (
     <footer className="relative w-full text-white">
       {/* Background Image */}
@@ -37,7 +63,7 @@ function Footer() {
 
           {/* Get in Touch */}
           <div className="text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
-            <h3 className="font-bold text-lg mb-4">Get in Touch</h3>
+            <h3 className="font-bold text-lg mb-4">{dict.getInTouch}</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-2 justify-center md:justify-center lg:justify-start">
                 <svg
@@ -59,11 +85,7 @@ function Footer() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>
-                  B02 Immeube Nessma, AV
-                  <br />
-                  UMA La Soukra Ariana
-                </span>
+                <span>{dict.address}</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg
@@ -112,46 +134,46 @@ function Footer() {
 
           {/* Secteurs */}
           <div className="text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
-            <h3 className="font-bold text-lg mb-4">Secteurs</h3>
+            <h3 className="font-bold text-lg mb-4">{dict.sectors.title}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/sectors/hospitality"
+                  href={`/${lang}/sectors/hospitality`}
                   className="hover:text-white/80 transition-colors"
                 >
-                  Hospitalité
+                  {dict.sectors.hospitality}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/sectors/retail"
+                  href={`/${lang}/sectors/retail`}
                   className="hover:text-white/80 transition-colors"
                 >
-                  Retail
+                  {dict.sectors.retail}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/sectors/fashion"
+                  href={`/${lang}/sectors/fashion`}
                   className="hover:text-white/80 transition-colors"
                 >
-                  Boutiques de Mode & d&apos;Habillement
+                  {dict.sectors.fashionBoutiques}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/sectors/production"
+                  href={`/${lang}/sectors/production`}
                   className="hover:text-white/80 transition-colors"
                 >
-                  Industrie & Production
+                  {dict.sectors.industryProduction}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/sectors/audit"
+                  href={`/${lang}/sectors/audit`}
                   className="hover:text-white/80 transition-colors"
                 >
-                  Audit
+                  {dict.sectors.audit}
                 </Link>
               </li>
             </ul>
@@ -159,30 +181,30 @@ function Footer() {
 
           {/* Contactez-nous */}
           <div className="text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
-            <h3 className="font-bold text-lg mb-4">Contactez-nous</h3>
+            <h3 className="font-bold text-lg mb-4">{dict.contact.title}</h3>
             <ul className="space-y-2 text-sm mb-6">
               <li>
                 <Link
-                  href="/client"
+                  href={`/${lang}/contact?type=client`}
                   className="hover:text-white/80 transition-colors"
                 >
-                  Client
+                  {dict.contact.client}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/partner"
+                  href={`/${lang}/contact?type=partner`}
                   className="hover:text-white/80 transition-colors"
                 >
-                  Partenaire
+                  {dict.contact.partner}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/join"
+                  href={`/${lang}/contact?type=join`}
                   className="hover:text-white/80 transition-colors"
                 >
-                  Nous Rejoindre
+                  {dict.contact.joinUs}
                 </Link>
               </li>
             </ul>
@@ -218,17 +240,13 @@ function Footer() {
                 <InstagramIcon />
               </a>
             </div>
-            <p className="text-xs text-white/80 mt-4">
-              Suivez-nous pour rester informé de nos actualités.
-            </p>
+            <p className="text-xs text-white/80 mt-4">{dict.social.follow}</p>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="border-t border-white/20 mt-8 pt-6 text-center">
-          <p className="text-sm text-white/80">
-            Copyright Aetos technology 2025
-          </p>
+          <p className="text-sm text-white/80">{dict.copyright}</p>
         </div>
       </div>
     </footer>
