@@ -1,4 +1,26 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Aetos Technology - Digital Performance Solutions for Your Business",
+      "description": "Transform your business with powerful digital solutions. Save time, reduce errors, and boost productivity with our tailored retail and hospitality management software.",
+      "keywords": "business software, digital transformation, retail management, hospitality solutions, productivity tools, workflow automation, business efficiency, retail software, point of sale"
+    },
+    "contact": {
+      "title": "Contact Us - Aetos Technology | Get Your Demo Today",
+      "description": "Ready to transform your business? Contact Aetos Technology to schedule a personalized demo or become a partner. Our team is here to help you succeed.",
+      "keywords": "contact aetos technology, business demo, partnership opportunities, retail software demo, hospitality solutions demo, schedule demo, business consultation"
+    },
+    "flowup": {
+      "title": "FlowUp - Effortless Efficiency for Retail & Hospitality | Aetos Technology",
+      "description": "Streamline your operations with FlowUp - the comprehensive management solution for retail and hospitality. Optimize workflows, reduce errors, and boost team productivity.",
+      "keywords": "flowup, retail management software, hospitality management, workflow optimization, operational efficiency, team productivity, task management, retail operations"
+    },
+    "partners": {
+      "title": "Partners - Join Our Network | Aetos Technology",
+      "description": "Become an Aetos Technology partner and grow your business. Join our network of trusted partners delivering innovative digital solutions to retail and hospitality sectors.",
+      "keywords": "technology partners, partnership program, business partners, reseller program, digital solutions partners, retail technology partners, hospitality partners"
+    }
+  },
   "test": {
     "poppins": "This is a test text with Poppins font",
     "isotek": "This is a test text with Isotek font",
@@ -36,7 +58,7 @@
     "title": "Your business deserves",
     "titleHighlight": "digital performance",
     "description": "We create powerful solutions tailored to your business reality to save time, reduce errors and improve your productivity.",
-    "ctaButton": "Get started",
+    "ctaButton": "Discover our solutions",
     "imageAlt": "Hero section background illustration",
     "brandImageAlt": "Aetos Technology brand",
     "addedValue": "Added value for your customers"
@@ -45,28 +67,28 @@
     "title": "Our Success with ",
     "kiabi": {
       "brand": "Kiabi",
-      "description": "Better in-store execution through clear, structured and harmonized tracking across the network.",
+      "description": "Better in-store execution thanks to clear, structured, and harmonized tracking across the entire network.",
       "stat1Label": "time saved on manual reporting",
       "stat2Label": "visibility in incident resolution",
       "stat3Label": "field visits completed on time"
     },
     "gemo": {
       "brand": "Gemo",
-      "description": "Optimization of retail operations with real-time monitoring of store performance.",
+      "description": "Simplified coordination between headquarters and stores, with significant time savings in daily monitoring.",
       "stat1Label": "administration time",
       "stat2Label": "standards compliance",
       "stat3Label": "team satisfaction"
     },
     "bodySoul": {
       "brand": "Body & Soul",
-      "description": "Complete digitalization of store processes for optimal customer experience.",
+      "description": "Instant communication and operational control ensure optimal management of points of sale.",
       "stat1Label": "team productivity",
       "stat2Label": "quality tracking",
       "stat3Label": "incident responsiveness"
     },
     "quiksilver": {
       "brand": "Quiksilver",
-      "description": "Digital transformation of operations for modern and efficient retail management.",
+      "description": "Smoother management of field operations and enhanced responsiveness to ensure a consistent customer experience.",
       "stat1Label": "resolution time",
       "stat2Label": "operational visibility",
       "stat3Label": "process execution"
@@ -75,16 +97,16 @@
   "services": {
     "header": "OUR SERVICES",
     "digitalSolutions": {
-      "title": "Digital Solutions",
-      "description": "Transform your operations with our cutting-edge digital tools designed for modern businesses."
+      "title": "Innovative Solutions",
+      "description": "Optimize your operations with our digital solutions."
     },
     "customSoftware": {
-      "title": "Custom Software",
-      "description": "Tailored software development that perfectly fits your unique business requirements."
+      "title": "Consulting & Business Analysis",
+      "description": "Understand your needs and guide you to the most effective solutions."
     },
     "processOptimization": {
-      "title": "Process Optimization",
-      "description": "Streamline your workflows and boost efficiency with our expert optimization services."
+      "title": "Custom Development",
+      "description": "Creation of tailor-made modules and features."
     },
     "fullCompanionship": {
       "title": "Full Companionship",
@@ -98,16 +120,16 @@
     "imageAlt": "Collaboration handshake illustration",
     "reasons": {
       "simplicity": {
-        "title": "Simplicity first",
-        "description": "Intuitive tools that your teams can use from day one"
+        "title": "Field Expertise",
+        "description": "A concrete understanding of your challenges to create truly useful solutions."
       },
       "speed": {
-        "title": "Fast deployment",
-        "description": "Operational solutions in weeks, not months"
+        "title": "Proven Technology",
+        "description": "Reliable tools that improve performance and reduce operational errors."
       },
       "support": {
-        "title": "Continuous support",
-        "description": "We stay by your side throughout your digital transformation"
+        "title": "Customer Proximity",
+        "description": "Continuous support to accelerate daily decision-making."
       }
     }
   },

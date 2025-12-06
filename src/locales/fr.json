@@ -1,4 +1,26 @@
 {
+  "metadata": {
+    "home": {
+      "title": "Aetos Technology - Solutions de Performance Digitale pour Votre Entreprise",
+      "description": "Transformez votre entreprise avec des solutions digitales puissantes. Gagnez du temps, réduisez les erreurs et boostez votre productivité avec nos logiciels de gestion adaptés au retail et à l'hospitalité.",
+      "keywords": "logiciel entreprise, transformation digitale, gestion retail, solutions hospitalité, outils productivité, automatisation workflow, efficacité entreprise, logiciel retail, point de vente"
+    },
+    "contact": {
+      "title": "Contactez-nous - Aetos Technology | Obtenez Votre Démo Aujourd'hui",
+      "description": "Prêt à transformer votre entreprise ? Contactez Aetos Technology pour planifier une démo personnalisée ou devenir partenaire. Notre équipe est là pour vous aider à réussir.",
+      "keywords": "contact aetos technology, démo entreprise, opportunités partenariat, démo logiciel retail, démo solutions hospitalité, planifier démo, consultation entreprise"
+    },
+    "flowup": {
+      "title": "FlowUp - L'Efficacité Sans Effort pour le Retail & l'Hospitalité | Aetos Technology",
+      "description": "Optimisez vos opérations avec FlowUp - la solution de gestion complète pour le retail et l'hospitalité. Optimisez les workflows, réduisez les erreurs et boostez la productivité de votre équipe.",
+      "keywords": "flowup, logiciel gestion retail, gestion hospitalité, optimisation workflow, efficacité opérationnelle, productivité équipe, gestion tâches, opérations retail"
+    },
+    "partners": {
+      "title": "Partenaires - Rejoignez Notre Réseau | Aetos Technology",
+      "description": "Devenez partenaire Aetos Technology et développez votre entreprise. Rejoignez notre réseau de partenaires de confiance offrant des solutions digitales innovantes aux secteurs du retail et de l'hospitalité.",
+      "keywords": "partenaires technologie, programme partenariat, partenaires commerciaux, programme revendeur, partenaires solutions digitales, partenaires technologie retail, partenaires hospitalité"
+    }
+  },
   "test": {
     "poppins": "Ceci est un texte de test avec la police Poppins",
     "isotek": "Ceci est un texte de test avec la police Isotek",
@@ -36,7 +58,7 @@
     "title": "Votre activité mérite la",
     "titleHighlight": "performance digitale",
     "description": "Nous créons des solutions puissantes et adaptées à votre réalité métier pour gagner du temps, réduire les erreurs et améliorer votre productivité.",
-    "ctaButton": "Commencer",
+    "ctaButton": "Découvrir nos solutions",
     "imageAlt": "Illustration de la section héroïque",
     "brandImageAlt": "Marque Aetos Technology",
     "addedValue": "Valeur ajoutée pour vos clients"
@@ -45,28 +67,28 @@
     "title": "Notre succès avec ",
     "kiabi": {
       "brand": "Kiabi",
-      "description": "Une meilleure exécution en magasin grâce à un suivi clair, structuré et harmonisé sur l'ensemble du réseau.",
+      "description": "Une meilleure exécution en magasin grâce à un suivi clair, structuré et harmonisé sur l’ensemble du réseau",
       "stat1Label": "de temps perdu sur les reporting manuels",
       "stat2Label": "de visibilité dans la résolution des incidents",
       "stat3Label": "de visites terrain réalisées dans les délais"
     },
     "gemo": {
       "brand": "Gemo",
-      "description": "Optimisation des opérations retail avec un suivi en temps réel des performances magasin.",
+      "description": "Une coordination simplifiée entre siège et magasins, avec un gain de temps significatif dans le suivi quotidien.",
       "stat1Label": "de temps d'administration",
       "stat2Label": "de conformité standards",
       "stat3Label": "de satisfaction équipes"
     },
     "bodySoul": {
       "brand": "Body & Soul",
-      "description": "Digitalisation complète des processus magasin pour une expérience client optimale.",
+      "description": "Une communication instantanée et un contrôle opérationnel qui garantissent une gestion optimale des points de vente.",
       "stat1Label": "de productivité équipes",
       "stat2Label": "de suivi qualité",
       "stat3Label": "de réactivité incidents"
     },
     "quiksilver": {
       "brand": "Quiksilver",
-      "description": "Transformation digitale des opérations pour une gestion retail moderne et efficace.",
+      "description": "Un pilotage plus fluide des opérations terrain et une réactivité renforcée pour assurer une expérience client constante.",
       "stat1Label": "de délais résolution",
       "stat2Label": "de visibilité opérationnelle",
       "stat3Label": "d'exécution des processus"
@@ -75,16 +97,16 @@
   "services": {
     "header": "NOS SERVICES",
     "digitalSolutions": {
-      "title": "Solutions Digitales",
-      "description": "Transformez vos opérations avec nos outils numériques de pointe conçus pour les entreprises modernes."
+      "title": "Solutions innovantes",
+      "description": "Optimiser vos opérations grace à nos solutions digitales."
     },
     "customSoftware": {
-      "title": "Logiciels Sur Mesure",
-      "description": "Développement de logiciels personnalisés qui correspondent parfaitement à vos besoins commerciaux uniques."
+      "title": "Consulting & Analyse métier",
+      "description": "Comprendre vos besoins et vous orienter vers les solutions les plus efficaces."
     },
     "processOptimization": {
-      "title": "Optimisation des Processus",
-      "description": "Rationalisez vos flux de travail et augmentez l'efficacité avec nos services d'optimisation experts."
+      "title": "Développement spécifique",
+      "description": "Création de modules et fonctionnalités sur mesure."
     },
     "fullCompanionship": {
       "title": "Un Accompagnement complet",
@@ -98,16 +120,16 @@
     "imageAlt": "Illustration de collaboration",
     "reasons": {
       "simplicity": {
-        "title": "Simplicité d'abord",
-        "description": "Des outils intuitifs que vos équipes peuvent utiliser dès le premier jour"
+        "title": "Expertise terrain",
+        "description": "Une compréhension concrète de vos défis pour créer des solutions réellement utiles."
       },
       "speed": {
-        "title": "Déploiement rapide",
-        "description": "Solutions opérationnelles en quelques semaines, pas des mois"
+        "title": "Technologie éprouvée",
+        "description": "Des outils fiables qui améliorent les performances et réduisent les erreurs opérationnelles."
       },
       "support": {
-        "title": "Support continu",
-        "description": "Nous restons à vos côtés tout au long de votre transformation digitale"
+        "title": "Proximité client",
+        "description": "Un accompagnement continu pour accélérer la prise de décision au quotidien."
       }
     }
   },
