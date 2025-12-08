@@ -33,6 +33,17 @@
     "insights": "Insights",
     "partners": "Partenaires",
     "contactUs": "Contactez-nous",
+    "common": {
+      "menu": "Menu",
+      "language": {
+        "en": "Anglais",
+        "fr": "Français"
+      },
+      "stats": {
+        "sales": "Ventes",
+        "comparedTo": "Comparé à {value} l'année dernière!"
+      }
+    },
     "products": {
       "title": "PRODUIT",
       "flowup": "Flowup",

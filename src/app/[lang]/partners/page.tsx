@@ -71,7 +71,7 @@ async function PartnersPage({ params }: { params: Promise<{ lang: Locale }> }) {
   const dict = await getDictionary(lang);
 
   return (
-    <div className="mb-24 mt-28">
+    <div className="mb-24 mt-28 max-w-[1440px] mx-auto">
       <PartnersHeroSection dict={dict.partners.hero} />
       <TrustedPartners dict={dict.partners.list} />
       <CollabSection dict={dict.partners.collaboration} />

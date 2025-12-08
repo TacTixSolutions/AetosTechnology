@@ -20,7 +20,7 @@ function CTASection({ dict }: CTASectionProps) {
     <div className="w-full py-16 mb-16">
       <div className="bg-[#dde8eb] flex flex-col items-center justify-center h-96 rounded-3xl w-9/10 lg:w-8/10 mx-auto relative">
         <div className="relative flex items-center justify-center">
-          <div className="block lg:hidden">
+          <div className="block xl:hidden">
             <Image
               src="/glassPill.png"
               alt={dict.imageAlt}
@@ -28,7 +28,7 @@ function CTASection({ dict }: CTASectionProps) {
               height={120}
             />
           </div>
-          <div className="lg:block hidden">
+          <div className="xl:block hidden">
             <Image
               src="/glassPill.png"
               alt={dict.imageAlt}
@@ -38,14 +38,14 @@ function CTASection({ dict }: CTASectionProps) {
           </div>
           <p
             className={`text-4xl ${
-              lang === "en" ? "lg:text-6xl" : "lg:text-5xl"
+              lang === "en" ? "xl:text-6xl" : "xl:text-5xl"
             } font-semibold absolute inset-0 flex items-center justify-center`}
           >
             {dict.title}
           </p>
         </div>
         <p
-          className={`text-4xl ${lang === "en" ? "lg:text-6xl" : "lg:text-5xl"} font-semibold`}
+          className={`text-4xl ${lang === "en" ? "xl:text-6xl" : "xl:text-5xl"} font-semibold`}
         >
           {dict.titleHighlight}
         </p>
@@ -61,7 +61,7 @@ function CTASection({ dict }: CTASectionProps) {
             />
           </button>
         </div>
-        <div className="hidden lg:block absolute -top-12 -left-24 animate-float">
+        <div className="hidden lg:block scale-90 xl:scale-100 absolute -top-12 -left-24 animate-float">
           <Image
             src="/cta/cta1.png"
             alt={dict.imageAlt}
@@ -69,7 +69,7 @@ function CTASection({ dict }: CTASectionProps) {
             height={300}
           />
         </div>
-        <div className="hidden lg:block absolute -bottom-16 right-8 animate-float-1">
+        <div className="hidden lg:block scale-90 xl:scale-100 absolute -bottom-16 right-8 animate-float-1">
           <Image
             src="/cta/cta4.png"
             alt={dict.imageAlt}
@@ -77,7 +77,7 @@ function CTASection({ dict }: CTASectionProps) {
             height={300}
           />
         </div>
-        <div className="hidden lg:block absolute -bottom-26 left-18 animate-float-2">
+        <div className="hidden lg:block scale-90 xl:scale-100 absolute -bottom-26 left-18 animate-float-2">
           <Image
             src="/cta/cta3.png"
             alt={dict.imageAlt}
@@ -85,7 +85,7 @@ function CTASection({ dict }: CTASectionProps) {
             height={250}
           />
         </div>
-        <div className="hidden lg:block absolute top-2 -right-18 animate-float-2">
+        <div className="hidden lg:block scale-90 xl:scale-100 absolute top-2 -right-18 animate-float-2">
           <Image
             src="/cta/cta2.png"
             alt={dict.imageAlt}

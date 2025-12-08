@@ -81,6 +81,7 @@ const sectorIcons = {
 
 function Navbar({ dict, lang }: NavbarProps) {
   const [isMobile, setIsMobile] = useState(false);
+  const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
@@ -125,7 +126,7 @@ function Navbar({ dict, lang }: NavbarProps) {
     >
       <div className="flex items-center gap-4">
         {isMobile && (
-          <Sheet>
+          <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <button className="h-9 w-9 hover:bg-accent hover:text-accent-foreground flex items-center justify-center rounded-md">
                 <HamburgerMenuIcon color="#024E63" size={24} />
@@ -161,6 +162,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                         : "text-gray-900"
                     )}
                     href={`/${lang}`}
+                    onClick={() => setOpen(false)}
                   >
                     {dict.home}
                   </Link>
@@ -180,7 +182,10 @@ function Navbar({ dict, lang }: NavbarProps) {
                             </h3>
                             <div className="space-y-1">
                               {/* Flowup - Featured */}
-                              <Link href={`/${lang}/solutions/flowUp`}>
+                              <Link
+                                href={`/${lang}/solutions/flowUp`}
+                                onClick={() => setOpen(false)}
+                              >
                                 <div className="flex items-start gap-3 p-3 rounded-lg cursor-pointer bg-[#26326c]/5 mx-2">
                                   <div className="w-10 h-10 rounded-lg bg-[#26326c] flex items-center justify-center shrink-0">
                                     <Image
@@ -207,6 +212,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                                   key={index}
                                   href={`/${lang}/solutions/flowUp#${product.id}`}
                                   className="flex items-center gap-2 px-4 py-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors mx-2 no-underline"
+                                  onClick={() => setOpen(false)}
                                 >
                                   <Plus size={14} className="text-gray-400" />
                                   <span className="text-sm text-gray-700">
@@ -272,6 +278,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                         : "text-gray-700"
                     )}
                     href={`/${lang}/insights`}
+                    onClick={() => setOpen(false)}
                   >
                     {dict.insights}
                   </Link>
@@ -285,6 +292,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                         : "text-gray-700"
                     )}
                     href={`/${lang}/partners`}
+                    onClick={() => setOpen(false)}
                   >
                     {dict.partners}
                   </Link>
