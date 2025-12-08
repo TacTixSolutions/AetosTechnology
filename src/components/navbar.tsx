@@ -79,6 +79,14 @@ const sectorIcons = {
   audit: ClipboardCheck,
 };
 
+const sectorSlugs: Record<string, string> = {
+  hospitality: "hospitality",
+  retail: "retail",
+  fashionBoutiques: "fashion-boutiques",
+  industryProduction: "industry-production",
+  audit: "audit",
+};
+
 function Navbar({ dict, lang }: NavbarProps) {
   const [isMobile, setIsMobile] = useState(false);
   const [open, setOpen] = useState(false);
@@ -243,10 +251,13 @@ function Navbar({ dict, lang }: NavbarProps) {
                                     "bg-teal-600",
                                     "bg-indigo-600",
                                   ];
+                                  const slug = sectorSlugs[key];
                                   return (
-                                    <div
+                                    <Link
                                       key={key}
-                                      className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors mx-2"
+                                      href={`/${lang}/solutions/sectors/${slug}`}
+                                      onClick={() => setOpen(false)}
+                                      className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors mx-2 no-underline"
                                     >
                                       <div
                                         className={`w-10 h-10 rounded-lg ${colors[index]} flex items-center justify-center shrink-0`}
@@ -259,7 +270,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                                       <span className="text-sm font-medium text-gray-900">
                                         {value}
                                       </span>
-                                    </div>
+                                    </Link>
                                   );
                                 })}
                             </div>
@@ -417,10 +428,12 @@ function Navbar({ dict, lang }: NavbarProps) {
                             "bg-teal-600",
                             "bg-indigo-600",
                           ];
+                          const slug = sectorSlugs[key];
                           return (
-                            <div
+                            <Link
                               key={key}
-                              className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors"
+                              href={`/${lang}/solutions/sectors/${slug}`}
+                              className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors no-underline"
                             >
                               <div
                                 className={`w-10 h-10 rounded-lg ${colors[index]} flex items-center justify-center shrink-0`}
@@ -433,7 +446,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                               <span className="font-medium text-gray-900">
                                 {value}
                               </span>
-                            </div>
+                            </Link>
                           );
                         })}
                     </div>
