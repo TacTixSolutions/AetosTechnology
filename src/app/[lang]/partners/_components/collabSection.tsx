@@ -81,16 +81,14 @@ function CollabSection({ dict }: CollabSectionProps) {
           </div>
         </div>
 
-        <div className="w-full lg:max-w-md">
-          <div className="relative w-full rounded-2xl overflow-hidden">
-            <Image
-              src="/partners/collab.webp"
-              alt={dict.imageAlt}
-              width={550}
-              height={420}
-              className="object-cover"
-            />
-          </div>
+        <div className="w-full lg:max-w-md flex items-center justify-center">
+          <Image
+            src="/partners/collab.webp"
+            alt={dict.imageAlt}
+            width={550}
+            height={420}
+            className="object-cover"
+          />
         </div>
       </div>
     </div>

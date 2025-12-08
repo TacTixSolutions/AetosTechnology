@@ -26,7 +26,7 @@ function CTASection({ dict }: CTASectionProps) {
           </Button>
         </div>
 
-        <div className="w-full lg:w-1/2">
+        <div className="w-full flex justify-center lg:w-1/2">
           <Image
             src="/partners/cta.png"
             alt={dict.imageAlt}
