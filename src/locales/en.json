@@ -1,0 +1,874 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Aetos Technology - Digital Performance Solutions for Your Business",
+      "description": "Transform your business with powerful digital solutions. Save time, reduce errors, and boost productivity with our tailored retail and hospitality management software.",
+      "keywords": "business software, digital transformation, retail management, hospitality solutions, productivity tools, workflow automation, business efficiency, retail software, point of sale"
+    },
+    "contact": {
+      "title": "Contact Us - Aetos Technology | Get Your Demo Today",
+      "description": "Ready to transform your business? Contact Aetos Technology to schedule a personalized demo or become a partner. Our team is here to help you succeed.",
+      "keywords": "contact aetos technology, business demo, partnership opportunities, retail software demo, hospitality solutions demo, schedule demo, business consultation"
+    },
+    "flowup": {
+      "title": "FlowUp - Effortless Efficiency for Retail & Hospitality | Aetos Technology",
+      "description": "Streamline your operations with FlowUp - the comprehensive management solution for retail and hospitality. Optimize workflows, reduce errors, and boost team productivity.",
+      "keywords": "flowup, retail management software, hospitality management, workflow optimization, operational efficiency, team productivity, task management, retail operations"
+    },
+    "partners": {
+      "title": "Partners - Join Our Network | Aetos Technology",
+      "description": "Become an Aetos Technology partner and grow your business. Join our network of trusted partners delivering innovative digital solutions to retail and hospitality sectors.",
+      "keywords": "technology partners, partnership program, business partners, reseller program, digital solutions partners, retail technology partners, hospitality partners"
+    }
+  },
+  "test": {
+    "poppins": "This is a test text with Poppins font",
+    "isotek": "This is a test text with Isotek font",
+    "inter": "This is a test text with Inter font",
+    "switchLanguage": "Switch to French"
+  },
+  "navbar": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "insights": "Insights",
+    "partners": "Partners",
+    "contactUs": "Contact us",
+    "common": {
+      "menu": "Menu",
+      "language": {
+        "en": "English",
+        "fr": "French"
+      },
+      "stats": {
+        "sales": "Sales",
+        "comparedTo": "Compared to {value} last year!"
+      }
+    },
+    "products": {
+      "title": "PRODUCT",
+      "flowup": "Flowup",
+      "flowupDescription": "Effortless efficiency",
+      "supervisor": "SuperVisor",
+      "visualMerchandising": "Visual Merchandising",
+      "shiftMaster": "ShiftMaster",
+      "communication": "Communication",
+      "flowHR": "FlowHR",
+      "microLearning": "Micro-Learning",
+      "optiStock": "OptiStock"
+    },
+    "sectors": {
+      "title": "SECTORS",
+      "hospitality": "Hospitality",
+      "retail": "Retail",
+      "fashionBoutiques": "Fashion & Clothing Boutiques",
+      "industryProduction": "Industry & Production",
+      "audit": "Audit"
+    }
+  },
+  "hero": {
+    "title": "Your business deserves",
+    "titleHighlight": "digital performance",
+    "description": "We create powerful solutions tailored to your business reality to save time, reduce errors and improve your productivity.",
+    "ctaButton": "Discover our solutions",
+    "imageAlt": "Hero section background illustration",
+    "brandImageAlt": "Aetos Technology brand",
+    "addedValue": "Added value for your customers"
+  },
+  "brandCarousel": {
+    "title": "Our Success with ",
+    "kiabi": {
+      "brand": "Kiabi",
+      "description": "Better in-store execution thanks to clear, structured, and harmonized tracking across the entire network.",
+      "stat1Label": "time saved on manual reporting",
+      "stat2Label": "visibility in incident resolution",
+      "stat3Label": "field visits completed on time"
+    },
+    "gemo": {
+      "brand": "Gemo",
+      "description": "Simplified coordination between headquarters and stores, with significant time savings in daily monitoring.",
+      "stat1Label": "administration time",
+      "stat2Label": "standards compliance",
+      "stat3Label": "team satisfaction"
+    },
+    "bodySoul": {
+      "brand": "Body & Soul",
+      "description": "Instant communication and operational control ensure optimal management of points of sale.",
+      "stat1Label": "team productivity",
+      "stat2Label": "quality tracking",
+      "stat3Label": "incident responsiveness"
+    },
+    "quiksilver": {
+      "brand": "Quiksilver",
+      "description": "Smoother management of field operations and enhanced responsiveness to ensure a consistent customer experience.",
+      "stat1Label": "resolution time",
+      "stat2Label": "operational visibility",
+      "stat3Label": "process execution"
+    }
+  },
+  "services": {
+    "header": "OUR SERVICES",
+    "digitalSolutions": {
+      "title": "Innovative Solutions",
+      "description": "Optimize your operations with our digital solutions."
+    },
+    "customSoftware": {
+      "title": "Consulting & Business Analysis",
+      "description": "Understand your needs and guide you to the most effective solutions."
+    },
+    "processOptimization": {
+      "title": "Custom Development",
+      "description": "Creation of tailor-made modules and features."
+    },
+    "fullCompanionship": {
+      "title": "Full Companionship",
+      "description": "Rapid deployment, tailored training, and ongoing support, with reliable and personalized solutions that grow with you."
+    }
+  },
+  "whyUs": {
+    "title": "Why us",
+    "subtitle": "Digitalization adapted to your reality",
+    "description": "Aetos Technology helps companies digitize their operations with simple, fast solutions designed for the business needs of the field.",
+    "imageAlt": "Collaboration handshake illustration",
+    "reasons": {
+      "simplicity": {
+        "title": "Field Expertise",
+        "description": "A concrete understanding of your challenges to create truly useful solutions."
+      },
+      "speed": {
+        "title": "Proven Technology",
+        "description": "Reliable tools that improve performance and reduce operational errors."
+      },
+      "support": {
+        "title": "Customer Proximity",
+        "description": "Continuous support to accelerate daily decision-making."
+      }
+    }
+  },
+  "cta": {
+    "title": "Want to start",
+    "titleHighlight": "your project?",
+    "button": "Let's talk!",
+    "imageAlt": "Call to action illustration"
+  },
+  "clients": {
+    "title": "Clients that trust us",
+    "logoAlt": "Client company logo"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "loading": "Loading FAQs...",
+    "empty": "No FAQs available at the moment."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "loading": "Loading testimonials...",
+    "empty": "No testimonials available."
+  },
+  "contact": {
+    "hero": {
+      "title": "Get in Touch",
+      "address": "B02 Immeube Nessma, AV UMA La Soukra Ariana"
+    },
+    "tabs": {
+      "client": "Client",
+      "partner": "Partner",
+      "join": "Join Us"
+    },
+    "formIntro": {
+      "demo": "Tell us who you are",
+      "features": {
+        "demo": "Demo built around your needs.",
+        "access": "Instant access to tools you can start using now",
+        "answers": "Straight answers to your questions, without buzzwords"
+      }
+    },
+    "clientForm": {
+      "intro": "Give us a short intro to your business",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "jobTitle": "Job title",
+      "businessEmail": "Business email",
+      "phoneNumber": "Phone number",
+      "company": "Company",
+      "locations": "Number of locations",
+      "employees": "Number of frontline employees",
+      "placeholder": "Enter your",
+      "footer": "Already a AETOS customer?",
+      "footerLink": "Please reach out to our customer support team",
+      "submit": "Get in touch",
+      "submitting": "Sending..."
+    },
+    "partnerForm": {
+      "intro": "Give us a short intro to your business",
+      "lastName": "Last name",
+      "firstName": "First name",
+      "company": "Company name",
+      "country": "Country",
+      "phoneNumber": "Phone number",
+      "email": "Email address",
+      "website": "Website (optional)",
+      "sector": "Business sector",
+      "hasClients": "Do you already have interested clients?",
+      "yes": "Yes",
+      "no": "No",
+      "submit": "Submit partnership request",
+      "submitting": "Sending..."
+    },
+    "joinForm": {
+      "intro": "Tell us about yourself",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "position": "Position you're applying for",
+      "experience": "Years of experience",
+      "linkedin": "LinkedIn profile (optional)",
+      "portfolio": "Portfolio/Website (optional)",
+      "cv": "Upload your CV",
+      "cvPlaceholder": "Choose file or drag & drop",
+      "cvSelected": "Selected file:",
+      "motivation": "Why do you want to join Aetos Technology?",
+      "availability": "When can you start?",
+      "submit": "Submit application",
+      "submitting": "Sending..."
+    },
+    "testimonialsSection": {
+      "clientsTitle": "What our clients say",
+      "partnersTitle": "What our partners say",
+      "teamTitle": "What our team members say"
+    }
+  },
+  "partners": {
+    "hero": {
+      "title": "Together to go further",
+      "description": "Join a network of innovation partners committed to digital transformation",
+      "ctaButton": "Discover how to collaborate",
+      "floatingCard1": "Strategic alliance",
+      "floatingCard2": "Mutual growth",
+      "imageAlt": "Partnership collaboration"
+    },
+    "list": {
+      "title": "Our Trusted Partners",
+      "quantumLeap": {
+        "name": "Quantum Leap",
+        "description": "Quantum Leap is a consulting and digital transformation firm specializing in innovative technology solutions. With their expertise in emerging technologies, they help businesses modernize their infrastructure and adopt cutting-edge tools for sustainable growth."
+      },
+      "smartVolarity": {
+        "name": "Smart Volarity",
+        "description": "Smart Volarity is a technology partner specializing in intelligent automation and data analytics solutions. They enable businesses to harness the power of AI and machine learning to optimize operations and make data-driven decisions."
+      }
+    },
+    "collaboration": {
+      "title": "Why collaborate with us?",
+      "imageAlt": "Collaboration handshake",
+      "reasons": {
+        "innovation": {
+          "title": "Business Development",
+          "description": "Access new opportunities and expand your market through our network."
+        },
+        "growth": {
+          "title": "Visibility and Credibility",
+          "description": "Benefit from Aetos Technology's reputation and strengthen your image with our clients."
+        },
+        "expertise": {
+          "title": "Joint Innovation",
+          "description": "Build innovative solutions with us tailored to your clients' needs."
+        },
+        "network": {
+          "title": "Support and Guidance",
+          "description": "Enjoy personalized follow-up, training, and dedicated support to ensure your partnership succeeds."
+        }
+      }
+    },
+    "cta": {
+      "title": "Interested in collaborating with us?",
+      "description": "We will help you reach your business goal",
+      "button": "Contact us",
+      "imageAlt": "Partnership opportunity"
+    },
+    "testimonials": {
+      "title": "What our partners say",
+      "loading": "Loading testimonials...",
+      "empty": "No testimonials available."
+    }
+  },
+  "flowUp": {
+    "hero": {
+      "title": "FlowUp",
+      "subtitle": "Effortless efficiency",
+      "imageAlt": "FlowUp platform interface"
+    },
+    "cta": {
+      "title": "Want to start",
+      "titleHighlight": "your project?",
+      "button": "Let's talk!",
+      "imageAlt": "Call to action illustration"
+    },
+    "modules": {
+      "supervisor": {
+        "title": "SuperVisor",
+        "description": "Streamline store operations with real-time task management and performance tracking for enhanced productivity.",
+        "id": "supervisor"
+      },
+      "visualMerchandising": {
+        "title": "Visual Merchandising",
+        "description": "Transform your retail displays with AI-powered visual merchandising tools that drive sales and enhance customer experience.",
+        "id": "visual-merchandising"
+      },
+      "shiftMaster": {
+        "title": "ShiftMaster",
+        "description": "Optimize workforce scheduling with intelligent shift management that balances employee needs and business demands.",
+        "id": "shiftmaster",
+        "card1Title": "Workflow",
+        "card1Subtitle": "simple",
+        "card2Title": "Fewer conflicts,",
+        "card2Subtitle": "more efficiency"
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Centralize team communication with instant messaging, announcements, and document sharing in one platform.",
+        "id": "communication",
+        "statValue": "+45%",
+        "statLabel": "Team engagement"
+      },
+      "flowHR": {
+        "title": "FlowHR",
+        "description": "Simplify HR management with automated onboarding, time tracking, and employee performance monitoring.",
+        "id": "flowhr"
+      },
+      "microLearning": {
+        "title": "Micro-Learning",
+        "description": "Empower your team with bite-sized training modules and gamified learning experiences for continuous development.",
+        "id": "micro-learning",
+        "cardTitle": "Quizzes",
+        "cardSubtitle": "Smart learning"
+      },
+      "optiStock": {
+        "title": "OptiStock",
+        "description": "Maximize inventory efficiency with real-time stock tracking and intelligent reordering suggestions.",
+        "id": "optistock",
+        "statValue": "70%",
+        "statLabel": "Smart tracking"
+      }
+    }
+  },
+  "sectors": {
+    "retail": {
+      "title": "An effective retail network requires total visibility and perfect execution.",
+      "imageAlt": "Retail sector",
+      "advantages": {
+        "instantTracking": {
+          "title": "Instant operations tracking",
+          "description": "Get real-time visibility of all your stores, from VM execution to field incidents."
+        },
+        "coordinatedTeams": {
+          "title": "Coordinated and responsive teams",
+          "description": "Employees always aligned with headquarters, thanks to centralized and accessible information."
+        },
+        "lessErrors": {
+          "title": "Fewer errors, more efficiency",
+          "description": "Reduce time waste and operational gaps by unifying your processes on a single platform."
+        }
+      }
+    },
+    "hospitality": {
+      "title": "A high-performing hotel is all about fluid coordination.",
+      "imageAlt": "Hospitality sector",
+      "advantages": {
+        "constantControl": {
+          "title": "Constant field control",
+          "description": "Teams aligned in real-time through instant communication and perfectly distributed tasks."
+        },
+        "organizedTeams": {
+          "title": "Organized and responsive teams",
+          "description": "Consistent quality control, with digitalized inspections and rapid action plans."
+        },
+        "fluidProcedures": {
+          "title": "Fluid procedure transmission",
+          "description": "Enhanced customer experience, thanks to error-free and delay-free internal organization."
+        }
+      }
+    },
+    "fashionBoutiques": {
+      "title": "The most successful supermarkets focus on",
+      "imageAlt": "Fashion boutiques sector",
+      "advantages": {
+        "constantControl": {
+          "title": "Constant field control:",
+          "description": "Precise and constant control of shelves and customer experience."
+        },
+        "organizedTeams": {
+          "title": "Organized and responsive teams:",
+          "description": "Solid schedules and fluid coordination at every moment."
+        },
+        "fluidProcedures": {
+          "title": "Fluid procedure transmission:",
+          "description": "Clear instructions, understood and applied quickly."
+        }
+      }
+    },
+    "industryProduction": {
+      "title": "What if your industrial performance finally became clear and immediate?",
+      "imageAlt": "Industry and production sector",
+      "advantages": {
+        "nonConformityReduction": {
+          "title": "Reduction of non-conformities and unplanned stops",
+          "description": "Digitalized control and real-time alerts reduce defects, waste, and unplanned downtime."
+        },
+        "productivityGain": {
+          "title": "Productivity gains for field teams",
+          "description": "Automated checklists, fluid data, and instant communication enable teams to work better and faster."
+        },
+        "totalTraceability": {
+          "title": "Total traceability & faster decisions:",
+          "description": "Digital history of controls and actions accelerates audits, strengthens compliance, and improves workshop performance."
+        }
+      }
+    },
+    "audit": {
+      "title": "Operational performance is the foundation of a smooth and surprise-free audit.",
+      "imageAlt": "Audit sector",
+      "advantages": {
+        "fasterAudits": {
+          "title": "Faster and fully structured audits",
+          "description": "All evidence, data, and history are centralized, making preparation easier and reducing audit time."
+        },
+        "totalTraceability": {
+          "title": "Total traceability and evidence available at all times",
+          "description": "Every control, action, and non-conformity is documented, making it easy to justify your compliance."
+        },
+        "controlledConformity": {
+          "title": "Controlled compliance and reduced deviation risks",
+          "description": "Processes become standardized, errors decrease, and preparation for certifications becomes more serene and predictable."
+        }
+      },
+      "accordionSections": [
+        {
+          "title": "Structured, reliable, and easy-to-execute internal audits",
+          "description": "With FlowUp, your teams conduct consistent, comprehensive, and uniform audits, regardless of site or department.",
+          "imageSrc": "/sectors/audit/section1.png",
+          "imageAlt": "Structured audits",
+          "items": [
+            {
+              "title": "Fully digitalized audit checklists",
+              "description": "Create custom audit grids (ISO, safety, hygiene, QHSE…), standardized and easy to update."
+            },
+            {
+              "title": "Guided and 100% mobile field execution",
+              "description": "Your auditors follow a clear path on smartphones, with photos, comments, and integrated evidence."
+            },
+            {
+              "title": "Automatic geolocation and timestamp",
+              "description": "Ensure the authenticity and reliability of audits with verified field data."
+            },
+            {
+              "title": "Automatic & analytical reports",
+              "description": "Instantly obtain clear, comparative, and exportable audit reports without manual processing."
+            }
+          ]
+        },
+        {
+          "title": "Complete management to succeed in all your certifications",
+          "description": "FlowUp centralizes your evidence, organizes your actions, and facilitates continuous control to calmly prepare your certifications (ISO 9001, ISO 14001, ISO 22000, HACCP…).",
+          "imageSrc": "/sectors/audit/2.png",
+          "imageAlt": "Certifications",
+          "items": [
+            {
+              "title": "Centralized non-conformity register",
+              "description": "Identify, qualify, and track each non-conformity until resolution, with complete traceability."
+            },
+            {
+              "title": "Automated corrective action plans",
+              "description": "Assign actions, set deadlines, receive reminders, and track progress in real-time."
+            },
+            {
+              "title": "History and evidence always accessible",
+              "description": "Store documents, photos, justifications, and compliance updates in one place, ready for the certifier's audit."
+            },
+            {
+              "title": "Real-time compliance tracking",
+              "description": "View key indicators and instantly check the readiness status of your teams and sites."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sectorsAccordion": {
+    "fashionBoutiques": {
+      "sections": [
+        {
+          "title": "Centralize your operations, align your teams, and save time every day.",
+          "imageSrc": "/sectors/fashion-boutiques/1.png",
+          "imageAlt": "Operations centralization",
+          "items": [
+            {
+              "title": "Intelligent visit planning",
+              "description": "Easily plan Area Manager visits and maintain complete visibility over your network coverage."
+            },
+            {
+              "title": "Checklist and task assignment",
+              "description": "Assign in-store actions with just a few clicks: VM, hygiene, stock, operations… Each manager receives exactly what they need to do."
+            },
+            {
+              "title": "Real-time execution tracking (with geolocation)",
+              "description": "View instant progress of visits and tasks, verify store presence, identify delays, and ensure standards compliance."
+            },
+            {
+              "title": "Automatic reports",
+              "description": "Receive clear and consolidated reports without manual work: compliance, store performance, visit status, action progress…"
+            },
+            {
+              "title": "Incident management with reminders & notifications",
+              "description": "Declare, process, and track field incident action plans. Automatic reminders and notifications ensure quick resolution and better network control."
+            }
+          ]
+        },
+        {
+          "title": "Window and in-store space organization and monitoring",
+          "imageSrc": "/sectors/fashion-boutiques/2.png",
+          "imageAlt": "Window management",
+          "items": [
+            {
+              "title": "Window and in-store space organization and monitoring",
+              "description": "Plan, share, and control the setup of windows and merchandising spaces in all your stores while staying connected with your teams."
+            },
+            {
+              "title": "Instant sharing of campaigns and new products",
+              "description": "Inform your field teams of launches, promotions, and product changes in seconds, without scattered emails."
+            },
+            {
+              "title": "Visual monitoring of in-store compliance",
+              "description": "Receive store photos, compare them to guidelines, and validate compliance with ease."
+            },
+            {
+              "title": "Internal messaging & dedicated groups",
+              "description": "Communicate quickly with teams: messages, announcements, groups by region or role, news feed… everything is centralized."
+            },
+            {
+              "title": "Field feedback & instant information reporting",
+              "description": "Store teams can share feedback, report setups, ask questions, or escalate issues directly from the app."
+            }
+          ]
+        },
+        {
+          "title": "Team schedule planning",
+          "imageSrc": "/sectors/fashion-boutiques/3.png",
+          "imageAlt": "Team planning",
+          "items": [
+            {
+              "title": "Team schedule planning",
+              "description": "Create, modify, and easily track your team schedules. Quickly see who works when and ensure smooth store organization."
+            },
+            {
+              "title": "Absence and leave management",
+              "description": "Centralize absence and leave requests, quickly approve them, and view the impact on schedules in real-time."
+            },
+            {
+              "title": "Simplified shift exchanges and replacements",
+              "description": "Allow employees to exchange shifts or request replacements directly from the app, without confusion or errors."
+            },
+            {
+              "title": "Staff tracking and evaluation",
+              "description": "Record evaluations, feedback, and employee performance. Identify strengths and training needs to improve productivity and engagement."
+            },
+            {
+              "title": "Automatic notifications and reminders",
+              "description": "Inform your teams of their shifts, approved absences, or changes via automatic notifications to avoid oversights and ensure good organization."
+            }
+          ]
+        },
+        {
+          "title": "Short and targeted training modules",
+          "imageSrc": "/sectors/fashion-boutiques/4.png",
+          "imageAlt": "Training",
+          "items": [
+            {
+              "title": "Short and targeted training modules",
+              "description": "Offer short, easy-to-follow training content adapted to your teams' needs and specific roles."
+            },
+            {
+              "title": "Progress and performance tracking",
+              "description": "View each employee's progress, identify areas for improvement, and ensure continuous skill development."
+            },
+            {
+              "title": "Mobile and flexible accessibility",
+              "description": "Teams can follow training anywhere, from a smartphone or tablet, without time or location constraints."
+            }
+          ]
+        },
+        {
+          "title": "Reduce lost sales and maximize product availability with our AI recommendations.",
+          "imageSrc": "/sectors/fashion-boutiques/5.png",
+          "imageAlt": "AI optimization",
+          "items": [
+            {
+              "title": "Reduction of lost sales",
+              "description": "Ensure availability of key products and avoid stockouts that directly impact your revenue."
+            },
+            {
+              "title": "AI-guided decision making",
+              "description": "Benefit from intelligent analytics to adjust your inventory based on sales, trends, and specific needs of each store."
+            },
+            {
+              "title": "Multi-store optimization",
+              "description": "Efficiently distribute your products among your different stores to maximize sales and improve customer service."
+            }
+          ]
+        }
+      ]
+    },
+    "hospitality": {
+      "sections": [
+        {
+          "title": "Manage your hotel operations in real-time: housekeeping, maintenance, quality, and services, everything is centralized and perfectly coordinated.",
+          "imageSrc": "/sectors/hospitality/1.png",
+          "imageAlt": "Hotel operations",
+          "items": [
+            {
+              "title": "Housekeeping checklist tracking & Quality control",
+              "description": "Define your cleaning, welcome, and finishing standards. Track housekeeping progress in real-time and ensure room compliance before service."
+            },
+            {
+              "title": "Supervisor rounds and inspection management",
+              "description": "Organize daily or weekly supervisor visits (floors, restaurants, common areas) and instantly view checked points and detected non-conformities."
+            },
+            {
+              "title": "Incident reporting and tracking (maintenance & service)",
+              "description": "Allow teams to immediately report an incident (faulty equipment, leak, customer issue…). Track its processing until resolution, without information loss."
+            },
+            {
+              "title": "Automatic reports and hotel standards compliance",
+              "description": "Receive detailed reports: ready rooms, detected anomalies, intervention times, compliance by floor or team. Ideal for internal audits and quality certifications."
+            }
+          ]
+        },
+        {
+          "title": "Organize your teams 24/7 with ease and ensure optimal staffing for every moment of the guest stay.",
+          "imageSrc": "/sectors/hospitality/2.png",
+          "imageAlt": "24/7 team management",
+          "items": [
+            {
+              "title": "Unified view of all your teams",
+              "description": "Centralized management of multi-service teams (Housekeeping, F&B, Front Office, Maintenance…) with real-time visibility of present staff."
+            },
+            {
+              "title": "Reliable 24/7 staffing control",
+              "description": "Track attendance, absences, and delays to ensure seamless 24/7 customer service continuity."
+            },
+            {
+              "title": "Precise schedules adapted to your hotel rhythm",
+              "description": "Quick creation of multi-service schedules, accounting for occupancy peaks, events, and seasonality."
+            },
+            {
+              "title": "Guarantee of always optimal service",
+              "description": "Smooth management of shift exchange requests and replacements to avoid any staff shortage in operations."
+            }
+          ]
+        },
+        {
+          "title": "Deliver the right information at the right time and train your teams continuously in just minutes.",
+          "imageSrc": "/sectors/hospitality/3.png",
+          "imageAlt": "Communication and training",
+          "items": [
+            {
+              "title": "Your instructions, received in real-time",
+              "description": "Instant distribution of service notes (housekeeping procedures, safety instructions, F&B menus…)."
+            },
+            {
+              "title": "The right teams alerted at the right time",
+              "description": "Targeted alerts for urgent situations, priority rooms, customer incidents, critical maintenance."
+            },
+            {
+              "title": "Train fast, train better",
+              "description": "Quick training capsules to train staff on hotel standards (customer welcome, room preparation, room service…)."
+            },
+            {
+              "title": "Teams always up to standard",
+              "description": "Regular evaluations and quizzes to ensure compliance with quality and hygiene standards."
+            }
+          ]
+        }
+      ]
+    },
+    "retail": {
+      "sections": [
+        {
+          "title": "Boost your shelf impact and transform your stores into real sales drivers with FlowUp",
+          "imageSrc": "/sectors/retail/1.png",
+          "imageAlt": "Visual merchandising",
+          "items": [
+            {
+              "title": "Maximize key product visibility",
+              "description": "With the app, plan and track optimal placement of your strategic products to increase sales in each aisle."
+            },
+            {
+              "title": "Ensure perfect shelf compliance",
+              "description": "Easily verify that each aisle respects your planograms and merchandising standards to offer a uniform and attractive customer experience."
+            },
+            {
+              "title": "Deploy promotions in record time",
+              "description": "The app allows you to distribute and control the implementation of promotions and special offers instantly in all your stores."
+            },
+            {
+              "title": "Efficiently coordinate your field teams",
+              "description": "Transmit your merchandising directives via the app and receive real-time feedback to ensure each store is compliant and performing."
+            }
+          ]
+        },
+        {
+          "title": "Product and shelf quality tracking",
+          "imageSrc": "/sectors/retail/2.png",
+          "imageAlt": "Quality and control",
+          "items": [
+            {
+              "title": "Product and shelf quality tracking",
+              "description": "Monitor product condition, detect anomalies, and ensure shelf compliance according to your quality standards."
+            },
+            {
+              "title": "Action plan for incidents and anomalies",
+              "description": "Quickly report any problem (damaged product, non-compliant shelves) and assign an action plan directly via the app for rapid resolution."
+            },
+            {
+              "title": "Smooth collaboration with department heads",
+              "description": "Easily communicate with your department heads and field teams to transmit directives, validate corrections, and coordinate actions in real-time."
+            },
+            {
+              "title": "Automatic reports and performance tracking",
+              "description": "Generate detailed reports on shelf status, resolved incidents, and team performance to effectively manage your stores."
+            }
+          ]
+        },
+        {
+          "title": "Optimal organization of in-store rotations",
+          "imageSrc": "/sectors/retail/3.png",
+          "imageAlt": "Team planning",
+          "items": [
+            {
+              "title": "Optimal organization of in-store rotations",
+              "description": "Easily plan shifts for cashiers, department heads, pickers, and back-office teams to ensure complete coverage at every moment of the day."
+            },
+            {
+              "title": "Simple absence and replacement management",
+              "description": "Report absences with one click and quickly find available replacements to avoid staff shortages during peak hours."
+            },
+            {
+              "title": "Workload balance between teams",
+              "description": "Distribute work fairly among employees to ensure continuous efficiency and avoid under-or over-solicited teams."
+            },
+            {
+              "title": "Schedule updated in real-time",
+              "description": "All changes (shift exchanges, adjustments, urgent reinforcements) are automatically synchronized, ensuring clear and immediate communication with your teams."
+            }
+          ]
+        }
+      ]
+    },
+    "industryProduction": {
+      "sections": [
+        {
+          "title": "Quality control on the production line",
+          "imageSrc": "/sectors/industry-production/1.png",
+          "imageAlt": "Quality control",
+          "items": [
+            {
+              "title": "Quality control on the production line",
+              "description": "With the app, your teams perform real-time quality controls at each station, quickly identify non-conformities, and ensure production compliant with your industrial standards."
+            },
+            {
+              "title": "Non-conformity tracking & corrective actions",
+              "description": "Instantly report a non-conformity from the workshop, track its processing step by step, and trigger a corrective action plan to avoid any drift in the production process."
+            },
+            {
+              "title": "HSE compliance and internal audits",
+              "description": "Conduct your HSE inspections, internal audits, or safety verifications directly via the app, with automatic tracking of anomalies, reminders, and scheduling."
+            },
+            {
+              "title": "Smooth field team coordination",
+              "description": "Facilitate communication between supervisors, workshop managers, and operators: instant transmission of instructions, task validation, and real-time progress synchronization."
+            }
+          ]
+        },
+        {
+          "title": "Team planning by position and line",
+          "imageSrc": "/sectors/industry-production/2.png",
+          "imageAlt": "Production planning",
+          "items": [
+            {
+              "title": "Team planning by position and line",
+              "description": "Organize operator rotations by position, production line, or team (A/B/C) to ensure continuous workshop coverage."
+            },
+            {
+              "title": "Express absence and replacement management",
+              "description": "Report an absence instantly and immediately find an available operator to avoid stopping or slowing down the chain."
+            },
+            {
+              "title": "Balanced skill distribution",
+              "description": "Ensure optimal presence of operators certified by machine or process to guarantee operation safety and compliance."
+            },
+            {
+              "title": "Real-time synchronized updates",
+              "description": "Any schedule, assignment, or reinforcement change is automatically communicated to each employee, limiting errors and delays."
+            }
+          ]
+        },
+        {
+          "title": "Instant transmission of production instructions",
+          "imageSrc": "/sectors/industry-production/3.png",
+          "imageAlt": "Workshop communication",
+          "items": [
+            {
+              "title": "Instant transmission of production instructions",
+              "description": "Quickly distribute series change instructions, new procedures, or safety alerts directly to field teams."
+            },
+            {
+              "title": "Targeted micro-training to build skills",
+              "description": "Offer short modules: machine use, HSE reminders, quality best practices… accessible anytime from the workshop."
+            },
+            {
+              "title": "Error reduction through centralized information",
+              "description": "No more paper notes or lost instructions: all critical information is centralized in the app and accessible in real-time."
+            },
+            {
+              "title": "Operator engagement and accountability",
+              "description": "Teams access an internal news feed, documents, messages, and notifications, promoting smooth communication and better standards compliance."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "getInTouch": "Get in Touch",
+    "address": "B02 Immeube Nessma, AV UMA La Soukra Ariana",
+    "sectors": {
+      "title": "Sectors",
+      "hospitality": "Hospitality",
+      "retail": "Retail",
+      "fashionBoutiques": "Fashion & Clothing Boutiques",
+      "industryProduction": "Industry & Production",
+      "audit": "Audit"
+    },
+    "contact": {
+      "title": "Contact us",
+      "client": "Client",
+      "partner": "Partner",
+      "joinUs": "Join Us"
+    },
+    "social": {
+      "follow": "Follow us to stay informed of our news."
+    },
+    "copyright": "Copyright Aetos technology 2025"
+  },
+  "common": {
+    "menu": "Menu",
+    "language": {
+      "en": "English",
+      "fr": "French"
+    },
+    "stats": {
+      "sales": "Sales",
+      "comparedTo": "Compared to {value} last year!"
+    }
+  }
+}

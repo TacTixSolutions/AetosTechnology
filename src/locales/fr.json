@@ -1,0 +1,874 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Aetos Technology - Solutions de Performance Digitale pour Votre Entreprise",
+      "description": "Transformez votre entreprise avec des solutions digitales puissantes. Gagnez du temps, réduisez les erreurs et boostez votre productivité avec nos logiciels de gestion adaptés au retail et à l'hospitalité.",
+      "keywords": "logiciel entreprise, transformation digitale, gestion retail, solutions hospitalité, outils productivité, automatisation workflow, efficacité entreprise, logiciel retail, point de vente"
+    },
+    "contact": {
+      "title": "Contactez-nous - Aetos Technology | Obtenez Votre Démo Aujourd'hui",
+      "description": "Prêt à transformer votre entreprise ? Contactez Aetos Technology pour planifier une démo personnalisée ou devenir partenaire. Notre équipe est là pour vous aider à réussir.",
+      "keywords": "contact aetos technology, démo entreprise, opportunités partenariat, démo logiciel retail, démo solutions hospitalité, planifier démo, consultation entreprise"
+    },
+    "flowup": {
+      "title": "FlowUp - L'Efficacité Sans Effort pour le Retail & l'Hospitalité | Aetos Technology",
+      "description": "Optimisez vos opérations avec FlowUp - la solution de gestion complète pour le retail et l'hospitalité. Optimisez les workflows, réduisez les erreurs et boostez la productivité de votre équipe.",
+      "keywords": "flowup, logiciel gestion retail, gestion hospitalité, optimisation workflow, efficacité opérationnelle, productivité équipe, gestion tâches, opérations retail"
+    },
+    "partners": {
+      "title": "Partenaires - Rejoignez Notre Réseau | Aetos Technology",
+      "description": "Devenez partenaire Aetos Technology et développez votre entreprise. Rejoignez notre réseau de partenaires de confiance offrant des solutions digitales innovantes aux secteurs du retail et de l'hospitalité.",
+      "keywords": "partenaires technologie, programme partenariat, partenaires commerciaux, programme revendeur, partenaires solutions digitales, partenaires technologie retail, partenaires hospitalité"
+    }
+  },
+  "test": {
+    "poppins": "Ceci est un texte de test avec la police Poppins",
+    "isotek": "Ceci est un texte de test avec la police Isotek",
+    "inter": "Ceci est un texte de test avec la police Inter",
+    "switchLanguage": "Passer à l'anglais"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "solutions": "Solutions",
+    "insights": "Insights",
+    "partners": "Partenaires",
+    "contactUs": "Contactez-nous",
+    "common": {
+      "menu": "Menu",
+      "language": {
+        "en": "Anglais",
+        "fr": "Français"
+      },
+      "stats": {
+        "sales": "Ventes",
+        "comparedTo": "Comparé à {value} l'année dernière!"
+      }
+    },
+    "products": {
+      "title": "PRODUIT",
+      "flowup": "Flowup",
+      "flowupDescription": "L'efficacité sans effort",
+      "supervisor": "SuperVisor",
+      "visualMerchandising": "Visual Merchandising",
+      "shiftMaster": "ShiftMaster",
+      "communication": "Communication",
+      "flowHR": "FlowHR",
+      "microLearning": "Micro-Learning",
+      "optiStock": "OptiStock"
+    },
+    "sectors": {
+      "title": "SECTEURS",
+      "hospitality": "Hospitalité",
+      "retail": "Retail",
+      "fashionBoutiques": "Boutiques de Mode & d'Habillement",
+      "industryProduction": "Industrie & Production",
+      "audit": "Audit"
+    }
+  },
+  "hero": {
+    "title": "Votre activité mérite la",
+    "titleHighlight": "performance digitale",
+    "description": "Nous créons des solutions puissantes et adaptées à votre réalité métier pour gagner du temps, réduire les erreurs et améliorer votre productivité.",
+    "ctaButton": "Découvrir nos solutions",
+    "imageAlt": "Illustration de la section héroïque",
+    "brandImageAlt": "Marque Aetos Technology",
+    "addedValue": "Valeur ajoutée pour vos clients"
+  },
+  "brandCarousel": {
+    "title": "Notre succès avec ",
+    "kiabi": {
+      "brand": "Kiabi",
+      "description": "Une meilleure exécution en magasin grâce à un suivi clair, structuré et harmonisé sur l’ensemble du réseau",
+      "stat1Label": "de temps perdu sur les reporting manuels",
+      "stat2Label": "de visibilité dans la résolution des incidents",
+      "stat3Label": "de visites terrain réalisées dans les délais"
+    },
+    "gemo": {
+      "brand": "Gemo",
+      "description": "Une coordination simplifiée entre siège et magasins, avec un gain de temps significatif dans le suivi quotidien.",
+      "stat1Label": "de temps d'administration",
+      "stat2Label": "de conformité standards",
+      "stat3Label": "de satisfaction équipes"
+    },
+    "bodySoul": {
+      "brand": "Body & Soul",
+      "description": "Une communication instantanée et un contrôle opérationnel qui garantissent une gestion optimale des points de vente.",
+      "stat1Label": "de productivité équipes",
+      "stat2Label": "de suivi qualité",
+      "stat3Label": "de réactivité incidents"
+    },
+    "quiksilver": {
+      "brand": "Quiksilver",
+      "description": "Un pilotage plus fluide des opérations terrain et une réactivité renforcée pour assurer une expérience client constante.",
+      "stat1Label": "de délais résolution",
+      "stat2Label": "de visibilité opérationnelle",
+      "stat3Label": "d'exécution des processus"
+    }
+  },
+  "services": {
+    "header": "NOS SERVICES",
+    "digitalSolutions": {
+      "title": "Solutions innovantes",
+      "description": "Optimiser vos opérations grace à nos solutions digitales."
+    },
+    "customSoftware": {
+      "title": "Consulting & Analyse métier",
+      "description": "Comprendre vos besoins et vous orienter vers les solutions les plus efficaces."
+    },
+    "processOptimization": {
+      "title": "Développement spécifique",
+      "description": "Création de modules et fonctionnalités sur mesure."
+    },
+    "fullCompanionship": {
+      "title": "Un Accompagnement complet",
+      "description": "Un déploiement rapide, une formation adaptée et un accompagnement continu, avec des solutions fiables et personnalisées qui évoluent avec vous."
+    }
+  },
+  "whyUs": {
+    "title": "Pourquoi nous",
+    "subtitle": "Digitalisation adaptée à votre réalité",
+    "description": "Aetos Technology aide les entreprises à digitaliser leurs opérations avec des solutions simples, rapides et conçues pour les besoins métier du terrain.",
+    "imageAlt": "Illustration de collaboration",
+    "reasons": {
+      "simplicity": {
+        "title": "Expertise terrain",
+        "description": "Une compréhension concrète de vos défis pour créer des solutions réellement utiles."
+      },
+      "speed": {
+        "title": "Technologie éprouvée",
+        "description": "Des outils fiables qui améliorent les performances et réduisent les erreurs opérationnelles."
+      },
+      "support": {
+        "title": "Proximité client",
+        "description": "Un accompagnement continu pour accélérer la prise de décision au quotidien."
+      }
+    }
+  },
+  "cta": {
+    "title": "Envie de démarrer",
+    "titleHighlight": "votre projet?",
+    "button": "Discutons!",
+    "imageAlt": "Illustration d'appel à l'action"
+  },
+  "clients": {
+    "title": "Clients qui nous font confiance",
+    "logoAlt": "Logo de l'entreprise cliente"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "loading": "Chargement des FAQ...",
+    "empty": "Aucune FAQ disponible pour le moment."
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "loading": "Chargement des témoignages...",
+    "empty": "Aucun témoignage disponible."
+  },
+  "contact": {
+    "hero": {
+      "title": "Prenez Contact",
+      "address": "B02 Immeube Nessma, AV UMA La Soukra Ariana"
+    },
+    "tabs": {
+      "client": "Client",
+      "partner": "Partenaire",
+      "join": "Nous Rejoindre"
+    },
+    "formIntro": {
+      "demo": "Dites-nous qui vous êtes",
+      "features": {
+        "demo": "Démo construite autour de vos besoins.",
+        "access": "Accès instantané aux outils que vous pouvez commencer à utiliser maintenant",
+        "answers": "Réponses directes à vos questions, sans jargon"
+      }
+    },
+    "clientForm": {
+      "intro": "Donnez-nous une brève introduction à votre entreprise",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "jobTitle": "Titre du poste",
+      "businessEmail": "Email professionnel",
+      "phoneNumber": "Numéro de téléphone",
+      "company": "Entreprise",
+      "locations": "Nombre d'emplacements",
+      "employees": "Nombre d'employés de première ligne",
+      "placeholder": "Entrez votre",
+      "footer": "Déjà client AETOS?",
+      "footerLink": "Veuillez contacter notre équipe de support client",
+      "submit": "Prendre contact",
+      "submitting": "Envoi en cours..."
+    },
+    "partnerForm": {
+      "intro": "Donnez-nous une brève introduction à votre entreprise",
+      "lastName": "Nom",
+      "firstName": "Prénom",
+      "company": "Nom de l'entreprise",
+      "country": "Pays",
+      "phoneNumber": "Numéro de téléphone",
+      "email": "Adresse e-mail",
+      "website": "Site web (optionnel)",
+      "sector": "Secteur d'activité",
+      "hasClients": "Avez-vous déjà des clients intéressés?",
+      "yes": "Oui",
+      "no": "Non",
+      "submit": "Soumettre la demande de partenariat",
+      "submitting": "Envoi en cours..."
+    },
+    "joinForm": {
+      "intro": "Parlez-nous de vous",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "position": "Poste pour lequel vous postulez",
+      "experience": "Années d'expérience",
+      "linkedin": "Profil LinkedIn (optionnel)",
+      "portfolio": "Portfolio/Site web (optionnel)",
+      "cv": "Téléchargez votre CV",
+      "cvPlaceholder": "Choisissez un fichier ou glissez-déposez",
+      "cvSelected": "Fichier sélectionné:",
+      "motivation": "Pourquoi voulez-vous rejoindre Aetos Technology?",
+      "availability": "Quand pouvez-vous commencer?",
+      "submit": "Soumettre la candidature",
+      "submitting": "Envoi en cours..."
+    },
+    "testimonialsSection": {
+      "clientsTitle": "Ce que disent nos clients",
+      "partnersTitle": "Ce que disent nos partenaires",
+      "teamTitle": "Ce que disent les membres de notre équipe"
+    }
+  },
+  "partners": {
+    "hero": {
+      "title": "Ensemble pour aller plus loin",
+      "description": "Rejoignez un réseau de partenaires d'innovation engagés dans la transformation digitale",
+      "ctaButton": "Découvrez comment collaborer",
+      "floatingCard1": "Alliance stratégique",
+      "floatingCard2": "Croissance mutuelle",
+      "imageAlt": "Collaboration partenariat"
+    },
+    "list": {
+      "title": "Nos Partenaires de Confiance",
+      "quantumLeap": {
+        "name": "Quantum Leap",
+        "description": "Quantum Leap est un cabinet de conseil et de transformation digitale spécialisé dans les solutions technologiques innovantes. Avec leur expertise dans les technologies émergentes, ils aident les entreprises à moderniser leur infrastructure et à adopter des outils de pointe pour une croissance durable."
+      },
+      "smartVolarity": {
+        "name": "Smart Volarity",
+        "description": "Smart Volarity est un partenaire technologique spécialisé dans l'automatisation intelligente et les solutions d'analyse de données. Ils permettent aux entreprises d'exploiter la puissance de l'IA et du machine learning pour optimiser les opérations et prendre des décisions basées sur les données."
+      }
+    },
+    "collaboration": {
+      "title": "Pourquoi collaborer avec nous?",
+      "imageAlt": "Poignée de main de collaboration",
+      "reasons": {
+        "innovation": {
+          "title": "Développement commercial",
+          "description": "Accédez à de nouvelles opportunités et élargissez votre marché grâce à notre réseau."
+        },
+        "growth": {
+          "title": "Visibilité et crédibilité",
+          "description": "Bénéficiez de la notoriété d’Aetos Technology et renforcez votre image auprès de nos clients."
+        },
+        "expertise": {
+          "title": "Innovation commune",
+          "description": "Construisez avec nous des solutions innovantes adaptées aux besoins de vos clients"
+        },
+        "network": {
+          "title": "Support et accompagnement",
+          "description": "Profitez d’un suivi personnalisé, d’une formation et d’un support dédié pour réussir votre partenariat."
+        }
+      }
+    },
+    "cta": {
+      "title": "Intéressé par une collaboration avec nous?",
+      "description": "Nous vous aiderons à atteindre vos objectifs commerciaux",
+      "button": "Contactez-nous",
+      "imageAlt": "Opportunité de partenariat"
+    },
+    "testimonials": {
+      "title": "Ce que disent nos partenaires",
+      "loading": "Chargement des témoignages...",
+      "empty": "Aucun témoignage disponible."
+    }
+  },
+  "flowUp": {
+    "hero": {
+      "title": "FlowUp",
+      "subtitle": "L'efficacité sans effort",
+      "imageAlt": "Interface de la plateforme FlowUp"
+    },
+    "cta": {
+      "title": "Envie de démarrer",
+      "titleHighlight": "votre projet?",
+      "button": "Discutons!",
+      "imageAlt": "Illustration d'appel à l'action"
+    },
+    "modules": {
+      "supervisor": {
+        "title": "SuperVisor",
+        "description": "Rationalisez les opérations en magasin avec la gestion des tâches en temps réel et le suivi des performances pour une productivité accrue.",
+        "id": "supervisor"
+      },
+      "visualMerchandising": {
+        "title": "Visual Merchandising",
+        "description": "Transformez vos présentations retail avec des outils de merchandising visuel alimentés par l'IA qui stimulent les ventes et améliorent l'expérience client.",
+        "id": "visual-merchandising"
+      },
+      "shiftMaster": {
+        "title": "ShiftMaster",
+        "description": "Optimisez la planification du personnel avec une gestion intelligente des quarts de travail qui équilibre les besoins des employés et les exigences de l'entreprise.",
+        "id": "shiftmaster",
+        "card1Title": "Flux de travail",
+        "card1Subtitle": "simple",
+        "card2Title": "Moins de conflits,",
+        "card2Subtitle": "plus d'efficacité"
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Centralisez la communication d'équipe avec la messagerie instantanée, les annonces et le partage de documents sur une seule plateforme.",
+        "id": "communication",
+        "statValue": "+45%",
+        "statLabel": "Engagement des équipes"
+      },
+      "flowHR": {
+        "title": "FlowHR",
+        "description": "Simplifiez la gestion RH avec l'intégration automatisée, le suivi du temps et la surveillance des performances des employés.",
+        "id": "flowhr"
+      },
+      "microLearning": {
+        "title": "Micro-Learning",
+        "description": "Responsabilisez votre équipe avec des modules de formation en petites doses et des expériences d'apprentissage gamifiées pour un développement continu.",
+        "id": "micro-learning",
+        "cardTitle": "Quizzes",
+        "cardSubtitle": "Smart learning"
+      },
+      "optiStock": {
+        "title": "OptiStock",
+        "description": "Maximisez l'efficacité des stocks avec le suivi en temps réel et les suggestions de réapprovisionnement intelligentes.",
+        "id": "optistock",
+        "statValue": "70%",
+        "statLabel": "Smart tracking"
+      }
+    }
+  },
+  "sectors": {
+    "retail": {
+      "title": "Un réseau retail efficace exige visibilité totale et exécution parfaite.",
+      "imageAlt": "Retail sector",
+      "advantages": {
+        "instantTracking": {
+          "title": "Suivi instantané des opérations",
+          "description": "Ayez une vision en temps réel de toutes vos boutiques, de l'exécution VM aux incidents terrain."
+        },
+        "coordinatedTeams": {
+          "title": "Équipes coordonnées et réactives",
+          "description": "Des collaborateurs toujours alignés avec le siège, grâce à des informations centralisées et accessibles."
+        },
+        "lessErrors": {
+          "title": "Moins d'erreurs, plus d'efficacité",
+          "description": "Réduisez les pertes de temps et les écarts opérationnels en unifiant vos processus sur une seule plateforme."
+        }
+      }
+    },
+    "hospitality": {
+      "title": "Un hôtel performant, c'est une coordination fluide.",
+      "imageAlt": "Hospitality sector",
+      "advantages": {
+        "constantControl": {
+          "title": "Un contrôle terrain constant",
+          "description": "Des équipes alignées en temps réel grâce à une communication instantanée et des tâches parfaitement réparties."
+        },
+        "organizedTeams": {
+          "title": "Des équipes organisées et réactives",
+          "description": "Un contrôle qualité constant, avec des inspections digitalisées et des plans d'action rapides."
+        },
+        "fluidProcedures": {
+          "title": "Une transmission fluide des procédures",
+          "description": "Une expérience client améliorée, grâce à une organisation interne sans erreur ni retard."
+        }
+      }
+    },
+    "fashionBoutiques": {
+      "title": "Les supermarchés les plus performants se concentrent sur",
+      "imageAlt": "Fashion boutiques sector",
+      "advantages": {
+        "constantControl": {
+          "title": "Un contrôle terrain constant :",
+          "description": "Un contrôle précis et constant des rayons et de l'expérience client."
+        },
+        "organizedTeams": {
+          "title": "Des équipes organisées et réactives :",
+          "description": "Des plannings solides et une coordination fluide à chaque instant."
+        },
+        "fluidProcedures": {
+          "title": "Une transmission fluide des procédures :",
+          "description": "Des consignes claires, comprises et appliquées rapidement."
+        }
+      }
+    },
+    "industryProduction": {
+      "title": "Et si votre performance industrielle devenait enfin claire et immédiate ?",
+      "imageAlt": "Industry and production sector",
+      "advantages": {
+        "nonConformityReduction": {
+          "title": "Réduction des non-conformités et arrêts imprévus",
+          "description": "Le contrôle digitalisé et les alertes en temps réel réduisent défauts, rebuts et arrêts non planifiés."
+        },
+        "productivityGain": {
+          "title": "Gain de productivité pour les équipes terrain",
+          "description": "Checklists automatisées, données fluides et communication instantanée permettent aux équipes de travailler mieux et plus vite."
+        },
+        "totalTraceability": {
+          "title": "Traçabilité totale & décisions plus rapides :",
+          "description": "L'historique digital des contrôles et actions accélère les audits, renforce la conformité et améliore la performance de l'atelier."
+        }
+      }
+    },
+    "audit": {
+      "title": "La performance opérationnelle est la base d'un audit fluide et sans surprises.",
+      "imageAlt": "Audit sector",
+      "advantages": {
+        "fasterAudits": {
+          "title": "Audits plus rapides et entièrement structurés",
+          "description": "Toutes les preuves, données et historiques sont centralisés, ce qui facilite la préparation et réduit le temps d'audit."
+        },
+        "totalTraceability": {
+          "title": "Traçabilité totale et preuves disponibles à tout moment",
+          "description": "Chaque contrôle, action et non-conformité est documenté, ce qui permet de justifier facilement votre conformité."
+        },
+        "controlledConformity": {
+          "title": "Conformité maîtrisée et risques d'écarts réduits",
+          "description": "Les processus deviennent standardisés, les erreurs diminuent et la préparation aux certifications devient plus sereine et prévisible."
+        }
+      },
+      "accordionSections": [
+        {
+          "title": "Des audits internes structurés, fiables et faciles à exécuter",
+          "description": "Grâce à FlowUp, vos équipes réalisent des audits cohérents, complets et uniformes, quel que soit le site ou le département.",
+          "imageSrc": "/sectors/audit/1.png",
+          "imageAlt": "Audits structurés",
+          "items": [
+            {
+              "title": "Checklists d'audit entièrement digitalisées",
+              "description": "Créez des grilles d'audit sur mesure (ISO, sécurité, hygiène, QHSE…), standardisées et faciles à mettre à jour."
+            },
+            {
+              "title": "Exécution sur terrain guidée et 100% mobile",
+              "description": "Vos auditeurs suivent un parcours clair sur smartphone, avec photos, commentaires et preuves intégrées."
+            },
+            {
+              "title": "Géolocalisation et marque temporelle automatique",
+              "description": "Assurez l'authenticité et la fiabilité des audits avec des données terrain vérifiées."
+            },
+            {
+              "title": "Rapports automatiques & analytiques",
+              "description": "Obtenez instantanément des rapports d'audit clairs, comparatifs et exportables, sans traitement manuel."
+            }
+          ]
+        },
+        {
+          "title": "Une gestion complète pour réussir toutes vos certifications",
+          "description": "FlowUp centralise vos preuves, organise vos actions et facilite le contrôle continu pour préparer sereinement vos certifications (ISO 9001, ISO 14001, ISO 22000, HACCP…).",
+          "imageSrc": "/sectors/audit/2.png",
+          "imageAlt": "Certifications",
+          "items": [
+            {
+              "title": "Registre centralisé des non-conformités",
+              "description": "Identifiez, qualifiez et suivez chaque non-conformité jusqu'à sa résolution, avec une traçabilité complète."
+            },
+            {
+              "title": "Plans d'action correctifs automatisés",
+              "description": "Assignez des actions, fixez des échéances, recevez des rappels et suivez l'avancement en temps réel."
+            },
+            {
+              "title": "Historique et preuves toujours accessibles",
+              "description": "Stockez documents, photos, justificatifs et mises en conformité en un seul endroit, prêt pour l'audit du certificateur."
+            },
+            {
+              "title": "Suivi de conformité en temps réel",
+              "description": "Visualisez les indicateurs clés et contrôlez instantanément l'état de préparation de vos équipes et de vos sites."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sectorsAccordion": {
+    "fashionBoutiques": {
+      "sections": [
+        {
+          "title": "Centralisez vos opérations, alignez vos équipes et gagnez du temps au quotidien.",
+          "imageSrc": "/sectors/fashion-boutiques/1.png",
+          "imageAlt": "Centralisation des opérations",
+          "items": [
+            {
+              "title": "Planification intelligente des visites",
+              "description": "Planifiez simplement les visites des Area Managers et gardez une visibilité complète sur la couverture de votre réseau."
+            },
+            {
+              "title": "Affectation des checklists et des tâches",
+              "description": "Assignez en quelques clics les actions à réaliser en magasin : VM, hygiène, stock, opérations… Chaque responsable reçoit exactement ce qu'il doit faire."
+            },
+            {
+              "title": "Suivi d'exécution en temps réel (avec géolocalisation)",
+              "description": "Visualisez l'avancement instantané des visites et des tâches, vérifiez la présence en boutique, identifiez les retards et garantissez le respect des standards."
+            },
+            {
+              "title": "Rapports automatiques",
+              "description": "Recevez des rapports clairs et consolidés sans travail manuel : conformité, performance des magasins, état des visites, progression des actions…"
+            },
+            {
+              "title": "Gestion des incidents avec rappels & notifications",
+              "description": "Déclarez, traitez et suivez les plans d'actions des incidents terrain. Les rappels automatiques et les notifications garantissent une résolution rapide et un meilleur contrôle du réseau."
+            }
+          ]
+        },
+        {
+          "title": "Organisation et suivi des vitrines et des espaces en boutique",
+          "imageSrc": "/sectors/fashion-boutiques/2.png",
+          "imageAlt": "Gestion des vitrines",
+          "items": [
+            {
+              "title": "Organisation et suivi des vitrines et espaces en magasin",
+              "description": "Planifiez, partagez et contrôlez la mise en place des vitrines et espaces merchandising dans toutes vos boutiques, tout en restant connecté avec vos équipes."
+            },
+            {
+              "title": "Partage instantané des campagnes et nouveautés",
+              "description": "Informez vos équipes terrain des lancements, promotions et changements produits en quelques secondes, sans e-mails dispersés."
+            },
+            {
+              "title": "Suivi visuel de la conformité en boutique",
+              "description": "Recevez des photos des boutiques, comparez-les aux directives et validez la conformité en toute simplicité."
+            },
+            {
+              "title": "Messagerie interne & groupes dédiés",
+              "description": "Communiquez rapidement avec les équipes : messages, annonces, groupes par région ou par rôle, fil d'actualité… tout est centralisé."
+            },
+            {
+              "title": "Feedback terrain & remontée instantanée d'informations",
+              "description": "Les équipes magasin peuvent partager leurs retours, signaler une mise en place, poser des questions ou remonter un problème directement depuis l'application."
+            }
+          ]
+        },
+        {
+          "title": "Planning horaire des équipes",
+          "imageSrc": "/sectors/fashion-boutiques/3.png",
+          "imageAlt": "Planning équipes",
+          "items": [
+            {
+              "title": "Planning horaire des équipes",
+              "description": "Créez, modifiez et suivez facilement les horaires de vos équipes. Visualisez rapidement qui travaille à quel moment et assurez une organisation fluide de vos boutiques."
+            },
+            {
+              "title": "Gestion des absences et congés",
+              "description": "Centralisez les demandes d'absence et de congés, validez-les rapidement et visualisez l'impact sur les plannings en temps réel."
+            },
+            {
+              "title": "Échanges et remplacements simplifiés",
+              "description": "Permettez aux collaborateurs d'échanger leurs shifts ou de demander des remplacements directement depuis l'application, sans confusion ni erreur."
+            },
+            {
+              "title": "Suivi et évaluation du personnel",
+              "description": "Consignez les évaluations, feedbacks et performances des employés. Identifiez les forces et les besoins de formation pour améliorer la productivité et l'engagement."
+            },
+            {
+              "title": "Notifications et rappels automatiques",
+              "description": "Informez vos équipes de leurs shifts, absences validées ou changements via notifications automatiques, pour éviter les oublis et garantir la bonne organisation."
+            }
+          ]
+        },
+        {
+          "title": "Des modules de formation courts et ciblés",
+          "imageSrc": "/sectors/fashion-boutiques/4.png",
+          "imageAlt": "Formation",
+          "items": [
+            {
+              "title": "Modules de formation courts et ciblés",
+              "description": "Proposez des contenus de formation courts, faciles à suivre, adaptés aux besoins de vos équipes et à leurs rôles spécifiques."
+            },
+            {
+              "title": "Suivi des progrès et performances",
+              "description": "Visualisez l'avancement de chaque collaborateur, identifiez les points à renforcer et assurez une montée en compétence continue."
+            },
+            {
+              "title": "Accessibilité mobile et flexible",
+              "description": "Les équipes peuvent suivre les formations où qu'elles soient, depuis un smartphone ou une tablette, sans contrainte de lieu ni de temps."
+            }
+          ]
+        },
+        {
+          "title": "Réduisez les ventes perdues et maximisez la disponibilité produit grâce à nos recommandations IA.",
+          "imageSrc": "/sectors/fashion-boutiques/5.png",
+          "imageAlt": "Optimisation IA",
+          "items": [
+            {
+              "title": "Réduction des ventes perdues",
+              "description": "Assurez la disponibilité des produits clés et évitez les ruptures qui impactent directement vos revenus."
+            },
+            {
+              "title": "Prise de décision guidée par l'IA",
+              "description": "Bénéficiez d'analyses intelligentes pour ajuster vos stocks selon les ventes, tendances et besoins spécifiques de chaque magasin."
+            },
+            {
+              "title": "Optimisation multi-boutiques",
+              "description": "Répartissez efficacement vos produits entre vos différentes boutiques pour maximiser les ventes et améliorer le service client."
+            }
+          ]
+        }
+      ]
+    },
+    "hospitality": {
+      "sections": [
+        {
+          "title": "Gérez vos opérations hôtelières en temps réel : housekeeping, maintenance, qualité et services, tout est centralisé et parfaitement coordonné.",
+          "imageSrc": "/sectors/hospitality/1.png",
+          "imageAlt": "Opérations hôtelières",
+          "items": [
+            {
+              "title": "Suivi des checklists Housekeeping & Contrôle qualité",
+              "description": "Définissez vos standards de nettoyage, d'accueil et de finition. Suivez en temps réel l'avancement du housekeeping et assurez la conformité des chambres avant leur mise en service."
+            },
+            {
+              "title": "Gestion des tournées et inspections des superviseurs",
+              "description": "Organisez les visites quotidiennes ou hebdomadaires des superviseurs (étages, restaurants, zones communes) et visualisez instantanément les points contrôlés et les non-conformités détectées."
+            },
+            {
+              "title": "Signalement et suivi des incidents (maintenance & service)",
+              "description": "Permettez aux équipes de déclarer immédiatement un incident (équipement défectueux, fuite, problème client…). Suivez son traitement jusqu'à la résolution, sans perte d'information."
+            },
+            {
+              "title": "Rapports automatiques et conformité aux standards hôteliers",
+              "description": "Recevez des rapports détaillés : chambres prêtes, anomalies détectées, temps d'intervention, conformité par étage ou par équipe. Idéal pour les audits internes et les certifications qualité."
+            }
+          ]
+        },
+        {
+          "title": "Organisez vos équipes 24/7 en toute simplicité et assurez un staffing optimal pour chaque instant du séjour client.",
+          "imageSrc": "/sectors/hospitality/2.png",
+          "imageAlt": "Gestion équipes 24/7",
+          "items": [
+            {
+              "title": "Une vision unifiée de toutes vos équipes",
+              "description": "Gestion centralisée des équipes multi-services (Housekeeping, F&B, Front Office, Maintenance…) avec visibilité en temps réel des effectifs présents."
+            },
+            {
+              "title": "Un contrôle fiable du staffing 24/7",
+              "description": "Suivi des présences, absences et retards pour garantir une continuité irréprochable du service client 24/7."
+            },
+            {
+              "title": "Des plannings précis, adaptés à votre rythme hôtelier",
+              "description": "Création rapide des plannings multi-services, tenant compte des pics d'occupation, des événements et de la saisonnalité."
+            },
+            {
+              "title": "La garantie d'un service toujours optimal",
+              "description": "Gestion fluide des demandes d'échange de shifts et des remplacements, pour éviter tout manque de personnel en opération."
+            }
+          ]
+        },
+        {
+          "title": "Diffusez les bonnes informations au bon moment et formez vos équipes en continu, en quelques minutes.",
+          "imageSrc": "/sectors/hospitality/3.png",
+          "imageAlt": "Communication et formation",
+          "items": [
+            {
+              "title": "Vos consignes, reçues en temps réel",
+              "description": "Diffusion instantanée des notes de service (procédures housekeeping, consignes de sécurité, menus F&B…)."
+            },
+            {
+              "title": "Les bonnes équipes alertées au bon moment",
+              "description": "Alertes ciblées pour les situations urgentes, chambres prioritaires, incidents clients, maintenance critique."
+            },
+            {
+              "title": "Formez vite, formez mieux",
+              "description": "Capsules de formation rapides pour former le personnel sur les standards hôteliers (accueil client, préparation chambre, room service…)."
+            },
+            {
+              "title": "Des équipes toujours au niveau",
+              "description": "Évaluations et quiz réguliers pour garantir le respect des normes de qualité et d'hygiène."
+            }
+          ]
+        }
+      ]
+    },
+    "retail": {
+      "sections": [
+        {
+          "title": "Boostez l'impact de vos rayons et transformez vos magasins en véritables moteurs de ventes grâce à FlowUp",
+          "imageSrc": "/sectors/retail/1.png",
+          "imageAlt": "Visual merchandising",
+          "items": [
+            {
+              "title": "Maximisez la visibilité des produits clés",
+              "description": "Grâce à l'application, planifiez et suivez la mise en avant optimale de vos produits stratégiques pour augmenter vos ventes dans chaque rayon."
+            },
+            {
+              "title": "Assurez la conformité parfaite des rayons",
+              "description": "Vérifiez facilement que chaque rayon respecte vos planogrammes et standards merchandising pour offrir une expérience client uniforme et attractive."
+            },
+            {
+              "title": "Déployez vos promotions en un temps record",
+              "description": "L'application vous permet de diffuser et contrôler la mise en place des promotions et offres spéciales instantanément dans tous vos magasins."
+            },
+            {
+              "title": "Coordonnez efficacement vos équipes terrain",
+              "description": "Transmettez vos directives merchandising via l'application et recevez des retours en temps réel pour garantir que chaque magasin est conforme et performant."
+            }
+          ]
+        },
+        {
+          "title": "Suivi de la qualité des produits et des rayons",
+          "imageSrc": "/sectors/retail/2.png",
+          "imageAlt": "Qualité et contrôle",
+          "items": [
+            {
+              "title": "Suivi qualité des produits et rayons",
+              "description": "Contrôlez l'état des produits, détectez les anomalies et assurez la conformité des rayons selon vos standards de qualité."
+            },
+            {
+              "title": "Plan d'action pour incidents et anomalies",
+              "description": "Déclarez rapidement tout problème (produit endommagé, rayons non conformes) et assignez un plan d'action directement via l'application pour une résolution rapide."
+            },
+            {
+              "title": "Collaboration fluide avec les chefs de rayon",
+              "description": "Communiquez facilement avec vos chefs de rayon et équipes terrain pour transmettre directives, valider corrections et coordonner les actions en temps réel."
+            },
+            {
+              "title": "Rapports automatiques et suivi des performances",
+              "description": "Générez des rapports détaillés sur l'état des rayons, incidents résolus et performances des équipes pour piloter vos magasins efficacement."
+            }
+          ]
+        },
+        {
+          "title": "Organisation optimale des rotations en magasin",
+          "imageSrc": "/sectors/retail/3.png",
+          "imageAlt": "Planning équipes",
+          "items": [
+            {
+              "title": "Organisation optimale des rotations en magasin",
+              "description": "Planifiez facilement les shifts des caissiers, chefs de rayon, préparateurs et équipes back-office pour assurer une couverture complète à chaque moment de la journée."
+            },
+            {
+              "title": "Gestion simple des absences et remplacements",
+              "description": "Déclarez les absences en un clic et trouvez rapidement des remplaçants disponibles pour éviter les manques de personnel en heures de pointe."
+            },
+            {
+              "title": "Équilibre de charge entre les équipes",
+              "description": "Répartissez le travail de manière équitable entre les collaborateurs pour garantir une efficacité continue et éviter les équipes sous-ou sur-sollicitées."
+            },
+            {
+              "title": "Planning mis à jour en temps réel",
+              "description": "Toutes les modifications (échanges de shifts, ajustements, renforts urgents) sont automatiquement synchronisées, assurant une communication claire et immédiate avec vos équipes."
+            }
+          ]
+        }
+      ]
+    },
+    "industryProduction": {
+      "sections": [
+        {
+          "title": "Contrôle qualité sur la ligne de production",
+          "imageSrc": "/sectors/industry-production/1.png",
+          "imageAlt": "Contrôle qualité",
+          "items": [
+            {
+              "title": "Contrôle qualité en ligne de production",
+              "description": "Grâce à l'application, vos équipes effectuent des contrôles qualité en temps réel sur chaque poste, identifient rapidement les non-conformités et assurent une production conforme à vos standards industriels."
+            },
+            {
+              "title": "Suivi des non-conformités & actions correctives",
+              "description": "Déclarez instantanément une non-conformité depuis l'atelier, suivez son traitement étape par étape et déclenchez un plan d'action correctif pour éviter toute dérive dans le processus de production."
+            },
+            {
+              "title": "Conformité HSE et audits internes",
+              "description": "Réalisez vos inspections HSE, audits internes ou vérifications de sécurité directement via l'application, avec un suivi automatique des anomalies, rappels et planifications."
+            },
+            {
+              "title": "Coordination fluide des équipes terrain",
+              "description": "Facilitez la communication entre superviseurs, chefs d'atelier et opérateurs : transmission instantanée des instructions, validation des tâches et synchronisation en temps réel de l'avancement."
+            }
+          ]
+        },
+        {
+          "title": "Planification des équipes par poste et par ligne",
+          "imageSrc": "/sectors/industry-production/2.png",
+          "imageAlt": "Planning production",
+          "items": [
+            {
+              "title": "Planification des équipes par poste et par ligne",
+              "description": "Organisez les rotations des opérateurs par poste, ligne de production ou équipe (A/B/C) afin d'assurer une couverture continue de l'atelier."
+            },
+            {
+              "title": "Gestion des absences et remplacements express",
+              "description": "Déclarez une absence en un instant et trouvez immédiatement un opérateur disponible pour éviter l'arrêt ou le ralentissement de la chaîne."
+            },
+            {
+              "title": "Répartition équilibrée des compétences",
+              "description": "Assurez une présence optimale des opérateurs certifiés par machine ou procédé pour garantir la sécurité et la conformité des opérations."
+            },
+            {
+              "title": "Mises à jour synchronisées en temps réel",
+              "description": "Tout changement de planning, d'affectation ou de renfort est automatiquement communiqué à chaque collaborateur, limitant les erreurs et les retards."
+            }
+          ]
+        },
+        {
+          "title": "Transmission instantanée des consignes de production",
+          "imageSrc": "/sectors/industry-production/3.png",
+          "imageAlt": "Communication atelier",
+          "items": [
+            {
+              "title": "Transmission instantanée des consignes de production",
+              "description": "Diffusez rapidement les instructions de changement de série, nouvelles procédures ou alertes de sécurité directement aux équipes terrain."
+            },
+            {
+              "title": "Micro-formations ciblées pour monter en compétence",
+              "description": "Proposez des modules courts : utilisation machine, rappel HSE, bonnes pratiques qualité… accessibles à tout moment depuis l'atelier."
+            },
+            {
+              "title": "Réduction des erreurs grâce à une information centralisée",
+              "description": "Fini les notes papier ou les consignes perdues : toutes les informations critiques sont centralisées dans l'application et consultables en temps réel."
+            },
+            {
+              "title": "Engagement et responsabilisation des opérateurs",
+              "description": "Les équipes accèdent à un fil d'actualité interne, des documents, messages et notifications, favorisant une communication fluide et un meilleur respect des standards."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "getInTouch": "Prenez Contact",
+    "address": "B02 Immeube Nessma, AV UMA La Soukra Ariana",
+    "sectors": {
+      "title": "Secteurs",
+      "hospitality": "Hospitalité",
+      "retail": "Retail",
+      "fashionBoutiques": "Boutiques de Mode & d'Habillement",
+      "industryProduction": "Industrie & Production",
+      "audit": "Audit"
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "client": "Client",
+      "partner": "Partenaire",
+      "joinUs": "Nous Rejoindre"
+    },
+    "social": {
+      "follow": "Suivez-nous pour rester informé de nos actualités."
+    },
+    "copyright": "Copyright Aetos technology 2025"
+  },
+  "common": {
+    "menu": "Menu",
+    "language": {
+      "en": "Anglais",
+      "fr": "Français"
+    },
+    "stats": {
+      "sales": "Ventes",
+      "comparedTo": "Comparé à {value} l'année dernière!"
+    }
+  }
+}

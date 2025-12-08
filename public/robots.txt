@@ -1,0 +1,13 @@
+# robots.txt for Aetos Technology
+# https://aetos-technology.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /studio/
+
+# Sitemaps
+Sitemap: https://aetos-technology.com/sitemap.xml
