@@ -64,8 +64,8 @@ function AdvantagesSection({ dict, sector }: CollabSectionProps) {
           <Image
             src={`/sectors/${sector}/advPic.png`}
             alt={dict.imageAlt}
-            width={610}
-            height={420}
+            width={535}
+            height={380}
             className="object-cover"
           />
         </div>

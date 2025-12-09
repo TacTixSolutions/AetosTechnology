@@ -18,7 +18,6 @@ interface AccordionInfoCardProps {
 }
 
 function AccordionInfoCard({
-  title,
   items,
   imageSrc,
   imageAlt = "",
@@ -90,7 +89,8 @@ function AccordionInfoCard({
             <Image
               src={imageSrc}
               alt={imageAlt}
-              fill
+              width={475}
+              height={435}
               className="object-contain"
             />
           </div>
