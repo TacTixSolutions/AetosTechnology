@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://aetos-technology.com";
+  const baseUrl = "https://aetos.com.tn";
   const languages = ["en", "fr"];
   const lastModified = new Date();
 

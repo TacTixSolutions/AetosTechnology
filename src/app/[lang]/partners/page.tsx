@@ -26,7 +26,7 @@ export async function generateMetadata({
     openGraph: {
       title: metadata.title,
       description: metadata.description,
-      url: `https://aetos-technology.com/${lang}/partners`,
+      url: `https://aetos.com.tn/${lang}/partners`,
       siteName: "Aetos Technology",
       locale: lang === "fr" ? "fr_FR" : "en_US",
       type: "website",
@@ -57,10 +57,10 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `https://aetos-technology.com/${lang}/partners`,
+      canonical: `https://aetos.com.tn/${lang}/partners`,
       languages: {
-        en: "https://aetos-technology.com/en/partners",
-        fr: "https://aetos-technology.com/fr/partners",
+        en: "https://aetos.com.tn/en/partners",
+        fr: "https://aetos.com.tn/fr/partners",
       },
     },
   };

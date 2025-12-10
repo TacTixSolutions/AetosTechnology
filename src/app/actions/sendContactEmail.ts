@@ -54,7 +54,7 @@ export async function sendContactEmail(formData: {
         <body>
           <div class="container">
             <div class="header">
-              <img src="https://aetos-technology.com/logoWithText.png" alt="AETOS Technology" />
+              <img src="https://aetos.com.tn/logoWithText.png" alt="AETOS Technology" />
             </div>
             <div class="content">
               <h1 class="title">New Client Inquiry</h1>
@@ -127,7 +127,7 @@ export async function sendContactEmail(formData: {
         <body>
           <div class="container">
             <div class="header">
-              <img src="https://aetos-technology.com/logoWithText.png" alt="AETOS Technology" />
+              <img src="https://aetos.com.tn/logoWithText.png" alt="AETOS Technology" />
             </div>
             <div class="content">
               <h1 class="title">New Partner Inquiry</h1>
@@ -209,7 +209,7 @@ export async function sendContactEmail(formData: {
         <body>
           <div class="container">
             <div class="header">
-              <img src="https://aetos-technology.com/logoWithText.png" alt="AETOS Technology" />
+              <img src="https://aetos.com.tn/logoWithText.png" alt="AETOS Technology" />
             </div>
             <div class="content">
               <h1 class="title">New Job Application</h1>

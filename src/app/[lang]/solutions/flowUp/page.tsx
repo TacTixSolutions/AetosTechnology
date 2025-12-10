@@ -24,7 +24,7 @@ export async function generateMetadata({
     openGraph: {
       title: metadata.title,
       description: metadata.description,
-      url: `https://aetos-technology.com/${lang}/solutions/flowUp`,
+      url: `https://aetos.com.tn/${lang}/solutions/flowUp`,
       siteName: "Aetos Technology",
       locale: lang === "fr" ? "fr_FR" : "en_US",
       type: "website",
@@ -55,10 +55,10 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `https://aetos-technology.com/${lang}/solutions/flowUp`,
+      canonical: `https://aetos.com.tn/${lang}/solutions/flowUp`,
       languages: {
-        en: "https://aetos-technology.com/en/solutions/flowUp",
-        fr: "https://aetos-technology.com/fr/solutions/flowUp",
+        en: "https://aetos.com.tn/en/solutions/flowUp",
+        fr: "https://aetos.com.tn/fr/solutions/flowUp",
       },
     },
   };

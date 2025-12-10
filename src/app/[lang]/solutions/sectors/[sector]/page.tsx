@@ -54,7 +54,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${sectorName} Solutions - Aetos Technology`,
       description: `Discover our comprehensive ${sectorName.toLowerCase()} solutions designed to optimize your operations and boost productivity.`,
-      url: `https://aetos-technology.com/${lang}/solutions/sectors/${sector}`,
+      url: `https://aetos.com.tn/${lang}/solutions/sectors/${sector}`,
       siteName: "Aetos Technology",
       locale: lang === "fr" ? "fr_FR" : "en_US",
       type: "website",
@@ -85,10 +85,10 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `https://aetos-technology.com/${lang}/solutions/sectors/${sector}`,
+      canonical: `https://aetos.com.tn/${lang}/solutions/sectors/${sector}`,
       languages: {
-        en: `https://aetos-technology.com/en/solutions/sectors/${sector}`,
-        fr: `https://aetos-technology.com/fr/solutions/sectors/${sector}`,
+        en: `https://aetos.com.tn/en/solutions/sectors/${sector}`,
+        fr: `https://aetos.com.tn/fr/solutions/sectors/${sector}`,
       },
     },
   };
