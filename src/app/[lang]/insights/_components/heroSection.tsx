@@ -10,7 +10,7 @@ function HeroSection() {
         className="object-cover"
         priority
       />
-      <div className="absolute font-poppins w-full h-full flex flex-col items-center justify-center">
+      <div className="absolute font-poppins w-full px-4 h-full flex flex-col items-center justify-center">
         <p className="text-lg md:text-[40px] uppercase text-white font-bold max-w-4xl text-center">
           Insights
         </p>

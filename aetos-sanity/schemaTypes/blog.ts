@@ -4,6 +4,7 @@ export default defineType({
   name: 'blog',
   title: 'Blogs',
   type: 'document',
+  liveEdit: false,
   fields: [
     defineField({
       name: 'titleEn',
