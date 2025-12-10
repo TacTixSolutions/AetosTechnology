@@ -67,7 +67,7 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
       description: dict.kiabi.description,
       stats: [
         {
-          percentage: "-35%",
+          percentage: "+35%",
           description: dict.kiabi.stat1Label,
           isPositive: false,
         },
@@ -95,7 +95,7 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
       description: dict.gemo.description,
       stats: [
         {
-          percentage: "-28%",
+          percentage: "+28%",
           description: dict.gemo.stat1Label,
           isPositive: false,
         },
@@ -151,7 +151,7 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
       description: dict.quiksilver.description,
       stats: [
         {
-          percentage: "-40%",
+          percentage: "+40%",
           description: dict.quiksilver.stat1Label,
           isPositive: false,
         },
