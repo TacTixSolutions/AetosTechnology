@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ClientForm from "./ClientForm";
@@ -93,7 +93,13 @@ export default function ContactContent({ dict, lang }: ContactContentProps) {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
+
+  const plugin = useRef(
+    Autoplay({
+      delay: 4000,
+      stopOnInteraction: true,
+    })
+  );
 
   useEffect(() => {
     const fetchTestimonials = async () => {
@@ -105,7 +111,7 @@ export default function ContactContent({ dict, lang }: ContactContentProps) {
 
       const query = `*[_type == "testimonial" && type == $type] | order(_createdAt desc)`;
       const data = await client.fetch(query, { type: typeMap[activeTab] });
-      setTestimonials(data);
+      setTestimonials([...data, ...data]);
     };
 
     fetchTestimonials();
@@ -113,8 +119,6 @@ export default function ContactContent({ dict, lang }: ContactContentProps) {
 
   useEffect(() => {
     if (!api) return;
-
-    setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap());
 
     api.on("select", () => {
@@ -227,21 +231,16 @@ export default function ContactContent({ dict, lang }: ContactContentProps) {
           <Carousel
             setApi={setApi}
             opts={{
-              align: "start",
+              align: "center",
               loop: true,
             }}
-            plugins={[
-              Autoplay({
-                delay: 4000,
-                stopOnInteraction: true,
-              }),
-            ]}
+            plugins={[plugin.current]}
             className="w-full"
           >
             <CarouselContent>
-              {testimonials.map((testimonial) => (
+              {testimonials.map((testimonial, index) => (
                 <TestimonialCard
-                  key={testimonial._id}
+                  key={index}
                   testimonial={{
                     ...testimonial,
                     content:
@@ -256,18 +255,23 @@ export default function ContactContent({ dict, lang }: ContactContentProps) {
 
             {/* Custom indicators */}
             <div className="flex justify-center items-center gap-2 -mt-12">
-              {Array.from({ length: count }).map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => api?.scrollTo(index)}
-                  className={`h-2 rounded-full transition-all ${
-                    index === current
-                      ? "w-4 h-4 bg-[#024e63]"
-                      : "w-3 h-3 bg-[#99bcc6]"
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
+              {Array.from({ length: testimonials.length / 2 }).map(
+                (_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      api?.scrollTo(index);
+                    }}
+                    className={`h-2 rounded-full cursor-pointer transition-all z-20 ${
+                      index === current ||
+                      index === current - testimonials.length / 2
+                        ? "w-4 h-4 bg-[#024e63]"
+                        : "w-3 h-3 bg-[#99bcc6]"
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                )
+              )}
             </div>
           </Carousel>
         </div>
