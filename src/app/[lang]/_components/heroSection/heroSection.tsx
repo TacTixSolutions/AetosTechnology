@@ -3,6 +3,7 @@ import Image from "next/image";
 import PieChartCard from "./pieChartCard";
 import SalesCard from "./salesCard";
 import IconTitleCard from "./iconTitleCard";
+import Link from "next/link";
 
 interface HeroSectionProps {
   dict: {
@@ -35,12 +36,14 @@ function HeroSection({ dict }: HeroSectionProps) {
           <p className="font-poppins text-center lg:text-start text-sm sm:text-base md:text-base xl:text-lg mt-4 uppercase">
             {dict.description}
           </p>
-          <Button
-            size={"lg"}
-            className="bg-brand border border-[#024E63] rounded-lg hover:bg-brand/90 w-64 lg:w-72 lg:h-12 font-inter text-white px-6 mt-6"
-          >
-            {dict.ctaButton}
-          </Button>
+          <Link href="/solutions/flowUp">
+            <Button
+              size={"lg"}
+              className="bg-brand border border-[#024E63] rounded-lg hover:bg-brand/90 w-64 lg:w-72 lg:h-12 font-inter text-white px-6 mt-6"
+            >
+              {dict.ctaButton}
+            </Button>
+          </Link>
         </div>
         <div className="flex relative scale-75 lg:scale-100 flex-col mr-0 lg:mr-6 items-center justify-center w-auto">
           <Image

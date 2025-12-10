@@ -2,6 +2,7 @@ import Image from "next/image";
 import IconTitleCard from "./iconTitleCard";
 import BarGraphIcon from "@/components/icons/barGraphIcon";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface PartnersHeroSectionProps {
   dict: {
@@ -23,9 +24,11 @@ function PartnersHeroSection({ dict }: PartnersHeroSectionProps) {
             {dict.title}
           </p>
           <p className="text-base lg:text-lg uppercase">{dict.description}</p>
-          <Button className="bg-white w-fit text-brand py-6 px-8 hover:bg-white/90 transition-colors font-semibold mt-2">
-            {dict.ctaButton}
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-white w-fit text-brand py-6 px-8 hover:bg-white/90 transition-colors font-semibold mt-2">
+              {dict.ctaButton}
+            </Button>
+          </Link>
         </div>
         {/* img */}
         <div className="scale-75 md:scale-100 relative">
