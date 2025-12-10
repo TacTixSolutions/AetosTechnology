@@ -124,7 +124,7 @@ export default function ContactContent({ dict, lang }: ContactContentProps) {
 
   return (
     <>
-      <div className="bg-[#f3f8fa] my-24 w-9/10 mx-auto rounded-xl">
+      <div className="bg-[#f3f8fa] py-24 w-9/10 mx-auto rounded-xl">
         <div className="min-h-screen flex">
           {/* Left Side - Image */}
           <div className="hidden lg:flex lg:w-1/2 relative">

@@ -74,7 +74,7 @@ async function FlowUpPage({
   const infoCards = getInfoCards(dict.flowUp.modules);
 
   return (
-    <div className="mb-24 mt-28 max-w-[1440px] mx-auto">
+    <div className="mb-24 pt-28 max-w-[1440px] mx-auto">
       <FlowUpHero dict={dict.flowUp.hero} />
       <InfoSection cards={infoCards} />
       <CTASection dict={dict.flowUp.cta} />
