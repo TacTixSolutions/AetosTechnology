@@ -5,6 +5,7 @@ import { Locale } from "@/lib/i18n-config";
 import Navbar from "@/components/navbar";
 import "./globals.css";
 import Footer from "@/components/footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Aetos Technology",
@@ -30,6 +31,7 @@ export default async function RootLayout({
         {children}
         <Footer dict={dict.footer} lang={lang} />
       </body>
+      <GoogleAnalytics gaId="G-WK27LXFSX5" />
     </html>
   );
 }
