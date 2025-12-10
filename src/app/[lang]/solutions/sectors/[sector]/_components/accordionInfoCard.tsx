@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Plus } from "lucide-react";
 
 interface AccordionItem {
@@ -24,21 +24,56 @@ function AccordionInfoCard({
   layout,
 }: AccordionInfoCardProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
   const isTextLeft = layout === "text-left";
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      }
+    );
+
+    const currentRef = cardRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <div className="w-full">
+    <div ref={cardRef} className="w-full">
       <div
         className={`flex flex-col items-center justify-center ${
           isTextLeft ? "lg:flex-row" : "lg:flex-row-reverse"
         } gap-8 lg:gap-16`}
       >
         {/* Text Content with Accordion */}
-        <div className="flex-1 space-y-6 w-full">
+        <div
+          className={`flex-1 space-y-6 w-full transition-all duration-1000 ease-out ${
+            isVisible
+              ? "opacity-100 translate-x-0"
+              : `opacity-0 ${isTextLeft ? "-translate-x-12" : "translate-x-12"}`
+          }`}
+        >
           <div className="space-y-3">
             {items.map((item, index) => (
               <div
@@ -84,7 +119,11 @@ function AccordionInfoCard({
         </div>
 
         {/* Image Content */}
-        <div className="w-full lg:w-1/2 relative">
+        <div
+          className={`w-full lg:w-1/2 relative transition-all duration-1000 ease-out delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+          }`}
+        >
           <div className="relative flex items-center justify-center w-full aspect-4/3 rounded-2xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
             <Image
               src={imageSrc}
