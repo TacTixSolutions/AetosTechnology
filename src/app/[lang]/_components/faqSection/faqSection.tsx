@@ -63,12 +63,13 @@ function FaqSection({ lang, dict }: FaqSectionProps) {
   React.useEffect(() => {
     const fetchFaqs = async () => {
       try {
-        const query = `*[_type == "faq"] {
+        const query = `*[_type == "faq" && isPublished == true] {
           _id,
           questionEn,
           questionFr,
           answerEn,
-          answerFr
+          answerFr,
+          isPublished
         }`;
         const data = await client.fetch(query);
         setFaqs(data);

@@ -61,6 +61,14 @@ export default defineType({
         hotspot: true,
       },
     }),
+    defineField({
+      name: 'isPublished',
+      title: 'Is Published',
+      type: 'boolean',
+      description: 'Toggle to publish/unpublish this event',
+      initialValue: true,
+      validation: (Rule) => Rule.required(),
+    }),
   ],
   preview: {
     select: {

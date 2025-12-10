@@ -140,6 +140,14 @@ export default defineType({
       initialValue: () => new Date().toISOString(),
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: 'isPublished',
+      title: 'Is Published',
+      type: 'boolean',
+      description: 'Toggle to publish/unpublish this blog',
+      initialValue: true,
+      validation: (Rule) => Rule.required(),
+    }),
   ],
   preview: {
     select: {

@@ -49,7 +49,7 @@ function TestimonialsSection({ dict, lang }: TestimonialsSectionProps) {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const query = `*[_type == "testimonial"  && type == "partner"] {
+        const query = `*[_type == "testimonial" && type == "partner" && isPublished == true] {
           _id,
           type,
           textEn,
@@ -58,7 +58,8 @@ function TestimonialsSection({ dict, lang }: TestimonialsSectionProps) {
           image,
           name,
           role,
-          company
+          company,
+          isPublished
         }`;
         const data = await client.fetch(query);
         setTestimonials(data);

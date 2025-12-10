@@ -29,6 +29,14 @@ export default defineType({
       type: 'text',
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: 'isPublished',
+      title: 'Is Published',
+      type: 'boolean',
+      description: 'Toggle to publish/unpublish this FAQ',
+      initialValue: true,
+      validation: (Rule) => Rule.required(),
+    }),
   ],
   preview: {
     select: {

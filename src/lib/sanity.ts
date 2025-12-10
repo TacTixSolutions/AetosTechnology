@@ -17,7 +17,7 @@ export function urlFor(source: any) {
 
 export async function getBlogs() {
   return client.fetch(
-    `*[_type == "blog"] | order(createdAt desc) {
+    `*[_type == "blog" && isPublished == true] | order(createdAt desc) {
       _id,
       titleEn,
       titleFr,
@@ -25,14 +25,15 @@ export async function getBlogs() {
       contentEn,
       contentFr,
       picture,
-      createdAt
+      createdAt,
+      isPublished
     }`
   );
 }
 
 export async function getBlogBySlug(slug: string) {
   return client.fetch(
-    `*[_type == "blog" && slug.current == $slug][0] {
+    `*[_type == "blog" && slug.current == $slug && isPublished == true][0] {
       _id,
       titleEn,
       titleFr,
@@ -40,7 +41,8 @@ export async function getBlogBySlug(slug: string) {
       contentEn,
       contentFr,
       picture,
-      createdAt
+      createdAt,
+      isPublished
     }`,
     { slug }
   );
@@ -48,7 +50,7 @@ export async function getBlogBySlug(slug: string) {
 
 export async function getEvents() {
   return client.fetch(
-    `*[_type == "event"] | order(date desc) {
+    `*[_type == "event" && isPublished == true] | order(date desc) {
       _id,
       eventHost,
       titleEn,
@@ -59,7 +61,8 @@ export async function getEvents() {
       location,
       descriptionEn,
       descriptionFr,
-      picture
+      picture,
+      isPublished
     }`
   );
 }
