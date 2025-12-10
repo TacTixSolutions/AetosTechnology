@@ -4,6 +4,7 @@ import BlogsSection from "./_components/blogsSection";
 import EventsSection from "./_components/eventsSection";
 import HeroSection from "./_components/heroSection";
 import { Metadata } from "next";
+import { getDictionary } from "@/lib/get-dictionary";
 
 export async function generateMetadata({
   params,
@@ -48,11 +49,15 @@ export async function generateMetadata({
 
 async function Insights({ params }: { params: Promise<{ lang: Locale }> }) {
   const { lang } = await params;
-  const [blogs, events] = await Promise.all([getBlogs(), getEvents()]);
+  const [blogs, events, dict] = await Promise.all([
+    getBlogs(),
+    getEvents(),
+    getDictionary(lang),
+  ]);
 
   return (
     <div className="min-h-screen pt-32 pb-24 w-9/10 px-auto lg:px-16 mx-auto max-w-[1440px]">
-      <HeroSection />
+      <HeroSection dict={dict.insights.hero} />
       <EventsSection events={events} lang={lang} />
       <BlogsSection blogs={blogs} lang={lang} />
     </div>

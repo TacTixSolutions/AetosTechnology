@@ -120,9 +120,28 @@ async function SectorPage({
     notFound();
   }
   const dict = await getDictionary(lang);
-
+  interface CollabSectionProps {
+    dict: {
+      title: string;
+      imageAlt: string;
+      advantages: {
+        [key: string]: {
+          title: string;
+          description: string;
+        };
+      };
+    };
+    sector:
+      | "hospitality"
+      | "retail"
+      | "fashion-boutiques"
+      | "industry-production"
+      | "audit";
+  }
   const sectorKey = sectorKeyMap[sector as SectorSlug];
-  const sectorDict = dict.sectors[sectorKey as keyof typeof dict.sectors];
+  const sectorDict = dict.sectors[
+    sectorKey as keyof typeof dict.sectors
+  ] as CollabSectionProps["dict"];
 
   const accordionSections =
     (dict as any).sectorsAccordion?.[sectorKey]?.sections ||
@@ -131,12 +150,16 @@ async function SectorPage({
   console.log(accordionSections);
   return (
     <div className="min-h-screen pt-32 pb-24 w-9/10 mx-auto max-w-[1440px]">
-      <HeroSection sector={sector as SectorSlug} />
+      <HeroSection
+        sector={sector as SectorSlug}
+        dict={dict.sectors}
+        lang={lang}
+      />
       <AdvantagesSection sector={sector as SectorSlug} dict={sectorDict} />
       {accordionSections.length > 0 && (
         <AccordionInfoSection sections={accordionSections} />
       )}
-      <CTASection />
+      <CTASection dict={dict.sectors.cta} lang={lang} />
     </div>
   );
 }

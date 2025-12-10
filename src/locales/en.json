@@ -353,6 +353,33 @@
     }
   },
   "sectors": {
+    "hero": {
+      "fashionBoutiques": {
+        "title": "FlowUp for Fashion & Luxury Retailers",
+        "description": "Boost your in-store customer experience with smooth, seamless organization."
+      },
+      "retail": {
+        "title": "FlowUp for Supermarkets: Your Operations Simplified",
+        "description": "Manage your teams and in-store operations from a single platform, for streamlined efficiency."
+      },
+      "hospitality": {
+        "title": "FlowUp for Hospitality: Manage Your Operations Effortlessly",
+        "description": "Centralize your teams, schedules and standards, and deliver a better customer experience."
+      },
+      "industryProduction": {
+        "title": "FlowUp for Higher-Performing Workshops",
+        "description": "The solution that digitalizes your controls, ensures compliance and improves your workshop performance daily."
+      },
+      "audit": {
+        "title": "FlowUp for Audit & Certification",
+        "description": "Transform your audits into a simple, fast and reliable process."
+      }
+    },
+    "cta": {
+      "title": "Ready to take action?",
+      "description": "We design reliable solutions tailored to your business needs, and support you every step of the way for lasting results.",
+      "button": "Contact us"
+    },
     "retail": {
       "title": "An effective retail network requires total visibility and perfect execution.",
       "imageAlt": "Retail sector",
@@ -836,6 +863,12 @@
           ]
         }
       ]
+    }
+  },
+  "insights": {
+    "hero": {
+      "title": "Insights",
+      "description": "Our news, insights and key events"
     }
   },
   "footer": {
