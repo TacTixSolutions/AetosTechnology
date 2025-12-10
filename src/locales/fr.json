@@ -58,9 +58,9 @@
     },
     "sectors": {
       "title": "SECTEURS",
+      "fashionBoutiques": "Retail",
+      "retail": "Grande Distribution",
       "hospitality": "Hospitalité",
-      "retail": "Retail",
-      "fashionBoutiques": "Boutiques de Mode & d'Habillement",
       "industryProduction": "Industrie & Production",
       "audit": "Audit"
     }
@@ -843,9 +843,9 @@
     "address": "B02 Immeube Nessma, AV UMA La Soukra Ariana",
     "sectors": {
       "title": "Secteurs",
-      "hospitality": "Hospitalité",
-      "retail": "Retail",
       "fashionBoutiques": "Boutiques de Mode & d'Habillement",
+      "retail": "Retail",
+      "hospitality": "Hospitalité",
       "industryProduction": "Industrie & Production",
       "audit": "Audit"
     },
