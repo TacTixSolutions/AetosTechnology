@@ -70,10 +70,10 @@ export default async function BlogPage({
         <div className="flex items-center gap-2 text-sm text-gray-600">
           <Link
             href={`/${lang}/insights`}
-            className="hover:text-gray-400 font-inter transition-colors"
+            className="hover:text-gray-400 font-inter flex transition-colors"
           >
             <span>
-              <ChevronLeft className="inline-block mb-1 w-4 h-4" />{" "}
+              <ChevronLeft className="inline-block mb-0.5 w-4 h-4" />{" "}
             </span>
             {lang === "fr" ? "Blogs" : "Blogs"}
           </Link>
