@@ -147,6 +147,11 @@ async function SectorPage({
     (dict as any).sectorsAccordion?.[sectorKey]?.sections ||
     (sectorDict as any).accordionSections ||
     [];
+
+  const accordionTitle = (dict as any).sectorsAccordion?.[sectorKey]?.title;
+  const accordionTitleHighlight = (dict as any).sectorsAccordion?.[sectorKey]
+    ?.titleHighlight;
+
   console.log(accordionSections);
   return (
     <div className="min-h-screen pt-32 pb-24 w-9/10 mx-auto max-w-[1440px]">
@@ -157,7 +162,11 @@ async function SectorPage({
       />
       <AdvantagesSection sector={sector as SectorSlug} dict={sectorDict} />
       {accordionSections.length > 0 && (
-        <AccordionInfoSection sections={accordionSections} />
+        <AccordionInfoSection
+          sections={accordionSections}
+          sectionTitle={accordionTitle}
+          sectionTitleHighlight={accordionTitleHighlight}
+        />
       )}
       <CTASection dict={dict.sectors.cta} lang={lang} />
     </div>

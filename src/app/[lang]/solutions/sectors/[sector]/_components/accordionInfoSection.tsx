@@ -15,15 +15,27 @@ interface AccordionSection {
 
 interface AccordionInfoSectionProps {
   sections: AccordionSection[];
+  sectionTitle?: string;
+  sectionTitleHighlight?: string;
 }
 
-function AccordionInfoSection({ sections }: AccordionInfoSectionProps) {
+function AccordionInfoSection({
+  sections,
+  sectionTitle,
+  sectionTitleHighlight,
+}: AccordionInfoSectionProps) {
   if (!sections || sections.length === 0) {
     return null;
   }
 
   return (
-    <div className="w-full py-16 space-y-24">
+    <div className="w-full py-16 space-y-12 lg:space-y-24">
+      {(sectionTitle || sectionTitleHighlight) && (
+        <p className="text-2xl lg:text-4xl text-center font-semibold font-poppins">
+          {sectionTitle}
+          <span className="text-brand"> {sectionTitleHighlight}</span>
+        </p>
+      )}
       {sections.map((section, index) => (
         <AccordionInfoCard
           key={index}

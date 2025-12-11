@@ -523,9 +523,10 @@
   },
   "sectorsAccordion": {
     "fashionBoutiques": {
+      "title": "Centralisez vos opérations, alignez vos équipes et gagnez du",
+      "titleHighlight": "temps chaque jour.",
       "sections": [
         {
-          "title": "Centralisez vos opérations, alignez vos équipes et gagnez du temps au quotidien.",
           "imageSrc": "/sectors/fashion-boutiques/1.png",
           "imageAlt": "Centralisation des opérations",
           "items": [
@@ -646,6 +647,8 @@
       ]
     },
     "hospitality": {
+      "title": "Gérez vos opérations en temps réel avec des services ",
+      "titleHighlight": "centralisés et parfaitement coordonnés",
       "sections": [
         {
           "title": "Gérez vos opérations hôtelières en temps réel : housekeeping, maintenance, qualité et services, tout est centralisé et parfaitement coordonné.",
@@ -719,6 +722,8 @@
       ]
     },
     "retail": {
+      "title": "Boostez l'impact de vos rayons et transformez vos magasins en moteurs de ventes avec",
+      "titleHighlight": "FlowUp",
       "sections": [
         {
           "title": "Boostez l'impact de vos rayons et transformez vos magasins en véritables moteurs de ventes grâce à FlowUp",
@@ -792,6 +797,8 @@
       ]
     },
     "industryProduction": {
+      "title": "Réduisez les inefficiences et pilotez votre production en",
+      "titleHighlight": "temps réel grâce à une plateforme unifiée.",
       "sections": [
         {
           "title": "Contrôle qualité sur la ligne de production",
@@ -863,6 +870,10 @@
           ]
         }
       ]
+    },
+    "audit": {
+      "title": "Standardisez vos processus d'audit et obtenez une visibilité totale pour garantir",
+      "titleHighlight": "conformité et excellence opérationnelle."
     }
   },
   "insights": {

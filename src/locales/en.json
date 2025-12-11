@@ -719,6 +719,8 @@
       ]
     },
     "retail": {
+      "title": "Boost the impact of your aisles and transform your stores into sales engines with",
+      "titleHighlight": "FlowUp",
       "sections": [
         {
           "title": "Boost your shelf impact and transform your stores into real sales drivers with FlowUp",
@@ -792,6 +794,8 @@
       ]
     },
     "industryProduction": {
+      "title": "Reduce inefficiencies and manage your production in",
+      "titleHighlight": "real-time with a unified platform.",
       "sections": [
         {
           "title": "Quality control on the production line",
@@ -863,6 +867,10 @@
           ]
         }
       ]
+    },
+    "audit": {
+      "title": "Standardize your audit processes and gain total visibility to ensure",
+      "titleHighlight": "compliance and operational excellence."
     }
   },
   "insights": {

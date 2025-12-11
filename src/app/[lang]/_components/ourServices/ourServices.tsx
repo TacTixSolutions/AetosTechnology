@@ -40,12 +40,12 @@ function OurServices({ dict }: OurServicesProps) {
     {
       title: dict.digitalSolutions.title,
       description: dict.digitalSolutions.description,
-      image: "/services/consulting.png",
+      image: "/services/solutions.png",
     },
     {
       title: dict.customSoftware.title,
       description: dict.customSoftware.description,
-      image: "/services/solutions.png",
+      image: "/services/consulting.png",
     },
     {
       title: dict.processOptimization.title,
