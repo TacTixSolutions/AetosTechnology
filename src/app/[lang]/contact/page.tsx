@@ -62,12 +62,20 @@ export async function generateMetadata({
   };
 }
 
-async function ContactPage({ params }: { params: Promise<{ lang: Locale }> }) {
+async function ContactPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ lang: Locale }>;
+  searchParams: Promise<{ type?: string }>;
+}) {
   const { lang } = await params;
+  const { type } = await searchParams;
   const dict = await getDictionary(lang);
+
   return (
     <div className="bg-white">
-      <ContactContent dict={dict.contact} lang={lang} />
+      <ContactContent dict={dict.contact} lang={lang} initialTab={type} />
     </div>
   );
 }

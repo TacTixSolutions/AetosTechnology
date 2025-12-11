@@ -99,7 +99,7 @@ function Footer({ dict, lang }: FooterProps) {
             <ul className="space-y-3 font-medium text-white/90 font-roboto text-[16px]">
               <li>
                 <Link
-                  href={`/${lang}/sectors/hospitality`}
+                  href={`/${lang}/solutions/sectors/hospitality`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.hospitality}
@@ -107,7 +107,7 @@ function Footer({ dict, lang }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/sectors/retail`}
+                  href={`/${lang}/solutions/sectors/retail`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.retail}
@@ -115,7 +115,7 @@ function Footer({ dict, lang }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/sectors/fashion`}
+                  href={`/${lang}/solutions/sectors/fashion-boutiques`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.fashionBoutiques}
@@ -123,7 +123,7 @@ function Footer({ dict, lang }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/sectors/production`}
+                  href={`/${lang}/solutions/sectors/industry-production`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.industryProduction}
@@ -131,7 +131,7 @@ function Footer({ dict, lang }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/sectors/audit`}
+                  href={`/${lang}/solutions/sectors/audit`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.audit}

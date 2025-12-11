@@ -84,11 +84,23 @@ interface ContactContentProps {
     };
   };
   lang: Locale;
+  initialTab?: string;
 }
 
-export default function ContactContent({ dict, lang }: ContactContentProps) {
+export default function ContactContent({
+  dict,
+  lang,
+  initialTab,
+}: ContactContentProps) {
+  const getValidTab = (tab?: string): "client" | "partner" | "join" => {
+    if (tab === "client" || tab === "partner" || tab === "join") {
+      return tab;
+    }
+    return "client";
+  };
+
   const [activeTab, setActiveTab] = useState<"client" | "partner" | "join">(
-    "client"
+    getValidTab(initialTab)
   );
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [api, setApi] = useState<CarouselApi>();
