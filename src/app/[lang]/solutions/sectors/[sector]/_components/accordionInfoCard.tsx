@@ -9,12 +9,20 @@ interface AccordionItem {
   description: string;
 }
 
+interface FloatingImages {
+  topLeft?: string;
+  topRight?: string;
+  bottomLeft?: string;
+  bottomRight?: string;
+}
+
 interface AccordionInfoCardProps {
   title: string;
   items: AccordionItem[];
   imageSrc: string;
   imageAlt?: string;
   layout: "text-left" | "text-right";
+  floatingImages?: FloatingImages;
 }
 
 function AccordionInfoCard({
@@ -22,6 +30,7 @@ function AccordionInfoCard({
   imageSrc,
   imageAlt = "",
   layout,
+  floatingImages,
 }: AccordionInfoCardProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -133,6 +142,59 @@ function AccordionInfoCard({
               className="object-contain"
             />
           </div>
+
+          {/* Floating Images */}
+          {floatingImages?.topLeft && (
+            <div className="absolute top-2 left-3 md:top-8 md:left-12 z-10">
+              <div className="relative animate-float-1 w-32 h-32 lg:w-40 lg:h-40 overflow-hidden p-2">
+                <Image
+                  src={floatingImages.topLeft}
+                  alt="Top left decoration"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          )}
+
+          {floatingImages?.topRight && (
+            <div className="absolute top-2 right-3 md:top-8 md:right-12 z-10">
+              <div className="relative animate-float-2 w-32 h-32 lg:w-40 lg:h-40  overflow-hidden p-2">
+                <Image
+                  src={floatingImages.topRight}
+                  alt="Top right decoration"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          )}
+
+          {floatingImages?.bottomLeft && (
+            <div className="absolute bottom-2 left-3 md:bottom-8 md:left-12 z-10">
+              <div className="relative animate-float-3 w-32 h-32 lg:w-40 lg:h-40  overflow-hidden p-2">
+                <Image
+                  src={floatingImages.bottomLeft}
+                  alt="Bottom left decoration"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          )}
+
+          {floatingImages?.bottomRight && (
+            <div className="absolute bottom-2 right-3 md:bottom-8 md:right-12 z-10">
+              <div className="relative animate-float w-40 h-32 lg:w-52 lg:h-40 overflow-hidden  p-2">
+                <Image
+                  src={floatingImages.bottomRight}
+                  alt="Bottom right decoration"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

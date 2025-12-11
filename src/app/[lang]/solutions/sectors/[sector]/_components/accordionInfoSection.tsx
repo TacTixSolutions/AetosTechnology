@@ -5,12 +5,20 @@ interface AccordionItem {
   description: string;
 }
 
+interface FloatingImages {
+  topLeft?: string;
+  topRight?: string;
+  bottomLeft?: string;
+  bottomRight?: string;
+}
+
 interface AccordionSection {
   title: string;
   description?: string;
   items: AccordionItem[];
   imageSrc: string;
   imageAlt: string;
+  floatingImages?: FloatingImages;
 }
 
 interface AccordionInfoSectionProps {
@@ -44,6 +52,7 @@ function AccordionInfoSection({
           imageSrc={section.imageSrc}
           imageAlt={section.imageAlt}
           layout={index % 2 === 0 ? "text-right" : "text-left"}
+          floatingImages={section.floatingImages}
         />
       ))}
     </div>

@@ -523,6 +523,8 @@
   },
   "sectorsAccordion": {
     "fashionBoutiques": {
+      "title": "Centralize your operations, align your teams, and save",
+      "titleHighlight": "time every day.",
       "sections": [
         {
           "title": "Centralize your operations, align your teams, and save time every day.",
@@ -582,6 +584,9 @@
           "title": "Team schedule planning",
           "imageSrc": "/sectors/fashion-boutiques/3.png",
           "imageAlt": "Team planning",
+          "floatingImages": {
+            "bottomRight": "/sectors/fashion-boutiques/3br.png"
+          },
           "items": [
             {
               "title": "Team schedule planning",
@@ -628,6 +633,10 @@
           "title": "Reduce lost sales and maximize product availability with our AI recommendations.",
           "imageSrc": "/sectors/fashion-boutiques/5.png",
           "imageAlt": "AI optimization",
+          "floatingImages": {
+            "topLeft": "/sectors/fashion-boutiques/5tl.png",
+            "bottomRight": "/sectors/fashion-boutiques/5br.png"
+          },
           "items": [
             {
               "title": "Reduction of lost sales",
@@ -646,6 +655,8 @@
       ]
     },
     "hospitality": {
+      "title": "Manage your operations in real-time with",
+      "titleHighlight": "centralized and perfectly coordinated services",
       "sections": [
         {
           "title": "Manage your hotel operations in real-time: housekeeping, maintenance, quality, and services, everything is centralized and perfectly coordinated.",
@@ -697,6 +708,9 @@
           "title": "Deliver the right information at the right time and train your teams continuously in just minutes.",
           "imageSrc": "/sectors/hospitality/3.png",
           "imageAlt": "Communication and training",
+          "floatingImages": {
+            "topRight": "/sectors/hospitality/3tr.png"
+          },
           "items": [
             {
               "title": "Your instructions, received in real-time",
@@ -726,6 +740,9 @@
           "title": "Boost your shelf impact and transform your stores into real sales drivers with FlowUp",
           "imageSrc": "/sectors/retail/1.png",
           "imageAlt": "Visual merchandising",
+          "floatingImages": {
+            "bottomRight": "/sectors/retail/1br.png"
+          },
           "items": [
             {
               "title": "Maximize key product visibility",
@@ -772,6 +789,9 @@
           "title": "Optimal organization of in-store rotations",
           "imageSrc": "/sectors/retail/3.png",
           "imageAlt": "Team planning",
+          "floatingImages": {
+            "bottomRight": "/sectors/retail/3br.png"
+          },
           "items": [
             {
               "title": "Optimal organization of in-store rotations",
@@ -824,6 +844,9 @@
           "title": "Team planning by position and line",
           "imageSrc": "/sectors/industry-production/2.png",
           "imageAlt": "Production planning",
+          "floatingImages": {
+            "bottomRight": "/sectors/industry-production/2br.png"
+          },
           "items": [
             {
               "title": "Team planning by position and line",
@@ -847,6 +870,9 @@
           "title": "Instant transmission of production instructions",
           "imageSrc": "/sectors/industry-production/3.png",
           "imageAlt": "Workshop communication",
+          "floatingImages": {
+            "bottomRight": "/sectors/industry-production/3br.png"
+          },
           "items": [
             {
               "title": "Instant transmission of production instructions",
