@@ -145,7 +145,7 @@ function AccordionInfoCard({
 
           {/* Floating Images */}
           {floatingImages?.topLeft && (
-            <div className="absolute top-2 left-3 md:top-8 md:left-12 z-10">
+            <div className="absolute top-0 left-2 md:top-8 md:left-12 z-10">
               <div className="relative animate-float-1 w-32 h-32 lg:w-40 lg:h-40 overflow-hidden p-2">
                 <Image
                   src={floatingImages.topLeft}
@@ -158,7 +158,7 @@ function AccordionInfoCard({
           )}
 
           {floatingImages?.topRight && (
-            <div className="absolute top-2 right-3 md:top-8 md:right-12 z-10">
+            <div className="absolute top-0 right-2 md:top-8 md:right-12 z-10">
               <div className="relative animate-float-2 w-32 h-32 lg:w-40 lg:h-40  overflow-hidden p-2">
                 <Image
                   src={floatingImages.topRight}
@@ -171,7 +171,7 @@ function AccordionInfoCard({
           )}
 
           {floatingImages?.bottomLeft && (
-            <div className="absolute bottom-2 left-3 md:bottom-8 md:left-12 z-10">
+            <div className="absolute bottom-0 left-2 md:bottom-8 md:left-12 z-10">
               <div className="relative animate-float-3 w-32 h-32 lg:w-40 lg:h-40  overflow-hidden p-2">
                 <Image
                   src={floatingImages.bottomLeft}
@@ -184,7 +184,7 @@ function AccordionInfoCard({
           )}
 
           {floatingImages?.bottomRight && (
-            <div className="absolute bottom-2 right-3 md:bottom-8 md:right-12 z-10">
+            <div className="absolute bottom-0 right-2 md:bottom-8 md:right-12 z-10">
               <div className="relative animate-float w-40 h-32 lg:w-52 lg:h-40 overflow-hidden  p-2">
                 <Image
                   src={floatingImages.bottomRight}

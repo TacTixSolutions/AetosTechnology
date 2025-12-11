@@ -14,7 +14,7 @@ interface CTASectionProps {
 
 function CTASection({ dict, lang }: CTASectionProps) {
   return (
-    <div className="relative w-9/10 h-auto md:h-[420px] bg-[#e6eef0] flex items-center justify-center flex-col md:flex-row gap-8 p-12 mx-auto mb-16 rounded-[50px]">
+    <div className="relative w-9/10 h-auto md:h-[420px] bg-[#e6eef0] flex items-center justify-center flex-col md:flex-row gap-8 p-6 md:p-12 mx-auto mb-16 rounded-xl md:rounded-[50px]">
       <div className="w-full lg:w-45/100 h-full flex items-center justify-center ">
         <Image
           src="/sectors/cta.png"
@@ -32,7 +32,7 @@ function CTASection({ dict, lang }: CTASectionProps) {
           {dict.description}
         </p>
         <Link href={`/${lang}/contact`}>
-          <Button className="px-20 w-9/10 md:w-80 py-6 font-poppins uppercase shadow-lg bg-[#024e63] hover:bg-brand">
+          <Button className="px-20 w-full md:w-80 py-6 font-poppins uppercase shadow-lg bg-[#024e63] hover:bg-brand">
             {dict.button}
             <ArrowRight className="ml-2" />
           </Button>

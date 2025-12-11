@@ -49,6 +49,7 @@ function InfoSectionCard({
 
     return () => {
       if (cardRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(cardRef.current);
       }
     };
@@ -95,14 +96,14 @@ function InfoSectionCard({
 
           {/* Floating Component One - Top Right */}
           {floatingComponentOne && (
-            <div className="absolute top-8 -right-4 z-10">
+            <div className="absolute md:scale-100 scale-75 -top-8  md:top-8 -right-4 z-10">
               {floatingComponentOne}
             </div>
           )}
 
           {/* Floating Component Two - Bottom Left */}
           {floatingComponentTwo && (
-            <div className="absolute bottom-12 left-12 z-10">
+            <div className="absolute md:scale-100 scale-75 bottom-0 -left-4 md:bottom-12 md:left-12 z-10">
               {floatingComponentTwo}
             </div>
           )}

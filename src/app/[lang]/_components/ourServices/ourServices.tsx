@@ -61,7 +61,7 @@ function OurServices({ dict }: OurServicesProps) {
 
   return (
     <div className="w-full py-16 relative">
-      <div className="w-85/100 mx-auto">
+      <div className="w-9/10 md:w-85/100 mx-auto">
         {/* Fixed Header with Indicators */}
         <div className="absolute top-24 left-[15%] md:top-28 lg:top-32 2xl:top-32  md:left-[12%] 2xl:left-[15%] md:translate-x-0 z-10 flex flex-col items-center gap-1">
           <h3 className="font-isotek font-bold text-brand tracking-wider uppercase">
@@ -103,7 +103,7 @@ function OurServices({ dict }: OurServicesProps) {
             {services.map((service, index) => (
               <CarouselItem
                 key={index}
-                className="md:basis-1/1 lg:basis-1/1 px-4 2xl:px-24"
+                className="md:basis-1/1 lg:basis-1/1 px-1 2xl:px-24"
               >
                 <div className="bg-[#E8F4F8] rounded-2xl md:rounded-[40px] p-6 md:p-12 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8 h-auto md:h-[410px] min-h-[350px]">
                   {/* Text Content */}

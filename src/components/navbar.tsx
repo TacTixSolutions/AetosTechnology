@@ -267,7 +267,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                                     >
                                       <IconComponent />
                                     </div>
-                                    <span className="text-sm font-bold text-gray-900">
+                                    <span className="text-sm text-gray-900">
                                       {value}
                                     </span>
                                   </Link>
@@ -307,6 +307,20 @@ function Navbar({ dict, lang }: NavbarProps) {
                   >
                     {dict.partners}
                   </Link>
+
+                  {/* contact */}
+                  <Link
+                    className={cn(
+                      "flex w-full items-center rounded-md px-4 py-3 text-base font-medium transition-colors hover:bg-[#024E63]/10 hover:text-[#024E63] cursor-pointer no-underline",
+                      pathname === `/${lang}/partners`
+                        ? "bg-[#024E63]/10 text-[#024E63]"
+                        : "text-gray-700"
+                    )}
+                    href={`/${lang}/contact`}
+                    onClick={() => setOpen(false)}
+                  >
+                    {dict.contactUs}
+                  </Link>
                 </nav>
               </div>
 
@@ -318,14 +332,6 @@ function Navbar({ dict, lang }: NavbarProps) {
           </Sheet>
         )}
         <Link href={`/${lang}`}>
-          <div className="block md:hidden">
-            <Image
-              src="/logoWithText.png"
-              alt="Aetos Technology Logo"
-              width={90}
-              height={30}
-            />
-          </div>
           <div className="md:block hidden">
             <Image
               src="/logoWithText.png"
@@ -483,15 +489,23 @@ function Navbar({ dict, lang }: NavbarProps) {
           </NavigationMenuList>
         </NavigationMenu>
       )}
-
+      <Link className="block md:hidden" href={`/${lang}`}>
+        <Image
+          src="/logoWithText.png"
+          alt="Aetos Technology Logo"
+          width={90}
+          height={30}
+        />
+      </Link>
+      <div className="h-9 w-9 flex md:hidden"></div>
       {/* right side */}
-      <div className="flex items-center gap-3">
-        <div className="hidden md:flex">
+      <div className="items-center gap-3 hidden md:flex">
+        <div className="">
           <LanguageChanger />
         </div>
 
         <Link href={`/${lang}/contact`}>
-          <Button className=" font-inter bg-[#024E63] hover:bg-[#024E63]/90 rounded-[7px] text-white px-8 h-10">
+          <Button className=" font-inter bg-[#024E63] hover:bg-[#024E63]/90 rounded-[7px] text-white px-2 md:px-8 h-10">
             {dict.contactUs}
           </Button>
         </Link>

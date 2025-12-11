@@ -65,7 +65,7 @@ function StatCard({ percentage, description }: StatCardProps) {
   return (
     <div
       ref={cardRef}
-      className="bg-white rounded-2xl p-4 shadow-lg flex flex-col items-center justify-center min-h-32 min-w-32 lg:min-w-40 lg:min-h-40"
+      className="bg-white rounded-2xl p-4 shadow-lg flex flex-col items-center justify-center min-h-32 max-h-[170px] min-w-32 lg:min-w-40 lg:min-h-40"
     >
       <div className="mb-2">
         <CircularProgress

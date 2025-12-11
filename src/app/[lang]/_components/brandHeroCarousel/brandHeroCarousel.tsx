@@ -185,7 +185,7 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
       >
         <CarouselContent>
           {slides.map((slide, index) => (
-            <CarouselItem className="pl-0" key={index}>
+            <CarouselItem className="pl-0 px-0" key={index}>
               <div className="relative w-full max-[450px]:h-[750px] h-[700px] md:h-[648px]">
                 {/* Background image*/}
                 <div className="absolute inset-0">
@@ -204,7 +204,7 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
                     <h2 className="text-3xl md:text-4xl font-bold">
                       {slide.title} {slide.brand}
                     </h2>
-                    <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+                    <p className="text-lg md:text-xl text-gray-200 leading-snug">
                       {slide.description}
                     </p>
                   </div>
