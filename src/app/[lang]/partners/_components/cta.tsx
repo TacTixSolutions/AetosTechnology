@@ -23,7 +23,7 @@ function CTASection({ dict }: CTASectionProps) {
             {dict.description}
           </p>
           <Link href="/contact">
-            <Button className="px-20 py-6 font-poppins shadow-lg rounded-full bg-brand hover:bg-brand/70">
+            <Button className="px-20 py-6 font-poppins shadow-lg rounded-full bg-[#024E63] hover:bg-brand">
               {dict.button}
             </Button>
           </Link>

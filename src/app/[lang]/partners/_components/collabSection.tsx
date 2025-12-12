@@ -52,8 +52,8 @@ function CollabSection({ dict }: CollabSectionProps) {
   return (
     <div className="w-9/10 mx-auto py-16">
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-        <div className="flex-1 w-full ">
-          <h2 className="text-3xl md:text-4xl font-poppins font-semibold text-gray-900 mb-8">
+        <div className="flex flex-col w-full lg:w-1/2 ">
+          <h2 className="text-3xl md:text-[42px] font-poppins font-semibold text-gray-900 mb-8">
             {dict.title}
           </h2>
 
@@ -63,16 +63,16 @@ function CollabSection({ dict }: CollabSectionProps) {
                 key={reason.number}
                 className="flex gap-4 flex-col lg:flex-row text-center lg:text-start items-center lg:items-start"
               >
-                <div className="shrink-0 w-12 h-12 bg-[#024E63] rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xl font-bold font-poppins">
+                <div className="shrink-0 w-12 h-12 bg-[#306D7E] rounded-lg flex items-center justify-center">
+                  <span className="text-white text-2xl font-bold font-inter">
                     {reason.number}
                   </span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 font-poppins">
+                  <h3 className="text-lg md:text-[26px] font-semibold text-gray-900 mb-2 font-isotek">
                     {reason.title}
                   </h3>
-                  <p className="text-sm md:text-base text-gray-700 font-inter leading-relaxed">
+                  <p className="text-sm md:text-[22px] text-[#575757] font-inter leading-snug">
                     {reason.description}
                   </p>
                 </div>
@@ -81,7 +81,7 @@ function CollabSection({ dict }: CollabSectionProps) {
           </div>
         </div>
 
-        <div className="w-full lg:max-w-md flex items-center justify-center">
+        <div className="w-full lg:max-w-lg flex items-center justify-center">
           <Image
             src="/partners/collab.webp"
             alt={dict.imageAlt}
