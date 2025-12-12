@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import LinkedinIcon from "./icons/linkedinIcon";
 import FacebookLogo from "./icons/facebookLogo";
-import InstagramIcon from "./icons/instagramIcon";
 import { Mail, MapPin, PhoneIcon } from "lucide-react";
 
 interface FooterProps {
@@ -176,7 +175,7 @@ function Footer({ dict, lang }: FooterProps) {
           <div className="col-span-1 xl:col-span-2 flex flex-col items-center md:items-center lg:items-start">
             <div className="flex flex-row gap-3">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/aetos-technology"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors"
@@ -185,22 +184,13 @@ function Footer({ dict, lang }: FooterProps) {
                 <LinkedinIcon />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/Aetos-Technology/100054569854242/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors"
                 aria-label="Facebook"
               >
                 <FacebookLogo />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-11 h-11 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors"
-                aria-label="Instagram"
-              >
-                <InstagramIcon />
               </a>
             </div>
             <p className="text-[16px] font-light font-inter text-white/80 mt-4">
