@@ -79,30 +79,34 @@
     "kiabi": {
       "brand": "Kiabi",
       "description": "Better in-store execution thanks to clear, structured, and harmonized tracking across the entire network.",
-      "stat1Label": "time saved on manual reporting",
-      "stat2Label": "visibility in incident resolution",
-      "stat3Label": "field visits completed on time"
+      "stat1Label": "time wasted on manual reporting",
+      "stat2Label": "speed in incident resolution",
+      "stat3Label": "field visits completed on time",
+      "stat4Label": "operational engagement in store"
     },
     "gemo": {
       "brand": "Gemo",
       "description": "Simplified coordination between headquarters and stores, with significant time savings in daily monitoring.",
-      "stat1Label": "administration time",
-      "stat2Label": "standards compliance",
-      "stat3Label": "team satisfaction"
+      "stat1Label": "efficiency in store audit rounds",
+      "stat2Label": "compliance with operational standards",
+      "stat3Label": "compliance of in-store operations",
+      "stat4Label": "improvement in product availability"
     },
     "bodySoul": {
       "brand": "Body & Soul",
       "description": "Instant communication and operational control ensure optimal management of points of sale.",
-      "stat1Label": "team productivity",
-      "stat2Label": "quality tracking",
-      "stat3Label": "incident responsiveness"
+      "stat1Label": "speed in executing store actions",
+      "stat2Label": "errors related to paper processes",
+      "stat3Label": "staff satisfaction",
+      "stat4Label": "improvement in customer experience relevance"
     },
     "quiksilver": {
       "brand": "Quiksilver",
       "description": "Smoother management of field operations and enhanced responsiveness to ensure a consistent customer experience.",
-      "stat1Label": "resolution time",
-      "stat2Label": "operational visibility",
-      "stat3Label": "process execution"
+      "stat1Label": "clarity in operational priorities",
+      "stat2Label": "efficiency in field-headquarters communication",
+      "stat3Label": "Visual Merchandising non-conformities",
+      "stat4Label": "productivity of area managers"
     }
   },
   "services": {

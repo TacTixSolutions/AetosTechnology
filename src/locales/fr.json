@@ -80,29 +80,33 @@
       "brand": "Kiabi",
       "description": "Une meilleure exécution en magasin grâce à un suivi clair, structuré et harmonisé sur l’ensemble du réseau",
       "stat1Label": "de temps perdu sur les reporting manuels",
-      "stat2Label": "de visibilité dans la résolution des incidents",
-      "stat3Label": "de visites terrain réalisées dans les délais"
+      "stat2Label": "de rapidité dans la résolution des incidents",
+      "stat3Label": "de visites terrain réalisées dans les délais",
+      "stat4Label": "d'engagement opérationnel en magasin"
     },
     "gemo": {
       "brand": "Gemo",
       "description": "Une coordination simplifiée entre siège et magasins, avec un gain de temps significatif dans le suivi quotidien.",
-      "stat1Label": "de temps d'administration",
-      "stat2Label": "de conformité standards",
-      "stat3Label": "de satisfaction équipes"
+      "stat1Label": "d'efficacité dans les tournées d'audit magasin",
+      "stat2Label": "de respect des standards opérationnels",
+      "stat3Label": "de conformité des opérations en magasin",
+      "stat4Label": "d'amélioration de la disponibilité produit"
     },
     "bodySoul": {
       "brand": "Body & Soul",
       "description": "Une communication instantanée et un contrôle opérationnel qui garantissent une gestion optimale des points de vente.",
-      "stat1Label": "de productivité équipes",
-      "stat2Label": "de suivi qualité",
-      "stat3Label": "de réactivité incidents"
+      "stat1Label": "de rapidité dans l'exécution des actions magasin",
+      "stat2Label": "d'erreurs liées aux processus papier",
+      "stat3Label": "de satisfaction du staff",
+      "stat4Label": "d'amélioration de la pertinence de l'expérience client"
     },
     "quiksilver": {
       "brand": "Quiksilver",
       "description": "Un pilotage plus fluide des opérations terrain et une réactivité renforcée pour assurer une expérience client constante.",
-      "stat1Label": "de délais résolution",
-      "stat2Label": "de visibilité opérationnelle",
-      "stat3Label": "d'exécution des processus"
+      "stat1Label": "de clarté dans les priorités opérationnelles",
+      "stat2Label": "d'efficacité dans la communication terrain,siège",
+      "stat3Label": "de non-conformités Visual Merchandising",
+      "stat4Label": "de productivité des area managers"
     }
   },
   "services": {
@@ -145,8 +149,8 @@
     }
   },
   "cta": {
-    "title": "Envie de démarrer",
-    "titleHighlight": "votre projet?",
+    "title": "Vous voulez",
+    "titleHighlight": "démarrer un projet?",
     "button": "Discutons!",
     "imageAlt": "Illustration d'appel à l'action"
   },
