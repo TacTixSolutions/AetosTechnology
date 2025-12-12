@@ -67,7 +67,7 @@ export default async function BlogPage({
   return (
     <div className="min-h-screen pt-32 pb-24">
       <div className="w-9/10 px-auto lg:px-16 mx-auto max-w-[1440px] mb-8">
-        <div className="flex items-center gap-2 text-sm text-gray-600">
+        <div className="flex items-center gap-2 text-lg text-[#7F7F7F]">
           <Link
             href={`/${lang}/insights`}
             className="hover:text-gray-400 font-inter flex transition-colors"
@@ -75,17 +75,19 @@ export default async function BlogPage({
             <span>
               <ChevronLeft className="inline-block mb-0.5 w-4 h-4" />{" "}
             </span>
-            {lang === "fr" ? "Blogs" : "Blogs"}
+            <p className="font-medium text-black">Blogs</p>
           </Link>
           <span>/</span>
-          <span className="text-gray-400 font-inter line-clamp-1">{title}</span>
+          <span className="text-[#7F7F7F] font-inter line-clamp-1">
+            {title}
+          </span>
         </div>
       </div>
 
       {/* Content */}
       <article className="w-9/10 px-auto lg:px-16 mx-auto max-w-[1440px]">
         {blog.picture && (
-          <div className="relative rounded-xl h-[400px] mb-12">
+          <div className="relative rounded-xl h-[300px] mb-12">
             <Image
               src={urlFor(blog.picture).url()}
               alt={title}
@@ -95,7 +97,7 @@ export default async function BlogPage({
             />
           </div>
         )}
-        <div className="flex items-center gap-4 text-gray-600 mb-6">
+        <div className="flex items-center text-[20px] gap-4 text-gray-800 mb-6">
           <span>{date}</span>
           <span>•</span>
           <span>{readTime}</span>

@@ -40,7 +40,7 @@ function BlogCard({ blog, lang }: BlogCardProps) {
           <p className="font-semibold text-lg lg:text-xl text-center line-clamp-2">
             {title}
           </p>
-          <p className="text-gray-800">
+          <p className="text-gray-800 text-lg">
             {date} - {readTime}
           </p>
         </div>

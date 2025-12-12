@@ -26,7 +26,7 @@ interface EventsSectionProps {
 function EventsSection({ events, lang }: EventsSectionProps) {
   return (
     <div className="my-16">
-      <p className="font-poppins font-semibold text-3xl">Events</p>
+      <p className="font-poppins font-semibold text-[32px]">Events</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
         {events.map((event) => (
           <EventCard key={event._id} event={event} lang={lang} />

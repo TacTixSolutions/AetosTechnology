@@ -56,7 +56,7 @@ async function Insights({ params }: { params: Promise<{ lang: Locale }> }) {
   ]);
 
   return (
-    <div className="min-h-screen pt-32 pb-24 w-9/10 px-auto lg:px-16 mx-auto max-w-[1440px]">
+    <div className="min-h-screen pt-32 pb-24  w-9/10 xl:w-full px-auto lg:px-16 mx-auto max-w-[1440px]">
       <HeroSection dict={dict.insights.hero} />
       <EventsSection events={events} lang={lang} />
       <BlogsSection blogs={blogs} lang={lang} />
