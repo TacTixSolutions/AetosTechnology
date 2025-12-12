@@ -63,13 +63,13 @@ export default function ClientForm({ dict }: ClientFormProps) {
           <label className="text-sm font-medium mb-1 block">
             {dict.firstName}
           </label>
-          <Input name="firstName" required placeholder="Value" />
+          <Input name="firstName" required placeholder={dict.firstName} />
         </div>
         <div>
           <label className="text-sm font-medium mb-1 block">
             {dict.lastName}
           </label>
-          <Input name="lastName" required placeholder="Value" />
+          <Input name="lastName" required placeholder={dict.lastName} />
         </div>
       </div>
 
@@ -77,14 +77,19 @@ export default function ClientForm({ dict }: ClientFormProps) {
         <label className="text-sm font-medium mb-1 block">
           {dict.jobTitle || "Job title"}
         </label>
-        <Input name="jobTitle" required placeholder="Value" />
+        <Input name="jobTitle" required placeholder={dict.jobTitle} />
       </div>
 
       <div>
         <label className="text-sm font-medium mb-1 block">
           {dict.businessEmail}
         </label>
-        <Input name="email" type="email" required placeholder="Value" />
+        <Input
+          name="email"
+          type="email"
+          required
+          placeholder={dict.businessEmail}
+        />
       </div>
 
       <div>
@@ -95,27 +100,37 @@ export default function ClientForm({ dict }: ClientFormProps) {
           name="phone"
           defaultCountry="TN"
           required
-          placeholder="Value"
+          placeholder={dict.placeholder}
         />
       </div>
 
       <div>
         <label className="text-sm font-medium mb-1 block">{dict.company}</label>
-        <Input name="company" required placeholder="Value" />
+        <Input name="company" required placeholder={dict.company} />
       </div>
 
       <div>
         <label className="text-sm font-medium mb-1 block">
           {dict.locations}
         </label>
-        <Input name="locations" type="number" required placeholder="Value" />
+        <Input
+          name="locations"
+          type="number"
+          required
+          placeholder={dict.locations}
+        />
       </div>
 
       <div>
         <label className="text-sm font-medium mb-1 block">
           {dict.employees}
         </label>
-        <Input name="employees" type="number" required placeholder="Value" />
+        <Input
+          name="employees"
+          type="number"
+          required
+          placeholder={dict.employees}
+        />
       </div>
 
       <p className="text-xs text-gray-600">
