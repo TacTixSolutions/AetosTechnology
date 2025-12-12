@@ -54,7 +54,7 @@ function HeroSection({ dict }: HeroSectionProps) {
             className=" relative"
           />
           <div className="absolute scale-75 lg:scale-100 -bottom-4 -left-12 animate-float">
-            <PieChartCard />
+            <PieChartCard attendanceRate="" />
           </div>
           <div className="absolute scale-75 lg:scale-100 bottom-3 -right-28 animate-float-1">
             <SalesCard />

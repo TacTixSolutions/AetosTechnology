@@ -1,9 +1,12 @@
-function PieChartCard() {
+function PieChartCard({ attendanceRate }: { attendanceRate: string }) {
   return (
-    <div className="bg-white rounded-2xl px-4 card-shadow">
+    <div className="bg-white rounded-2xl px-2 card-shadow">
       <div className="p-6 flex flex-col items-center justify-center gap-4">
         <PieChartIcon />
         <p className="text-2xl font-bold">+70%</p>
+        <div className="text-center text-gray-600 font-semibold font-space text-xs">
+          {attendanceRate}
+        </div>
       </div>
     </div>
   );

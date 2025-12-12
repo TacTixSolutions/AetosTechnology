@@ -72,7 +72,8 @@
     "ctaButton": "Découvrir nos solutions",
     "imageAlt": "Illustration de la section héroïque",
     "brandImageAlt": "Marque Aetos Technology",
-    "addedValue": "Valeur ajoutée pour vos clients"
+    "addedValue": "Valeur ajoutée pour vos clients",
+    "attendanceRate": "Taux de présence"
   },
   "brandCarousel": {
     "title": "Notre succès avec ",
@@ -311,17 +312,17 @@
     "modules": {
       "supervisor": {
         "title": "SuperVisor",
-        "description": "Rationalisez les opérations en magasin avec la gestion des tâches en temps réel et le suivi des performances pour une productivité accrue.",
+        "description": "SuperVisor optimise les opérations terrain grâce à des checklists intelligentes, des plannings rationalisés et des rapports en temps réel. Conçu pour les équipes multisites, il accélère le travail quotidien, améliore l'exécution et facilite une meilleure prise de décision.",
         "id": "supervisor"
       },
       "visualMerchandising": {
         "title": "Visual Merchandising",
-        "description": "Transformez vos présentations retail avec des outils de merchandising visuel alimentés par l'IA qui stimulent les ventes et améliorent l'expérience client.",
+        "description": "Le module Visual Merchandising vous permet de contrôler l'exécution en magasin avec des directives claires, des photos avant/après et un suivi instantané. Il garantit la cohérence de la marque, améliore la communication entre le siège et le terrain, et offre une expérience client uniforme dans l'ensemble des points de vente.",
         "id": "visual-merchandising"
       },
       "shiftMaster": {
         "title": "ShiftMaster",
-        "description": "Optimisez la planification du personnel avec une gestion intelligente des quarts de travail qui équilibre les besoins des employés et les exigences de l'entreprise.",
+        "description": "Organisez et optimisez les plannings du personnel grâce à un module intelligent et simple d'utilisation. Créez et ajustez les shifts en quelques clics, équilibrez les charges de travail, réduisez les conflits, et assurez une couverture optimale selon les besoins opérationnels.",
         "id": "shiftmaster",
         "card1Title": "Flux de travail",
         "card1Subtitle": "simple",
@@ -330,26 +331,27 @@
       },
       "communication": {
         "title": "Communication",
-        "description": "Centralisez la communication d'équipe avec la messagerie instantanée, les annonces et le partage de documents sur une seule plateforme.",
+        "description": "Créez un véritable réseau social interne qui transforme la collaboration d'équipe. Le module Communication centralise la messagerie, les groupes de travail, le fil d'actualités et les appels intégrés dans un seul espace moderne et intuitif qui connecte toute votre organisation.",
         "id": "communication",
         "statValue": "+45%",
         "statLabel": "Engagement des équipes"
       },
       "flowHR": {
         "title": "FlowHR",
-        "description": "Simplifiez la gestion RH avec l'intégration automatisée, le suivi du temps et la surveillance des performances des employés.",
-        "id": "flowhr"
+        "description": "HRFlow est un module complet et intuitif qui centralise le suivi RH quotidien. Il gère les absences, les congés, les présences, les évaluations et les parcours employés tout en fournissant des informations claires et à jour. Un outil simple et structuré pour soutenir les équipes et la prise de décision RH.",
+        "id": "flowhr",
+        "attendanceRate": "Taux de présence"
       },
       "microLearning": {
         "title": "Micro-Learning",
-        "description": "Responsabilisez votre équipe avec des modules de formation en petites doses et des expériences d'apprentissage gamifiées pour un développement continu.",
+        "description": "Offrez à vos équipes une expérience d'apprentissage rapide, interactive et accessible à tout moment. Le module Micro-Learning délivre de courtes capsules de formation, des vidéos, des quiz et des parcours ciblés pour développer les compétences terrain en continu. Une approche moderne et flexible pour renforcer les compétences sans perturber les opérations.",
         "id": "micro-learning",
         "cardTitle": "Quizzes",
         "cardSubtitle": "Smart learning"
       },
       "optiStock": {
         "title": "OptiStock",
-        "description": "Maximisez l'efficacité des stocks avec le suivi en temps réel et les suggestions de réapprovisionnement intelligentes.",
+        "description": "OptiStock optimise les niveaux de stock grâce à un moteur d'analyse IA qui suit les ventes et les inventaires de chaque magasin. Il détecte les déséquilibres, recommande les meilleurs transferts, anticipe les besoins et évite les ruptures, les surstocks et les ventes perdues.",
         "id": "optistock",
         "statValue": "70%",
         "statLabel": "Smart tracking"
