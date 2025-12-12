@@ -25,16 +25,20 @@ interface AccordionInfoSectionProps {
   sections: AccordionSection[];
   sectionTitle?: string;
   sectionTitleHighlight?: string;
+  sector?: string;
 }
 
 function AccordionInfoSection({
   sections,
   sectionTitle,
   sectionTitleHighlight,
+  sector,
 }: AccordionInfoSectionProps) {
   if (!sections || sections.length === 0) {
     return null;
   }
+
+  const shouldFlipLayout = sector === "audit" || sector === "fashion-boutiques";
 
   return (
     <div className="w-full py-16 space-y-12 lg:space-y-24">
@@ -51,7 +55,15 @@ function AccordionInfoSection({
           items={section.items}
           imageSrc={section.imageSrc}
           imageAlt={section.imageAlt}
-          layout={index % 2 === 0 ? "text-right" : "text-left"}
+          layout={
+            shouldFlipLayout
+              ? index % 2 === 0
+                ? "text-left"
+                : "text-right"
+              : index % 2 === 0
+                ? "text-right"
+                : "text-left"
+          }
           floatingImages={section.floatingImages}
         />
       ))}

@@ -166,6 +166,7 @@ async function SectorPage({
           sections={accordionSections}
           sectionTitle={accordionTitle}
           sectionTitleHighlight={accordionTitleHighlight}
+          sector={sector}
         />
       )}
       <CTASection dict={dict.sectors.cta} lang={lang} />
