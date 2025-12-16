@@ -29,7 +29,7 @@ const sectorKeyMap: Record<SectorSlug, string> = {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale; sector: string }>;
+  params: Promise<{ lang: string; sector: string }>;
 }): Promise<Metadata> {
   const { lang, sector } = await params;
 
@@ -39,7 +39,7 @@ export async function generateMetadata({
     };
   }
 
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
   const sectorKey = sectorKeyMap[sector as SectorSlug];
   const sectorName =
     dict.navbar.sectors[sectorKey as keyof typeof dict.navbar.sectors];
@@ -112,14 +112,14 @@ export async function generateStaticParams() {
 async function SectorPage({
   params,
 }: {
-  params: Promise<{ lang: Locale; sector: string }>;
+  params: Promise<{ lang: string; sector: string }>;
 }) {
   const { lang, sector } = await params;
 
   if (!validSectors.includes(sector as SectorSlug)) {
     notFound();
   }
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
   interface CollabSectionProps {
     dict: {
       title: string;

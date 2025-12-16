@@ -11,7 +11,7 @@ import { ChevronLeft } from "lucide-react";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale; slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }): Promise<Metadata> {
   const { lang, slug } = await params;
   const blog = await getBlogBySlug(slug);
@@ -50,7 +50,7 @@ export async function generateMetadata({
 export default async function BlogPage({
   params,
 }: {
-  params: Promise<{ lang: Locale; slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }) {
   const { lang, slug } = await params;
   const blog = await getBlogBySlug(slug);
@@ -62,7 +62,7 @@ export default async function BlogPage({
   const title = lang === "fr" ? blog.titleFr : blog.titleEn;
   const content = lang === "fr" ? blog.contentFr : blog.contentEn;
   const readTime = calculateReadTime(content);
-  const date = formatDate(blog.createdAt, lang);
+  const date = formatDate(blog.createdAt, lang as "en" | "fr");
 
   return (
     <div className="min-h-screen pt-32 pb-24">

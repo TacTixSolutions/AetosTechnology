@@ -8,10 +8,10 @@ import { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: "en" | "fr" }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as "en" | "fr");
   const metadata = dict.metadata.flowup;
 
   return {
@@ -67,10 +67,10 @@ export async function generateMetadata({
 async function FlowUpPage({
   params,
 }: {
-  params: Promise<{ lang: "en" | "fr" }>;
+  params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as "en" | "fr");
   const infoCards = getInfoCards(dict.flowUp.modules);
 
   return (

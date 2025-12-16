@@ -9,7 +9,7 @@ import { getDictionary } from "@/lib/get-dictionary";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
 
@@ -47,19 +47,19 @@ export async function generateMetadata({
   };
 }
 
-async function Insights({ params }: { params: Promise<{ lang: Locale }> }) {
+async function Insights({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   const [blogs, events, dict] = await Promise.all([
     getBlogs(),
     getEvents(),
-    getDictionary(lang),
+    getDictionary(lang as Locale),
   ]);
 
   return (
     <div className="min-h-screen pt-32 pb-24  w-9/10 xl:w-full px-auto lg:px-16 mx-auto max-w-[1440px]">
       <HeroSection dict={dict.insights.hero} />
-      <EventsSection events={events} lang={lang} />
-      <BlogsSection blogs={blogs} lang={lang} />
+      <EventsSection events={events} lang={lang as Locale} />
+      <BlogsSection blogs={blogs} lang={lang as Locale} />
     </div>
   );
 }

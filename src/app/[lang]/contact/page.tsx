@@ -6,10 +6,10 @@ import { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
   const metadata = dict.metadata.contact;
 
   return {
@@ -66,16 +66,16 @@ async function ContactPage({
   params,
   searchParams,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
   searchParams: Promise<{ type?: string }>;
 }) {
   const { lang } = await params;
   const { type } = await searchParams;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
 
   return (
     <div className="bg-white">
-      <ContactContent dict={dict.contact} lang={lang} initialTab={type} />
+      <ContactContent dict={dict.contact} lang={lang as Locale} initialTab={type} />
     </div>
   );
 }

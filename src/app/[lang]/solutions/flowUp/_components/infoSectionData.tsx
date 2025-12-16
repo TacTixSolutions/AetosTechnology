@@ -8,7 +8,7 @@ import {
 import Image from "next/image";
 
 interface ModuleDict {
-  attendanceRate: string;
+  attendanceRate?: string;
   title: string;
   description: string;
   id: string;
@@ -140,7 +140,7 @@ export const getInfoCards = (modules: ModulesDict) => [
     imageAlt: modules.flowHR.title,
     floatingComponentOne: (
       <div className="animate-float">
-        <PieChartCard attendanceRate={modules.flowHR.attendanceRate} />
+        <PieChartCard attendanceRate={modules.flowHR.attendanceRate || ""} />
       </div>
     ),
   },
