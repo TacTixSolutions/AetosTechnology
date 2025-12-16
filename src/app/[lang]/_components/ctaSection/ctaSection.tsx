@@ -1,6 +1,7 @@
 "use client";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 
 interface CTASectionDict {
@@ -49,18 +50,20 @@ function CTASection({ dict }: CTASectionProps) {
         >
           {dict.titleHighlight}
         </p>
-        <div className=" cursor-pointer hover:bg-brand/80 transition-colors w-64 h-16 flex flex-row items-center justify-between bg-brand rounded-full mt-8">
-          <div className="w-8" />
-          <p className="font-poppins font-medium text-lg text-white">
-            {dict.button}
-          </p>
-          <button className="h-15 w-15 mr-0.5 rounded-full bg-white border-2 border-black">
-            <ArrowRight
-              size={16}
-              className="text-white bg-black rounded-full mx-auto"
-            />
-          </button>
-        </div>
+        <Link href="/contact">
+          <div className=" cursor-pointer hover:bg-brand/80 transition-colors w-64 h-16 flex flex-row items-center justify-between bg-brand rounded-full mt-8">
+            <div className="w-8" />
+            <p className="font-poppins font-medium text-lg text-white">
+              {dict.button}
+            </p>
+            <button className="h-15 w-15 mr-0.5 rounded-full bg-white border-2 border-black">
+              <ArrowRight
+                size={16}
+                className="text-white bg-black rounded-full mx-auto"
+              />
+            </button>
+          </div>
+        </Link>
         <div className="hidden lg:block scale-90 xl:scale-100 absolute -top-12 -left-24 animate-float">
           <Image
             src="/cta/cta1.png"

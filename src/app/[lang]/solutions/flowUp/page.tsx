@@ -8,10 +8,10 @@ import { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: "en" | "fr" }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as "en" | "fr");
   const metadata = dict.metadata.flowup;
 
   return {
@@ -24,7 +24,7 @@ export async function generateMetadata({
     openGraph: {
       title: metadata.title,
       description: metadata.description,
-      url: `https://aetos-technology.com/${lang}/solutions/flowUp`,
+      url: `https://aetos.com.tn/${lang}/solutions/flowUp`,
       siteName: "Aetos Technology",
       locale: lang === "fr" ? "fr_FR" : "en_US",
       type: "website",
@@ -55,10 +55,10 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `https://aetos-technology.com/${lang}/solutions/flowUp`,
+      canonical: `https://aetos.com.tn/${lang}/solutions/flowUp`,
       languages: {
-        en: "https://aetos-technology.com/en/solutions/flowUp",
-        fr: "https://aetos-technology.com/fr/solutions/flowUp",
+        en: "https://aetos.com.tn/en/solutions/flowUp",
+        fr: "https://aetos.com.tn/fr/solutions/flowUp",
       },
     },
   };
@@ -67,14 +67,14 @@ export async function generateMetadata({
 async function FlowUpPage({
   params,
 }: {
-  params: Promise<{ lang: "en" | "fr" }>;
+  params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as "en" | "fr");
   const infoCards = getInfoCards(dict.flowUp.modules);
 
   return (
-    <div className="mb-24 mt-28 max-w-[1440px] mx-auto">
+    <div className="mb-24 pt-28 max-w-[1440px] mx-auto">
       <FlowUpHero dict={dict.flowUp.hero} />
       <InfoSection cards={infoCards} />
       <CTASection dict={dict.flowUp.cta} />

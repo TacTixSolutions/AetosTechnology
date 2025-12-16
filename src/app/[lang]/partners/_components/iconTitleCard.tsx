@@ -13,7 +13,7 @@ function IconTitleCard({
 }) {
   return (
     <div
-      className={`bg-white font-space shadow-lg px-3 py-2 rounded-2xl flex ${orientation === "row" ? "flex-row items-center gap-4 max-w-56 " : "flex-col items-center gap-1 text-center py-4 max-w-36 "}`}
+      className={`bg-white font-inter shadow-lg px-3 py-2 rounded-2xl flex ${orientation === "row" ? "flex-row items-center gap-4 max-w-56 " : "flex-col items-center gap-1 text-center py-4 max-w-36 "}`}
     >
       <div
         style={{ backgroundColor }}
@@ -22,7 +22,7 @@ function IconTitleCard({
         {icon}
       </div>
       <div className="flex flex-col">
-        <h2 className="font-semibold text text-[#060336]">{title}</h2>
+        <h2 className="font-medium text text-[#060336]">{title}</h2>
         <p className="text-xs text-gray-400">{subtitle}</p>
       </div>
     </div>

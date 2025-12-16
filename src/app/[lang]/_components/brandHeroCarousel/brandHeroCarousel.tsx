@@ -30,6 +30,7 @@ interface BrandHeroCarouselDict {
     stat1Label: string;
     stat2Label: string;
     stat3Label: string;
+    stat4Label: string;
   };
   gemo: {
     brand: string;
@@ -37,6 +38,7 @@ interface BrandHeroCarouselDict {
     stat1Label: string;
     stat2Label: string;
     stat3Label: string;
+    stat4Label: string;
   };
   bodySoul: {
     brand: string;
@@ -44,6 +46,7 @@ interface BrandHeroCarouselDict {
     stat1Label: string;
     stat2Label: string;
     stat3Label: string;
+    stat4Label: string;
   };
   quiksilver: {
     brand: string;
@@ -51,6 +54,7 @@ interface BrandHeroCarouselDict {
     stat1Label: string;
     stat2Label: string;
     stat3Label: string;
+    stat4Label: string;
   };
 }
 
@@ -67,9 +71,9 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
       description: dict.kiabi.description,
       stats: [
         {
-          percentage: "-35%",
+          percentage: "+35%",
           description: dict.kiabi.stat1Label,
-          isPositive: false,
+          isPositive: true,
         },
         {
           percentage: "+28%",
@@ -82,8 +86,8 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
           isPositive: true,
         },
         {
-          percentage: "+42%",
-          description: dict.kiabi.stat3Label,
+          percentage: "+30%",
+          description: dict.kiabi.stat4Label,
           isPositive: true,
         },
       ],
@@ -95,23 +99,23 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
       description: dict.gemo.description,
       stats: [
         {
-          percentage: "-28%",
+          percentage: "+25%",
           description: dict.gemo.stat1Label,
-          isPositive: false,
+          isPositive: true,
         },
         {
-          percentage: "+38%",
+          percentage: "+30%",
           description: dict.gemo.stat2Label,
           isPositive: true,
         },
         {
-          percentage: "+52%",
+          percentage: "+36%",
           description: dict.gemo.stat3Label,
           isPositive: true,
         },
         {
-          percentage: "+42%",
-          description: dict.kiabi.stat3Label,
+          percentage: "+22%",
+          description: dict.gemo.stat4Label,
           isPositive: true,
         },
       ],
@@ -123,23 +127,23 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
       description: dict.bodySoul.description,
       stats: [
         {
-          percentage: "+62%",
+          percentage: "+55%",
           description: dict.bodySoul.stat1Label,
           isPositive: true,
         },
         {
-          percentage: "+48%",
+          percentage: "+45%",
           description: dict.bodySoul.stat2Label,
           isPositive: true,
         },
         {
-          percentage: "+35%",
+          percentage: "+38%",
           description: dict.bodySoul.stat3Label,
           isPositive: true,
         },
         {
-          percentage: "+42%",
-          description: dict.kiabi.stat3Label,
+          percentage: "+27%",
+          description: dict.bodySoul.stat4Label,
           isPositive: true,
         },
       ],
@@ -151,23 +155,23 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
       description: dict.quiksilver.description,
       stats: [
         {
-          percentage: "-40%",
+          percentage: "+30%",
           description: dict.quiksilver.stat1Label,
-          isPositive: false,
+          isPositive: true,
         },
         {
-          percentage: "+41%",
+          percentage: "+50%",
           description: dict.quiksilver.stat2Label,
           isPositive: true,
         },
         {
-          percentage: "+33%",
+          percentage: "+25%",
           description: dict.quiksilver.stat3Label,
           isPositive: true,
         },
         {
-          percentage: "+42%",
-          description: dict.kiabi.stat3Label,
+          percentage: "+32%",
+          description: dict.quiksilver.stat4Label,
           isPositive: true,
         },
       ],
@@ -185,7 +189,7 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
       >
         <CarouselContent>
           {slides.map((slide, index) => (
-            <CarouselItem className="pl-0" key={index}>
+            <CarouselItem className="pl-0 px-0" key={index}>
               <div className="relative w-full max-[450px]:h-[750px] h-[700px] md:h-[648px]">
                 {/* Background image*/}
                 <div className="absolute inset-0">
@@ -204,7 +208,7 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
                     <h2 className="text-3xl md:text-4xl font-bold">
                       {slide.title} {slide.brand}
                     </h2>
-                    <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+                    <p className="text-lg md:text-xl text-gray-200 leading-snug">
                       {slide.description}
                     </p>
                   </div>

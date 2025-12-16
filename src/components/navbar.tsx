@@ -27,15 +27,13 @@ import { cn } from "@/lib/utils";
 import HamburgerMenuIcon from "@/components/icons/hamburgerMenuIcon";
 import LanguageChanger from "@/components/language-switcher";
 import Link from "next/link";
-import {
-  Hotel,
-  Store,
-  Shirt,
-  Factory,
-  ClipboardCheck,
-  Plus,
-} from "lucide-react";
+import { Plus } from "lucide-react";
 import Image from "next/image";
+import HospitalityIcon from "./icons/hospitalityIcon";
+import IndustryIcon from "./icons/industryIcon";
+import AuditIcon from "./icons/auditIcon";
+import FashionIcon from "./icons/fashionIcon";
+import RetailIcon from "./icons/retailIcon";
 
 interface NavbarProps {
   dict: {
@@ -58,9 +56,9 @@ interface NavbarProps {
     };
     sectors: {
       title: string;
-      hospitality: string;
-      retail: string;
       fashionBoutiques: string;
+      retail: string;
+      hospitality: string;
       industryProduction: string;
       audit: string;
     };
@@ -72,20 +70,28 @@ interface NavbarProps {
 }
 
 const sectorIcons = {
-  hospitality: Hotel,
-  retail: Store,
-  fashionBoutiques: Shirt,
-  industryProduction: Factory,
-  audit: ClipboardCheck,
+  fashionBoutiques: FashionIcon,
+  retail: RetailIcon,
+  hospitality: HospitalityIcon,
+  industryProduction: IndustryIcon,
+  audit: AuditIcon,
 };
 
 const sectorSlugs: Record<string, string> = {
-  hospitality: "hospitality",
-  retail: "retail",
   fashionBoutiques: "fashion-boutiques",
+  retail: "retail",
+  hospitality: "hospitality",
   industryProduction: "industry-production",
   audit: "audit",
 };
+
+const sectorOrder = [
+  "fashionBoutiques",
+  "retail",
+  "hospitality",
+  "industryProduction",
+  "audit",
+] as const;
 
 function Navbar({ dict, lang }: NavbarProps) {
   const [isMobile, setIsMobile] = useState(false);
@@ -219,7 +225,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                                 <Link
                                   key={index}
                                   href={`/${lang}/solutions/flowUp#${product.id}`}
-                                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors mx-2 no-underline"
+                                  className="flex font-poppins items-center gap-2 px-4 py-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors mx-2 no-underline"
                                   onClick={() => setOpen(false)}
                                 >
                                   <Plus size={14} className="text-gray-400" />
@@ -232,47 +238,41 @@ function Navbar({ dict, lang }: NavbarProps) {
                           </div>
 
                           {/* Sectors Section */}
-                          <div>
+                          <div className="font-poppins">
                             <h3 className="mb-3 text-xs font-semibold text-gray-400 tracking-wider px-4">
                               {dict.sectors.title}
                             </h3>
                             <div className="space-y-1">
-                              {Object.entries(dict.sectors)
-                                .filter(([key]) => key !== "title")
-                                .map(([key, value], index) => {
-                                  const IconComponent =
-                                    sectorIcons[
-                                      key as keyof typeof sectorIcons
-                                    ];
-                                  const colors = [
-                                    "bg-blue-500",
-                                    "bg-cyan-500",
-                                    "bg-yellow-500",
-                                    "bg-teal-600",
-                                    "bg-indigo-600",
-                                  ];
-                                  const slug = sectorSlugs[key];
-                                  return (
-                                    <Link
-                                      key={key}
-                                      href={`/${lang}/solutions/sectors/${slug}`}
-                                      onClick={() => setOpen(false)}
-                                      className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors mx-2 no-underline"
+                              {sectorOrder.map((key, index) => {
+                                const IconComponent =
+                                  sectorIcons[key as keyof typeof sectorIcons];
+                                const colors = [
+                                  "bg-[#edc309]",
+                                  "bg-[#0fadcf]",
+                                  "bg-[#3c50e0]",
+                                  "bg-[#098db1]",
+                                  "bg-[#3c50e0]",
+                                ];
+                                const slug = sectorSlugs[key];
+                                const value = dict.sectors[key];
+                                return (
+                                  <Link
+                                    key={key}
+                                    href={`/${lang}/solutions/sectors/${slug}`}
+                                    onClick={() => setOpen(false)}
+                                    className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors mx-2 no-underline"
+                                  >
+                                    <div
+                                      className={`w-10 h-10 rounded-lg ${colors[index]} flex items-center justify-center shrink-0`}
                                     >
-                                      <div
-                                        className={`w-10 h-10 rounded-lg ${colors[index]} flex items-center justify-center shrink-0`}
-                                      >
-                                        <IconComponent
-                                          size={18}
-                                          className="text-white"
-                                        />
-                                      </div>
-                                      <span className="text-sm font-medium text-gray-900">
-                                        {value}
-                                      </span>
-                                    </Link>
-                                  );
-                                })}
+                                      <IconComponent />
+                                    </div>
+                                    <span className="text-sm text-gray-900">
+                                      {value}
+                                    </span>
+                                  </Link>
+                                );
+                              })}
                             </div>
                           </div>
                         </div>
@@ -307,6 +307,20 @@ function Navbar({ dict, lang }: NavbarProps) {
                   >
                     {dict.partners}
                   </Link>
+
+                  {/* contact */}
+                  <Link
+                    className={cn(
+                      "flex w-full items-center rounded-md px-4 py-3 text-base font-medium transition-colors hover:bg-[#024E63]/10 hover:text-[#024E63] cursor-pointer no-underline",
+                      pathname === `/${lang}/partners`
+                        ? "bg-[#024E63]/10 text-[#024E63]"
+                        : "text-gray-700"
+                    )}
+                    href={`/${lang}/contact`}
+                    onClick={() => setOpen(false)}
+                  >
+                    {dict.contactUs}
+                  </Link>
                 </nav>
               </div>
 
@@ -318,14 +332,6 @@ function Navbar({ dict, lang }: NavbarProps) {
           </Sheet>
         )}
         <Link href={`/${lang}`}>
-          <div className="block md:hidden">
-            <Image
-              src="/logoWithText.png"
-              alt="Aetos Technology Logo"
-              width={90}
-              height={30}
-            />
-          </div>
           <div className="md:block hidden">
             <Image
               src="/logoWithText.png"
@@ -399,7 +405,7 @@ function Navbar({ dict, lang }: NavbarProps) {
                         <Link
                           key={index}
                           href={`/${lang}/solutions/flowUp#${product.id}`}
-                          className="ml-14 flex items-center gap-2 px-3 py-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors no-underline"
+                          className="ml-14 flex items-center font-medium font-poppins gap-2 px-3 py-2 hover:bg-gray-50 rounded-md cursor-pointer transition-colors no-underline"
                         >
                           <Plus size={16} className="text-gray-400" />
                           <span className="text-sm text-gray-700">
@@ -411,44 +417,40 @@ function Navbar({ dict, lang }: NavbarProps) {
                   </div>
 
                   {/* Sectors Column */}
-                  <div>
+                  <div className="font-poppins">
                     <h3 className="mb-4 text-sm font-semibold text-gray-400 tracking-wider">
                       {dict.sectors.title}
                     </h3>
                     <div className="space-y-0">
-                      {Object.entries(dict.sectors)
-                        .filter(([key]) => key !== "title")
-                        .map(([key, value], index) => {
-                          const IconComponent =
-                            sectorIcons[key as keyof typeof sectorIcons];
-                          const colors = [
-                            "bg-blue-500",
-                            "bg-cyan-500",
-                            "bg-yellow-500",
-                            "bg-teal-600",
-                            "bg-indigo-600",
-                          ];
-                          const slug = sectorSlugs[key];
-                          return (
-                            <Link
-                              key={key}
-                              href={`/${lang}/solutions/sectors/${slug}`}
-                              className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors no-underline"
+                      {sectorOrder.map((key, index) => {
+                        const IconComponent =
+                          sectorIcons[key as keyof typeof sectorIcons];
+                        const colors = [
+                          "bg-[#edc309]",
+                          "bg-[#0fadcf]",
+                          "bg-[#3c50e0]",
+                          "bg-[#098db1]",
+                          "bg-[#3c50e0]",
+                        ];
+                        const slug = sectorSlugs[key];
+                        const value = dict.sectors[key];
+                        return (
+                          <Link
+                            key={key}
+                            href={`/${lang}/solutions/sectors/${slug}`}
+                            className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg cursor-pointer transition-colors no-underline"
+                          >
+                            <div
+                              className={`w-10 h-10 rounded-lg ${colors[index]} flex items-center justify-center shrink-0`}
                             >
-                              <div
-                                className={`w-10 h-10 rounded-lg ${colors[index]} flex items-center justify-center shrink-0`}
-                              >
-                                <IconComponent
-                                  size={20}
-                                  className="text-white"
-                                />
-                              </div>
-                              <span className="font-medium text-gray-900">
-                                {value}
-                              </span>
-                            </Link>
-                          );
-                        })}
+                              <IconComponent />
+                            </div>
+                            <span className="font-medium text-gray-900">
+                              {value}
+                            </span>
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
@@ -487,15 +489,23 @@ function Navbar({ dict, lang }: NavbarProps) {
           </NavigationMenuList>
         </NavigationMenu>
       )}
-
+      <Link className="block md:hidden" href={`/${lang}`}>
+        <Image
+          src="/logoWithText.png"
+          alt="Aetos Technology Logo"
+          width={90}
+          height={30}
+        />
+      </Link>
+      <div className="h-9 w-9 flex md:hidden"></div>
       {/* right side */}
-      <div className="flex items-center gap-3">
-        <div className="hidden md:flex">
+      <div className="items-center gap-3 hidden md:flex">
+        <div className="">
           <LanguageChanger />
         </div>
 
         <Link href={`/${lang}/contact`}>
-          <Button className=" font-inter bg-[#024E63] hover:bg-[#024E63]/90 rounded-[7px] text-white px-8 h-10">
+          <Button className=" font-inter bg-[#024E63] hover:bg-[#024E63]/90 rounded-[7px] text-white px-2 md:px-8 h-10">
             {dict.contactUs}
           </Button>
         </Link>

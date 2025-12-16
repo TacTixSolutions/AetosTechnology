@@ -42,14 +42,13 @@ interface TestimonialsSectionProps {
 function TestimonialsSection({ dict, lang }: TestimonialsSectionProps) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const query = `*[_type == "testimonial"  && type == "partner"] {
+        const query = `*[_type == "testimonial" && type == "partner" && isPublished == true] {
           _id,
           type,
           textEn,
@@ -58,10 +57,11 @@ function TestimonialsSection({ dict, lang }: TestimonialsSectionProps) {
           image,
           name,
           role,
-          company
+          company,
+          isPublished
         }`;
         const data = await client.fetch(query);
-        setTestimonials(data);
+        setTestimonials([...data, ...data]);
       } catch (error) {
         console.error("Error fetching testimonials:", error);
       } finally {
@@ -75,7 +75,6 @@ function TestimonialsSection({ dict, lang }: TestimonialsSectionProps) {
   useEffect(() => {
     if (!api) return;
 
-    setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap());
 
     api.on("select", () => {
@@ -116,9 +115,9 @@ function TestimonialsSection({ dict, lang }: TestimonialsSectionProps) {
               className="w-full"
             >
               <CarouselContent>
-                {testimonials.map((testimonial) => (
+                {testimonials.map((testimonial, index) => (
                   <TestimonialCard
-                    key={testimonial._id}
+                    key={index}
                     testimonial={{
                       ...testimonial,
                       content:
@@ -133,18 +132,23 @@ function TestimonialsSection({ dict, lang }: TestimonialsSectionProps) {
 
               {/* Custom indicators */}
               <div className="flex justify-center items-center -mt-12 gap-2">
-                {Array.from({ length: count }).map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => api?.scrollTo(index)}
-                    className={`h-2 rounded-full transition-all ${
-                      index === current
-                        ? "w-4 h-4 bg-[#024e63]"
-                        : "w-3 h-3 bg-[#99bcc6]"
-                    }`}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                ))}
+                {Array.from({ length: testimonials.length / 2 }).map(
+                  (_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => {
+                        api?.scrollTo(index);
+                      }}
+                      className={`h-2 rounded-full cursor-pointer z-20 transition-all ${
+                        index === current ||
+                        index === current - testimonials.length / 2
+                          ? "w-4 h-4 bg-[#024e63]"
+                          : "w-3 h-3 bg-[#99bcc6]"
+                      }`}
+                      aria-label={`Go to slide ${index + 1}`}
+                    />
+                  )
+                )}
               </div>
             </Carousel>
           </>

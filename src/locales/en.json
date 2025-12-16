@@ -58,9 +58,9 @@
     },
     "sectors": {
       "title": "SECTORS",
+      "fashionBoutiques": "Retail",
+      "retail": "Mass Retail",
       "hospitality": "Hospitality",
-      "retail": "Retail",
-      "fashionBoutiques": "Fashion & Clothing Boutiques",
       "industryProduction": "Industry & Production",
       "audit": "Audit"
     }
@@ -79,30 +79,34 @@
     "kiabi": {
       "brand": "Kiabi",
       "description": "Better in-store execution thanks to clear, structured, and harmonized tracking across the entire network.",
-      "stat1Label": "time saved on manual reporting",
-      "stat2Label": "visibility in incident resolution",
-      "stat3Label": "field visits completed on time"
+      "stat1Label": "time wasted on manual reporting",
+      "stat2Label": "speed in incident resolution",
+      "stat3Label": "field visits completed on time",
+      "stat4Label": "operational engagement in store"
     },
     "gemo": {
       "brand": "Gemo",
       "description": "Simplified coordination between headquarters and stores, with significant time savings in daily monitoring.",
-      "stat1Label": "administration time",
-      "stat2Label": "standards compliance",
-      "stat3Label": "team satisfaction"
+      "stat1Label": "efficiency in store audit rounds",
+      "stat2Label": "compliance with operational standards",
+      "stat3Label": "compliance of in-store operations",
+      "stat4Label": "improvement in product availability"
     },
     "bodySoul": {
       "brand": "Body & Soul",
       "description": "Instant communication and operational control ensure optimal management of points of sale.",
-      "stat1Label": "team productivity",
-      "stat2Label": "quality tracking",
-      "stat3Label": "incident responsiveness"
+      "stat1Label": "speed in executing store actions",
+      "stat2Label": "errors related to paper processes",
+      "stat3Label": "staff satisfaction",
+      "stat4Label": "improvement in customer experience relevance"
     },
     "quiksilver": {
       "brand": "Quiksilver",
       "description": "Smoother management of field operations and enhanced responsiveness to ensure a consistent customer experience.",
-      "stat1Label": "resolution time",
-      "stat2Label": "operational visibility",
-      "stat3Label": "process execution"
+      "stat1Label": "clarity in operational priorities",
+      "stat2Label": "efficiency in field-headquarters communication",
+      "stat3Label": "Visual Merchandising non-conformities",
+      "stat4Label": "productivity of area managers"
     }
   },
   "services": {
@@ -243,7 +247,7 @@
       "title": "Together to go further",
       "description": "Join a network of innovation partners committed to digital transformation",
       "ctaButton": "Discover how to collaborate",
-      "floatingCard1": "Strategic alliance",
+      "floatingCard1": "Added value for your clients",
       "floatingCard2": "Mutual growth",
       "imageAlt": "Partnership collaboration"
     },
@@ -307,17 +311,17 @@
     "modules": {
       "supervisor": {
         "title": "SuperVisor",
-        "description": "Streamline store operations with real-time task management and performance tracking for enhanced productivity.",
+        "description": "SuperVisor optimizes field operations with smart checklists, streamlined schedules, and real-time reports. Designed for multi-site teams, it accelerates daily work, improves execution, and facilitates better decision-making.",
         "id": "supervisor"
       },
       "visualMerchandising": {
         "title": "Visual Merchandising",
-        "description": "Transform your retail displays with AI-powered visual merchandising tools that drive sales and enhance customer experience.",
+        "description": "The Visual Merchandising module lets you control in-store execution with clear guidelines, before/after photos, and instant tracking. It ensures brand consistency, improves communication between headquarters and the field, and delivers a uniform customer experience across all points of sale.",
         "id": "visual-merchandising"
       },
       "shiftMaster": {
         "title": "ShiftMaster",
-        "description": "Optimize workforce scheduling with intelligent shift management that balances employee needs and business demands.",
+        "description": "Organize and optimize staff schedules with an intelligent and easy-to-use module. Create and adjust shifts with just a few clicks, balance workloads, reduce conflicts, and ensure optimal coverage according to operational needs.",
         "id": "shiftmaster",
         "card1Title": "Workflow",
         "card1Subtitle": "simple",
@@ -326,26 +330,27 @@
       },
       "communication": {
         "title": "Communication",
-        "description": "Centralize team communication with instant messaging, announcements, and document sharing in one platform.",
+        "description": "Create a true internal social network that transforms team collaboration. The Communication module centralizes messaging, work groups, news feed, and integrated calls in a single modern and intuitive space that connects your entire organization.",
         "id": "communication",
         "statValue": "+45%",
         "statLabel": "Team engagement"
       },
       "flowHR": {
         "title": "FlowHR",
-        "description": "Simplify HR management with automated onboarding, time tracking, and employee performance monitoring.",
-        "id": "flowhr"
+        "description": "HRFlow is a comprehensive and intuitive module that centralizes daily HR tracking. It manages absences, leaves, attendance, evaluations, and employee journeys while providing clear and up-to-date information. A simple and structured tool to support teams and HR decision-making.",
+        "id": "flowhr",
+        "attendanceRate": "Attendance rate"
       },
       "microLearning": {
         "title": "Micro-Learning",
-        "description": "Empower your team with bite-sized training modules and gamified learning experiences for continuous development.",
+        "description": "Offer your teams a fast, interactive learning experience accessible anytime. The Micro-Learning module delivers short training capsules, videos, quizzes, and targeted pathways to continuously develop field skills. A modern and flexible approach to strengthen competencies without disrupting operations.",
         "id": "micro-learning",
         "cardTitle": "Quizzes",
         "cardSubtitle": "Smart learning"
       },
       "optiStock": {
         "title": "OptiStock",
-        "description": "Maximize inventory efficiency with real-time stock tracking and intelligent reordering suggestions.",
+        "description": "OptiStock optimizes stock levels with an AI analysis engine that tracks sales and inventory for each store. It detects imbalances, recommends the best transfers, anticipates needs, and avoids stockouts, overstocks, and lost sales.",
         "id": "optistock",
         "statValue": "70%",
         "statLabel": "Smart tracking"
@@ -353,6 +358,33 @@
     }
   },
   "sectors": {
+    "hero": {
+      "fashionBoutiques": {
+        "title": "FlowUp for Fashion & Luxury Retailers",
+        "description": "Boost your in-store customer experience with smooth, seamless organization."
+      },
+      "retail": {
+        "title": "FlowUp for Supermarkets: Your Operations Simplified",
+        "description": "Manage your teams and in-store operations from a single platform, for streamlined efficiency."
+      },
+      "hospitality": {
+        "title": "FlowUp for Hospitality: Manage Your Operations Effortlessly",
+        "description": "Centralize your teams, schedules and standards, and deliver a better customer experience."
+      },
+      "industryProduction": {
+        "title": "FlowUp for Higher-Performing Workshops",
+        "description": "The solution that digitalizes your controls, ensures compliance and improves your workshop performance daily."
+      },
+      "audit": {
+        "title": "FlowUp for Audit & Certification",
+        "description": "Transform your audits into a simple, fast and reliable process."
+      }
+    },
+    "cta": {
+      "title": "Ready to take action?",
+      "description": "We design reliable solutions tailored to your business needs, and support you every step of the way for lasting results.",
+      "button": "Contact us"
+    },
     "retail": {
       "title": "An effective retail network requires total visibility and perfect execution.",
       "imageAlt": "Retail sector",
@@ -446,7 +478,7 @@
         {
           "title": "Structured, reliable, and easy-to-execute internal audits",
           "description": "With FlowUp, your teams conduct consistent, comprehensive, and uniform audits, regardless of site or department.",
-          "imageSrc": "/sectors/audit/section1.png",
+          "imageSrc": "/sectors/audit/1.png",
           "imageAlt": "Structured audits",
           "items": [
             {
@@ -496,6 +528,8 @@
   },
   "sectorsAccordion": {
     "fashionBoutiques": {
+      "title": "Centralize your operations, align your teams, and save",
+      "titleHighlight": "time every day.",
       "sections": [
         {
           "title": "Centralize your operations, align your teams, and save time every day.",
@@ -555,6 +589,9 @@
           "title": "Team schedule planning",
           "imageSrc": "/sectors/fashion-boutiques/3.png",
           "imageAlt": "Team planning",
+          "floatingImages": {
+            "bottomRight": "/sectors/fashion-boutiques/3br.png"
+          },
           "items": [
             {
               "title": "Team schedule planning",
@@ -601,6 +638,10 @@
           "title": "Reduce lost sales and maximize product availability with our AI recommendations.",
           "imageSrc": "/sectors/fashion-boutiques/5.png",
           "imageAlt": "AI optimization",
+          "floatingImages": {
+            "topLeft": "/sectors/fashion-boutiques/5tl.png",
+            "bottomRight": "/sectors/fashion-boutiques/5br.png"
+          },
           "items": [
             {
               "title": "Reduction of lost sales",
@@ -619,6 +660,8 @@
       ]
     },
     "hospitality": {
+      "title": "Manage your operations in real-time with",
+      "titleHighlight": "centralized and perfectly coordinated services",
       "sections": [
         {
           "title": "Manage your hotel operations in real-time: housekeeping, maintenance, quality, and services, everything is centralized and perfectly coordinated.",
@@ -670,6 +713,9 @@
           "title": "Deliver the right information at the right time and train your teams continuously in just minutes.",
           "imageSrc": "/sectors/hospitality/3.png",
           "imageAlt": "Communication and training",
+          "floatingImages": {
+            "topRight": "/sectors/hospitality/3tr.png"
+          },
           "items": [
             {
               "title": "Your instructions, received in real-time",
@@ -692,11 +738,16 @@
       ]
     },
     "retail": {
+      "title": "Boost the impact of your aisles and transform your stores into sales engines with",
+      "titleHighlight": "FlowUp",
       "sections": [
         {
           "title": "Boost your shelf impact and transform your stores into real sales drivers with FlowUp",
           "imageSrc": "/sectors/retail/1.png",
           "imageAlt": "Visual merchandising",
+          "floatingImages": {
+            "bottomRight": "/sectors/retail/1br.png"
+          },
           "items": [
             {
               "title": "Maximize key product visibility",
@@ -743,6 +794,9 @@
           "title": "Optimal organization of in-store rotations",
           "imageSrc": "/sectors/retail/3.png",
           "imageAlt": "Team planning",
+          "floatingImages": {
+            "bottomRight": "/sectors/retail/3br.png"
+          },
           "items": [
             {
               "title": "Optimal organization of in-store rotations",
@@ -765,6 +819,8 @@
       ]
     },
     "industryProduction": {
+      "title": "Reduce inefficiencies and manage your production in",
+      "titleHighlight": "real-time with a unified platform.",
       "sections": [
         {
           "title": "Quality control on the production line",
@@ -793,6 +849,9 @@
           "title": "Team planning by position and line",
           "imageSrc": "/sectors/industry-production/2.png",
           "imageAlt": "Production planning",
+          "floatingImages": {
+            "bottomRight": "/sectors/industry-production/2br.png"
+          },
           "items": [
             {
               "title": "Team planning by position and line",
@@ -816,6 +875,9 @@
           "title": "Instant transmission of production instructions",
           "imageSrc": "/sectors/industry-production/3.png",
           "imageAlt": "Workshop communication",
+          "floatingImages": {
+            "bottomRight": "/sectors/industry-production/3br.png"
+          },
           "items": [
             {
               "title": "Instant transmission of production instructions",
@@ -836,16 +898,27 @@
           ]
         }
       ]
+    },
+    "audit": {
+      "title": "Standardize your audit processes and gain total visibility to ensure",
+      "titleHighlight": "compliance and operational excellence."
+    }
+  },
+  "insights": {
+    "hero": {
+      "title": "Insights",
+      "description": "Our news, insights and key events"
     }
   },
   "footer": {
     "getInTouch": "Get in Touch",
     "address": "B02 Immeube Nessma, AV UMA La Soukra Ariana",
+    "companyDescription": "An engineering company that designs and deploys technological solutions aimed at improving the productivity, profitability and responsiveness of businesses.",
     "sectors": {
       "title": "Sectors",
-      "hospitality": "Hospitality",
-      "retail": "Retail",
       "fashionBoutiques": "Fashion & Clothing Boutiques",
+      "retail": "Retail",
+      "hospitality": "Hospitality",
       "industryProduction": "Industry & Production",
       "audit": "Audit"
     },

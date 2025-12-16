@@ -61,6 +61,14 @@ export default defineType({
       title: 'Company',
       type: 'string',
     }),
+    defineField({
+      name: 'isPublished',
+      title: 'Is Published',
+      type: 'boolean',
+      description: 'Toggle to publish/unpublish this testimonial',
+      initialValue: true,
+      validation: (Rule) => Rule.required(),
+    }),
   ],
   preview: {
     select: {

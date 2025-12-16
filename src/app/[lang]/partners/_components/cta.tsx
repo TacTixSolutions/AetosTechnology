@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 interface CTASectionProps {
   dict: {
@@ -21,9 +22,11 @@ function CTASection({ dict }: CTASectionProps) {
           <p className="text-xl font-poppins font-light text-gray-600 mb-8">
             {dict.description}
           </p>
-          <Button className="px-20 py-6 font-poppins shadow-lg rounded-full bg-brand hover:bg-brand/70">
-            {dict.button}
-          </Button>
+          <Link href="/contact">
+            <Button className="px-20 py-6 font-poppins shadow-lg rounded-full bg-[#024E63] hover:bg-brand">
+              {dict.button}
+            </Button>
+          </Link>
         </div>
 
         <div className="w-full flex justify-center lg:w-1/2">

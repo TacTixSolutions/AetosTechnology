@@ -51,7 +51,7 @@ function TestimonialsSection({ lang, dict }: TestimonialsSectionProps) {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const query = `*[_type == "testimonial"  && type == "client"] {
+        const query = `*[_type == "testimonial" && type == "client" && isPublished == true] {
           _id,
           type,
           textEn,
@@ -60,7 +60,8 @@ function TestimonialsSection({ lang, dict }: TestimonialsSectionProps) {
           image,
           name,
           role,
-          company
+          company,
+          isPublished
         }`;
         const data = await client.fetch(query);
         setTestimonials(data);
@@ -139,7 +140,7 @@ function TestimonialsSection({ lang, dict }: TestimonialsSectionProps) {
                   <button
                     key={index}
                     onClick={() => api?.scrollTo(index)}
-                    className={`h-2 rounded-full transition-all ${
+                    className={`h-2 rounded-full z-20 cursor-pointer transition-all ${
                       index === current
                         ? "w-4 h-4 bg-[#024e63]"
                         : "w-3 h-3 bg-[#99bcc6]"

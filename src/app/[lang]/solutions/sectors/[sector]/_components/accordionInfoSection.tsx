@@ -5,25 +5,49 @@ interface AccordionItem {
   description: string;
 }
 
+interface FloatingImages {
+  topLeft?: string;
+  topRight?: string;
+  bottomLeft?: string;
+  bottomRight?: string;
+}
+
 interface AccordionSection {
   title: string;
   description?: string;
   items: AccordionItem[];
   imageSrc: string;
   imageAlt: string;
+  floatingImages?: FloatingImages;
 }
 
 interface AccordionInfoSectionProps {
   sections: AccordionSection[];
+  sectionTitle?: string;
+  sectionTitleHighlight?: string;
+  sector?: string;
 }
 
-function AccordionInfoSection({ sections }: AccordionInfoSectionProps) {
+function AccordionInfoSection({
+  sections,
+  sectionTitle,
+  sectionTitleHighlight,
+  sector,
+}: AccordionInfoSectionProps) {
   if (!sections || sections.length === 0) {
     return null;
   }
 
+  const shouldFlipLayout = sector === "audit" || sector === "fashion-boutiques";
+
   return (
-    <div className="w-full py-16 space-y-24">
+    <div className="w-full py-16 space-y-12 lg:space-y-24">
+      {(sectionTitle || sectionTitleHighlight) && (
+        <p className="text-2xl lg:text-4xl text-center font-semibold font-poppins">
+          {sectionTitle}
+          <span className="text-brand"> {sectionTitleHighlight}</span>
+        </p>
+      )}
       {sections.map((section, index) => (
         <AccordionInfoCard
           key={index}
@@ -31,7 +55,16 @@ function AccordionInfoSection({ sections }: AccordionInfoSectionProps) {
           items={section.items}
           imageSrc={section.imageSrc}
           imageAlt={section.imageAlt}
-          layout={index % 2 === 0 ? "text-right" : "text-left"}
+          layout={
+            shouldFlipLayout
+              ? index % 2 === 0
+                ? "text-left"
+                : "text-right"
+              : index % 2 === 0
+                ? "text-right"
+                : "text-left"
+          }
+          floatingImages={section.floatingImages}
         />
       ))}
     </div>

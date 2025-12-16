@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import LinkedinIcon from "./icons/linkedinIcon";
 import FacebookLogo from "./icons/facebookLogo";
-import InstagramIcon from "./icons/instagramIcon";
+import { Mail, MapPin, PhoneIcon } from "lucide-react";
 
 interface FooterProps {
   dict: {
     getInTouch: string;
     address: string;
+    companyDescription: string;
     sectors: {
       title: string;
       hospitality: string;
@@ -32,7 +33,7 @@ interface FooterProps {
 
 function Footer({ dict, lang }: FooterProps) {
   return (
-    <footer className="relative w-full text-white">
+    <footer className="relative h-auto xl:h-[430px] w-full text-white">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -43,85 +44,42 @@ function Footer({ dict, lang }: FooterProps) {
         />
       </div>
 
-      <div className="w-9/10 mx-auto pt-12 pb-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+      <div className="w-9/10 mx-auto pt-24 pb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-11 gap-8">
           {/* Logo and Description */}
-          <div className="lg:col-span-2 text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
-            <Image
-              src="/logoWithTextWhite.png"
-              alt="Aetos Technology"
-              width={180}
-              height={60}
-              className="mb-4"
-            />
-            <p className="text-sm text-white/90 leading-relaxed max-w-sm">
-              Société d&apos;ingénierie qui conçoit et déploie des solutions
-              technologiques destinées à améliorer la productivité, la
-              rentabilité et la réactivité des entreprises.
+          <div className="col-span-1 xl:col-span-3 w-full lg:w-9/10 text-center  md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
+            <div className="w-full flex justify-center">
+              <Image
+                src="/logoWithTextWhite.png"
+                alt="Aetos Technology"
+                width={150}
+                height={80}
+                className="mb-4"
+              />
+            </div>
+            <p className="text-[14px] max-w-md text-start font-inter font-light text-white/90 leading-relaxed">
+              {dict.companyDescription}
             </p>
           </div>
 
           {/* Get in Touch */}
-          <div className="text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
-            <h3 className="font-bold text-lg mb-4">{dict.getInTouch}</h3>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-2 justify-center md:justify-center lg:justify-start">
-                <svg
-                  className="w-5 h-5 mt-0.5 shrink-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
+          <div className="col-span-1 xl:col-span-2 text-center md:text-center ml-0 xl:-ml-6 lg:text-left flex flex-col items-center md:items-center lg:items-start">
+            <div className="space-y-6 items-center lg:items-start flex flex-col justify-center text-[16px] text-white/90 font-inter font-light">
+              <div className="flex w-8/10 lg:w-full text-start gap-2 justify-center md:justify-center lg:justify-start">
+                <MapPin className="w-5 h-5 mt-1  shrink-0" />
                 <span>{dict.address}</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 shrink-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
+                <Mail className="w-5 h-5 shrink-0" />
                 <a
                   href="mailto:commercial@aetos.com.tn"
-                  className="hover:text-white/80 transition-colors"
+                  className="hover:text-white/80 text-start transition-colors"
                 >
                   commercial@aetos.com.tn
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 shrink-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
+                <PhoneIcon className="w-5 h-5 shrink-0" />
                 <a
                   href="tel:+21670295551"
                   className="hover:text-white/80 transition-colors"
@@ -133,12 +91,14 @@ function Footer({ dict, lang }: FooterProps) {
           </div>
 
           {/* Secteurs */}
-          <div className="text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
-            <h3 className="font-bold text-lg mb-4">{dict.sectors.title}</h3>
-            <ul className="space-y-2 text-sm">
+          <div className="col-span-1 xl:col-span-2 text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
+            <h3 className="text-[16px] font-medium mb-4 font-poppins">
+              {dict.sectors.title}
+            </h3>
+            <ul className="space-y-3 font-medium text-white/90 font-roboto text-[16px]">
               <li>
                 <Link
-                  href={`/${lang}/sectors/hospitality`}
+                  href={`/${lang}/solutions/sectors/hospitality`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.hospitality}
@@ -146,7 +106,7 @@ function Footer({ dict, lang }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/sectors/retail`}
+                  href={`/${lang}/solutions/sectors/retail`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.retail}
@@ -154,7 +114,7 @@ function Footer({ dict, lang }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/sectors/fashion`}
+                  href={`/${lang}/solutions/sectors/fashion-boutiques`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.fashionBoutiques}
@@ -162,7 +122,7 @@ function Footer({ dict, lang }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/sectors/production`}
+                  href={`/${lang}/solutions/sectors/industry-production`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.industryProduction}
@@ -170,7 +130,7 @@ function Footer({ dict, lang }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/sectors/audit`}
+                  href={`/${lang}/solutions/sectors/audit`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.audit}
@@ -180,9 +140,11 @@ function Footer({ dict, lang }: FooterProps) {
           </div>
 
           {/* Contactez-nous */}
-          <div className="text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
-            <h3 className="font-bold text-lg mb-4">{dict.contact.title}</h3>
-            <ul className="space-y-2 text-sm mb-6">
+          <div className="col-span-1 xl:col-span-2 text-center md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
+            <h3 className="text-[16px] mb-4 font-medium font-poppins">
+              {dict.contact.title}
+            </h3>
+            <ul className="space-y-3 font-medium text-white/90 font-roboto text-[16px] mb-6">
               <li>
                 <Link
                   href={`/${lang}/contact?type=client`}
@@ -199,21 +161,21 @@ function Footer({ dict, lang }: FooterProps) {
                   {dict.contact.partner}
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href={`/${lang}/contact?type=join`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.contact.joinUs}
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           {/* Social Media Icons */}
-          <div className="flex flex-col items-center md:items-center lg:items-start">
+          <div className="col-span-1 xl:col-span-2 flex flex-col items-center md:items-center lg:items-start">
             <div className="flex flex-row gap-3">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/aetos-technology"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors"
@@ -222,7 +184,7 @@ function Footer({ dict, lang }: FooterProps) {
                 <LinkedinIcon />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/Aetos-Technology/100054569854242/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors"
@@ -230,23 +192,16 @@ function Footer({ dict, lang }: FooterProps) {
               >
                 <FacebookLogo />
               </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-11 h-11 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors"
-                aria-label="Instagram"
-              >
-                <InstagramIcon />
-              </a>
             </div>
-            <p className="text-xs text-white/80 mt-4">{dict.social.follow}</p>
+            <p className="text-[16px] font-light font-inter text-white/80 mt-4">
+              {dict.social.follow}
+            </p>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="border-t border-white/20 mt-8 pt-6 text-center">
-          <p className="text-sm text-white/80">{dict.copyright}</p>
+          <p className="text-sm text-white font-inter">{dict.copyright}</p>
         </div>
       </div>
     </footer>

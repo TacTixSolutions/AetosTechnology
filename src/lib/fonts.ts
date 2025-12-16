@@ -1,4 +1,10 @@
-import { Inter, Poppins, Istok_Web, Space_Grotesk } from "next/font/google";
+import {
+  Inter,
+  Poppins,
+  Istok_Web,
+  Space_Grotesk,
+  Roboto,
+} from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -24,5 +30,12 @@ export const isotek = Istok_Web({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-isotek",
+  display: "swap",
+});
+
+export const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-roboto",
   display: "swap",
 });

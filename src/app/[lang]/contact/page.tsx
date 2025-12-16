@@ -6,10 +6,10 @@ import { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
   const metadata = dict.metadata.contact;
 
   return {
@@ -22,7 +22,7 @@ export async function generateMetadata({
     openGraph: {
       title: metadata.title,
       description: metadata.description,
-      url: `https://aetos-technology.com/${lang}/contact`,
+      url: `https://aetos.com.tn/${lang}/contact`,
       siteName: "Aetos Technology",
       locale: lang === "fr" ? "fr_FR" : "en_US",
       type: "website",
@@ -53,21 +53,29 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `https://aetos-technology.com/${lang}/contact`,
+      canonical: `https://aetos.com.tn/${lang}/contact`,
       languages: {
-        en: "https://aetos-technology.com/en/contact",
-        fr: "https://aetos-technology.com/fr/contact",
+        en: "https://aetos.com.tn/en/contact",
+        fr: "https://aetos.com.tn/fr/contact",
       },
     },
   };
 }
 
-async function ContactPage({ params }: { params: Promise<{ lang: Locale }> }) {
+async function ContactPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ lang: string }>;
+  searchParams: Promise<{ type?: string }>;
+}) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const { type } = await searchParams;
+  const dict = await getDictionary(lang as Locale);
+
   return (
     <div className="bg-white">
-      <ContactContent dict={dict.contact} lang={lang} />
+      <ContactContent dict={dict.contact} lang={lang as Locale} initialTab={type} />
     </div>
   );
 }

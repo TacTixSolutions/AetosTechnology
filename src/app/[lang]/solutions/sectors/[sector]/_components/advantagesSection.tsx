@@ -29,7 +29,7 @@ function AdvantagesSection({ dict, sector }: CollabSectionProps) {
   }));
 
   return (
-    <div className=" mx-auto py-16">
+    <div className=" mx-auto py-16 mt-0 lg:mt-16">
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         <div className="flex-1 w-full ">
           <h2 className="text-2xl md:text-[26px] font-poppins font-semibold text-gray-900 mb-8">
@@ -64,8 +64,8 @@ function AdvantagesSection({ dict, sector }: CollabSectionProps) {
           <Image
             src={`/sectors/${sector}/advPic.png`}
             alt={dict.imageAlt}
-            width={610}
-            height={420}
+            width={535}
+            height={380}
             className="object-cover"
           />
         </div>

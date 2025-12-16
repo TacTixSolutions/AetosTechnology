@@ -39,7 +39,7 @@ function WhyUsSection({ dict }: WhyUsSectionProps) {
         <div className="flex flex-col lg:flex-row gap-8 items-center">
           <div className="w-full font-isotek lg:w-1/2 ">
             <div className="space-y-2 xl:w-8/10">
-              <h3 className="text-sm font-semibold text-brand tracking-wider uppercase">
+              <h3 className="text-[16px] font-bold text-[#024E63]">
                 {dict.title}
               </h3>
 

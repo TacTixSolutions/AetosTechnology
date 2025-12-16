@@ -10,10 +10,10 @@ import { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
   const metadata = dict.metadata.partners;
 
   return {
@@ -26,7 +26,7 @@ export async function generateMetadata({
     openGraph: {
       title: metadata.title,
       description: metadata.description,
-      url: `https://aetos-technology.com/${lang}/partners`,
+      url: `https://aetos.com.tn/${lang}/partners`,
       siteName: "Aetos Technology",
       locale: lang === "fr" ? "fr_FR" : "en_US",
       type: "website",
@@ -57,25 +57,25 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `https://aetos-technology.com/${lang}/partners`,
+      canonical: `https://aetos.com.tn/${lang}/partners`,
       languages: {
-        en: "https://aetos-technology.com/en/partners",
-        fr: "https://aetos-technology.com/fr/partners",
+        en: "https://aetos.com.tn/en/partners",
+        fr: "https://aetos.com.tn/fr/partners",
       },
     },
   };
 }
 
-async function PartnersPage({ params }: { params: Promise<{ lang: Locale }> }) {
+async function PartnersPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
 
   return (
-    <div className="mb-24 mt-28 max-w-[1440px] mx-auto">
+    <div className="mb-24 pt-32 max-w-[1440px] mx-auto">
       <PartnersHeroSection dict={dict.partners.hero} />
       <TrustedPartners dict={dict.partners.list} />
       <CollabSection dict={dict.partners.collaboration} />
-      <TestimonialsSection dict={dict.partners.testimonials} lang={lang} />
+      <TestimonialsSection dict={dict.partners.testimonials} lang={lang as Locale} />
       <CTASection dict={dict.partners.cta} />
     </div>
   );

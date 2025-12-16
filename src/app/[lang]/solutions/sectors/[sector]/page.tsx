@@ -29,7 +29,7 @@ const sectorKeyMap: Record<SectorSlug, string> = {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale; sector: string }>;
+  params: Promise<{ lang: string; sector: string }>;
 }): Promise<Metadata> {
   const { lang, sector } = await params;
 
@@ -39,7 +39,7 @@ export async function generateMetadata({
     };
   }
 
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
   const sectorKey = sectorKeyMap[sector as SectorSlug];
   const sectorName =
     dict.navbar.sectors[sectorKey as keyof typeof dict.navbar.sectors];
@@ -54,7 +54,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${sectorName} Solutions - Aetos Technology`,
       description: `Discover our comprehensive ${sectorName.toLowerCase()} solutions designed to optimize your operations and boost productivity.`,
-      url: `https://aetos-technology.com/${lang}/solutions/sectors/${sector}`,
+      url: `https://aetos.com.tn/${lang}/solutions/sectors/${sector}`,
       siteName: "Aetos Technology",
       locale: lang === "fr" ? "fr_FR" : "en_US",
       type: "website",
@@ -85,10 +85,10 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `https://aetos-technology.com/${lang}/solutions/sectors/${sector}`,
+      canonical: `https://aetos.com.tn/${lang}/solutions/sectors/${sector}`,
       languages: {
-        en: `https://aetos-technology.com/en/solutions/sectors/${sector}`,
-        fr: `https://aetos-technology.com/fr/solutions/sectors/${sector}`,
+        en: `https://aetos.com.tn/en/solutions/sectors/${sector}`,
+        fr: `https://aetos.com.tn/fr/solutions/sectors/${sector}`,
       },
     },
   };
@@ -112,31 +112,64 @@ export async function generateStaticParams() {
 async function SectorPage({
   params,
 }: {
-  params: Promise<{ lang: Locale; sector: string }>;
+  params: Promise<{ lang: string; sector: string }>;
 }) {
   const { lang, sector } = await params;
 
   if (!validSectors.includes(sector as SectorSlug)) {
     notFound();
   }
-  const dict = await getDictionary(lang);
-
+  const dict = await getDictionary(lang as Locale);
+  interface CollabSectionProps {
+    dict: {
+      title: string;
+      imageAlt: string;
+      advantages: {
+        [key: string]: {
+          title: string;
+          description: string;
+        };
+      };
+    };
+    sector:
+      | "hospitality"
+      | "retail"
+      | "fashion-boutiques"
+      | "industry-production"
+      | "audit";
+  }
   const sectorKey = sectorKeyMap[sector as SectorSlug];
-  const sectorDict = dict.sectors[sectorKey as keyof typeof dict.sectors];
+  const sectorDict = dict.sectors[
+    sectorKey as keyof typeof dict.sectors
+  ] as CollabSectionProps["dict"];
 
   const accordionSections =
     (dict as any).sectorsAccordion?.[sectorKey]?.sections ||
     (sectorDict as any).accordionSections ||
     [];
+
+  const accordionTitle = (dict as any).sectorsAccordion?.[sectorKey]?.title;
+  const accordionTitleHighlight = (dict as any).sectorsAccordion?.[sectorKey]
+    ?.titleHighlight;
+
   console.log(accordionSections);
   return (
     <div className="min-h-screen pt-32 pb-24 w-9/10 mx-auto max-w-[1440px]">
-      <HeroSection sector={sector as SectorSlug} />
+      <HeroSection
+        sector={sector as SectorSlug}
+        dict={dict.sectors}
+        lang={lang}
+      />
       <AdvantagesSection sector={sector as SectorSlug} dict={sectorDict} />
       {accordionSections.length > 0 && (
-        <AccordionInfoSection sections={accordionSections} />
+        <AccordionInfoSection
+          sections={accordionSections}
+          sectionTitle={accordionTitle}
+          sectionTitleHighlight={accordionTitleHighlight}
+          sector={sector}
+        />
       )}
-      <CTASection />
+      <CTASection dict={dict.sectors.cta} lang={lang} />
     </div>
   );
 }

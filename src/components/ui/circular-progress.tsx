@@ -71,7 +71,10 @@ const CircularProgress = ({
           strokeDashoffset={percentage}
           fill="transparent"
           strokeDasharray={circumference}
-          className={cn("stroke-primary", progressClassName)}
+          className={cn(
+            "stroke-primary transition-all duration-75 ease-linear",
+            progressClassName
+          )}
         />
       </svg>
       {showLabel && (

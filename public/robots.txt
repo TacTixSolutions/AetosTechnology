@@ -1,5 +1,5 @@
 # robots.txt for Aetos Technology
-# https://aetos-technology.com
+# https://aetos.com.tn
 
 User-agent: *
 Allow: /
@@ -10,4 +10,4 @@ Disallow: /_next/
 Disallow: /studio/
 
 # Sitemaps
-Sitemap: https://aetos-technology.com/sitemap.xml
+Sitemap: https://aetos.com.tn/sitemap.xml

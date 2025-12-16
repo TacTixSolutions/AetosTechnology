@@ -13,10 +13,10 @@ import { Metadata } from "next";
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
   const metadata = dict.metadata.home;
 
   return {
@@ -29,7 +29,7 @@ export async function generateMetadata({
     openGraph: {
       title: metadata.title,
       description: metadata.description,
-      url: `https://aetos-technology.com/${lang}`,
+      url: `https://aetos.com.tn/${lang}`,
       siteName: "Aetos Technology",
       locale: lang === "fr" ? "fr_FR" : "en_US",
       type: "website",
@@ -60,10 +60,10 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `https://aetos-technology.com/${lang}`,
+      canonical: `https://aetos.com.tn/${lang}`,
       languages: {
-        en: "https://aetos-technology.com/en",
-        fr: "https://aetos-technology.com/fr",
+        en: "https://aetos.com.tn/en",
+        fr: "https://aetos.com.tn/fr",
       },
     },
   };
@@ -72,10 +72,10 @@ export async function generateMetadata({
 export default async function Home({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
 
   return (
     <div>
@@ -84,8 +84,8 @@ export default async function Home({
       <WhyUsSection dict={dict.whyUs} />
       <OurServices dict={dict.services} />
       <BrandHeroCarousel dict={dict.brandCarousel} />
-      <TestimonialsSection lang={lang} dict={dict.testimonials} />
-      <FaqSection lang={lang} dict={dict.faq} />
+      <TestimonialsSection lang={lang as Locale} dict={dict.testimonials} />
+      <FaqSection lang={lang as Locale} dict={dict.faq} />
       <CTASection dict={dict.cta} />
     </div>
   );
