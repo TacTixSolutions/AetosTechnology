@@ -22,16 +22,16 @@ function TrustedPartners({ dict }: TrustedPartnersProps) {
       </h2>
       <div className="flex items-center justify-between flex-col md:flex-row gap-4 xl:gap-16">
         <TrustedPartnerCard
-          imageSrc="/partners/quantumLeap.png"
-          companyName={dict.quantumLeap.name}
-          imageDimensions={{ width: 55, height: 55 }}
-          description={dict.quantumLeap.description}
-        />
-        <TrustedPartnerCard
           imageSrc="/partners/smartValority.png"
           companyName={dict.smartVolarity.name}
           imageDimensions={{ width: 170, height: 55 }}
           description={dict.smartVolarity.description}
+        />
+        <TrustedPartnerCard
+          imageSrc="/partners/quantumLeap.png"
+          companyName={dict.quantumLeap.name}
+          imageDimensions={{ width: 55, height: 55 }}
+          description={dict.quantumLeap.description}
         />
       </div>
     </div>

@@ -32,6 +32,7 @@ interface FooterProps {
 }
 
 function Footer({ dict, lang }: FooterProps) {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="relative h-auto xl:h-[430px] w-full text-white">
       {/* Background Image */}
@@ -72,10 +73,10 @@ function Footer({ dict, lang }: FooterProps) {
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 shrink-0" />
                 <a
-                  href="mailto:commercial@aetos.com.tn"
+                  href="mailto:contact@aetos.com.tn"
                   className="hover:text-white/80 text-start transition-colors"
                 >
-                  commercial@aetos.com.tn
+                  contact@aetos.com.tn
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -98,14 +99,6 @@ function Footer({ dict, lang }: FooterProps) {
             <ul className="space-y-3 font-medium text-white/90 font-roboto text-[16px]">
               <li>
                 <Link
-                  href={`/${lang}/solutions/sectors/hospitality`}
-                  className="hover:text-white/80 transition-colors"
-                >
-                  {dict.sectors.hospitality}
-                </Link>
-              </li>
-              <li>
-                <Link
                   href={`/${lang}/solutions/sectors/retail`}
                   className="hover:text-white/80 transition-colors"
                 >
@@ -118,6 +111,14 @@ function Footer({ dict, lang }: FooterProps) {
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.fashionBoutiques}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/solutions/sectors/hospitality`}
+                  className="hover:text-white/80 transition-colors"
+                >
+                  {dict.sectors.hospitality}
                 </Link>
               </li>
               <li>
@@ -201,7 +202,30 @@ function Footer({ dict, lang }: FooterProps) {
 
         {/* Copyright */}
         <div className="border-t border-white/20 mt-8 pt-6 text-center">
-          <p className="text-sm text-white font-inter">{dict.copyright}</p>
+          <p className="text-sm text-white font-inter">
+            {dict.copyright} {currentYear}
+          </p>
+        </div>
+        <div className="pt-2  text-center">
+          <p className="text-sm text-white font-inter flex items-center justify-center gap-1">
+            <span>Powered by</span>
+
+            <a
+              href="https://tactix.tn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center  hover:text-gray-300 transition"
+            >
+              <Image
+                src="/tactix-icon.png" // or png/webp
+                alt="Tactix Solutions"
+                width={16}
+                height={16}
+                className="object-contain"
+              />
+              <span>Tactix Solutions</span>
+            </a>
+          </p>
         </div>
       </div>
     </footer>

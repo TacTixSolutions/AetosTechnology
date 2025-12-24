@@ -37,7 +37,7 @@ export const getInfoCards = (modules: ModulesDict) => [
     id: modules.supervisor.id,
     title: modules.supervisor.title,
     description: modules.supervisor.description,
-    imageSrc: "/flowup/infosection1.png",
+    imageSrc: "/flowup/infosection11.png",
     imageAlt: modules.supervisor.title,
   },
   {

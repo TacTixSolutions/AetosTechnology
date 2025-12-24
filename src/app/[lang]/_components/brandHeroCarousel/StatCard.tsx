@@ -41,7 +41,7 @@ function StatCard({ percentage, description }: StatCardProps) {
   useEffect(() => {
     if (!isVisible) return;
 
-    const duration = 500;
+    const duration = 800;
     const steps = 60;
     const increment = numericValue / steps;
     const stepDuration = duration / steps;
@@ -67,17 +67,41 @@ function StatCard({ percentage, description }: StatCardProps) {
       ref={cardRef}
       className="bg-white rounded-2xl p-4 shadow-lg flex flex-col items-center justify-center min-h-32 max-h-[170px] min-w-32 lg:min-w-40 lg:min-h-40"
     >
-      <div className="mb-2">
-        <CircularProgress
+      <div className="relative w-[100px] h-[100px]">
+        {/* <CircularProgress
           value={animatedValue}
           size={100}
           strokeWidth={10}
           showLabel
-          progressClassName="stroke-[#274fb3]"
           className="stroke-transparent"
           labelClassName="font-bold text-base text-black"
-          renderLabel={() => percentage}
-        />
+        /> */}
+        {/* Overlay SVG gradient */}
+        <svg
+          className="absolute top-0 left-0 w-full h-full rotate-[-90deg]"
+          viewBox="0 0 100 100"
+        >
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#024E63" />
+              <stop offset="100%" stopColor="#3C50E0" />
+            </linearGradient>
+          </defs>
+          <circle
+            cx="50"
+            cy="50"
+            r="45"
+            stroke="url(#gradient)"
+            strokeWidth="10"
+            fill="none"
+            strokeDasharray={2 * Math.PI * 45}
+            strokeDashoffset={2 * Math.PI * 45 * (1 - animatedValue / 100)}
+            strokeLinecap="round"
+          />
+        </svg>
+        <div className="absolute inset-0 flex items-center justify-center font-bold text-base text-black">
+          {percentage}
+        </div>
       </div>
       <p className="text-xs text-center text-gray-600 leading-tight">
         {description}

@@ -129,11 +129,11 @@ function AccordionInfoCard({
 
         {/* Image Content */}
         <div
-          className={`w-full lg:w-1/2 relative transition-all duration-1000 ease-out delay-200 ${
+          className={`w-full lg:w-1/2 relative transition-all duration-1000 ease-out delay-200${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          <div className="relative flex items-center justify-center w-full aspect-4/3 rounded-2xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+          <div className="relative flex items-center justify-center w-full aspect-4/3 rounded-2xl  transform transition-transform duration-300 hover:scale-105">
             <Image
               src={imageSrc}
               alt={imageAlt}

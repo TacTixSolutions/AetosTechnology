@@ -13,10 +13,10 @@ interface Testimonial {
 }
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
-    <CarouselItem className="sm:basis-1/2 h-[500px] lg:basis-1/2 xl:basis-1/3 relative">
+    <CarouselItem className="sm:basis-1/2 h-[500px] lg:basis-1/2 xl:basis-1/3 relative ">
       <div className="flex w-95/100 mx-auto flex-col h-[300px] items-center justify-center bg-white rounded-[36px] border border-[#EBEBEB] px-4 pt-8 pb-16  max-w-[500px]">
         <QuoteIcon />
-        <p className="font-isotek text-sm mt-6 text-[#575757]">
+        <p className="font-isotek text-sm mt-6 text-[#575757] text-center">
           {testimonial.content}
         </p>
         <div className="flex items-center mt-4">
@@ -35,22 +35,24 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         </div>
       </div>
       <div
-        className="w-full max-w-[600px] bg-red-400 relative flex items-center justify-center mt-4"
+        className="w-full max-w-[600px] relative flex items-center justify-center mt-4"
         style={{ zIndex: 1000 }}
       >
         <div className="absolute font-isotek -top-16 w-full h-auto flex items-center justify-start flex-col gap-2">
-          <div className="">
+          <div className="flex items-center justify-center w-20 h-20 card-shadow shrink-0 rounded-full bg-white">
             <Image
               src={testimonial.logo}
               alt={`${testimonial.name} logo`}
-              width={80}
-              height={80}
-              className="w-20 h-20 card-shadow shrink-0 rounded-full bg-white object-contain"
+              width={50}
+              height={50}
+              className=" object-contain"
             />
           </div>
           <p className="font-semibold">{testimonial.name}</p>
           <p className="w-1/2 mx-auto text-center">
-            {testimonial.role} - {testimonial.company}
+            {testimonial.role.length <= 1
+              ? ""
+              : `${testimonial.role}  ${testimonial.company}`}
           </p>
         </div>
       </div>

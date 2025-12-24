@@ -65,29 +65,29 @@ interface BrandHeroCarouselProps {
 function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
   const slides: BrandSlide[] = [
     {
-      brand: dict.kiabi.brand,
-      backgroundImage: "/brandHeroCarousel/julesBg.webp",
+      brand: dict.quiksilver.brand,
+      backgroundImage: "/brandHeroCarousel/quiksilverBg.webp",
       title: dict.title,
-      description: dict.kiabi.description,
+      description: dict.quiksilver.description,
       stats: [
         {
-          percentage: "+35%",
-          description: dict.kiabi.stat1Label,
-          isPositive: true,
-        },
-        {
-          percentage: "+28%",
-          description: dict.kiabi.stat2Label,
-          isPositive: true,
-        },
-        {
-          percentage: "+42%",
-          description: dict.kiabi.stat3Label,
-          isPositive: true,
-        },
-        {
           percentage: "+30%",
-          description: dict.kiabi.stat4Label,
+          description: dict.quiksilver.stat1Label,
+          isPositive: true,
+        },
+        {
+          percentage: "+50%",
+          description: dict.quiksilver.stat2Label,
+          isPositive: true,
+        },
+        {
+          percentage: "-25%",
+          description: dict.quiksilver.stat3Label,
+          isPositive: true,
+        },
+        {
+          percentage: "+32%",
+          description: dict.quiksilver.stat4Label,
           isPositive: true,
         },
       ],
@@ -132,7 +132,7 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
           isPositive: true,
         },
         {
-          percentage: "+45%",
+          percentage: "-45%",
           description: dict.bodySoul.stat2Label,
           isPositive: true,
         },
@@ -148,30 +148,31 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
         },
       ],
     },
+
     {
-      brand: dict.quiksilver.brand,
-      backgroundImage: "/brandHeroCarousel/quiksilverBg.webp",
+      brand: dict.kiabi.brand,
+      backgroundImage: "/brandHeroCarousel/kiabiBg.png",
       title: dict.title,
-      description: dict.quiksilver.description,
+      description: dict.kiabi.description,
       stats: [
         {
+          percentage: "+42%",
+          description: dict.kiabi.stat3Label,
+          isPositive: true,
+        },
+        {
+          percentage: "-35%",
+          description: dict.kiabi.stat1Label,
+          isPositive: true,
+        },
+        {
+          percentage: "+28%",
+          description: dict.kiabi.stat2Label,
+          isPositive: true,
+        },
+        {
           percentage: "+30%",
-          description: dict.quiksilver.stat1Label,
-          isPositive: true,
-        },
-        {
-          percentage: "+50%",
-          description: dict.quiksilver.stat2Label,
-          isPositive: true,
-        },
-        {
-          percentage: "+25%",
-          description: dict.quiksilver.stat3Label,
-          isPositive: true,
-        },
-        {
-          percentage: "+32%",
-          description: dict.quiksilver.stat4Label,
+          description: dict.kiabi.stat4Label,
           isPositive: true,
         },
       ],

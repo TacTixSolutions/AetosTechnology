@@ -19,15 +19,23 @@ interface ClientsCarouselProps {
 
 function ClientsCarousel({ dict }: ClientsCarouselProps) {
   const clients = [
-    { name: "quick silver", logo: "/clients/quicksilver.png" },
     { name: "kiabi", logo: "/clients/kiabi.png" },
-    { name: "bondin", logo: "/clients/bondin.png" },
-    { name: "les galets", logo: "/clients/lesgalets.png" },
+    { name: "etam", logo: "/clients/etam.png" },
     { name: "koton", logo: "/clients/koton.png" },
+    { name: "armani", logo: "/clients/armani.png" },
+    { name: "diesel", logo: "/clients/diesel.png" },
+    { name: "quick silver", logo: "/clients/quicksilver.png" },
+    { name: "islandhaze", logo: "/clients/islandhaze.png" },
+    { name: "bodynsoul", logo: "/clients/bodynsoul.png" },
+    { name: "joliesse", logo: "/clients/joliesse.png" },
+    { name: "strass", logo: "/clients/strass.png" },
+    { name: "springfield", logo: "/clients/springfield.png" },
     { name: "women'secret", logo: "/clients/womensecret.png" },
     { name: "gemo", logo: "/clients/gemo.png" },
     { name: "jules", logo: "/clients/jules.png" },
-    { name: "joliesse", logo: "/clients/joliesse.png" },
+    { name: "les galets", logo: "/clients/lesgalets.png" },
+    { name: "bondin", logo: "/clients/bondin.png" },
+    { name: "dreamprice", logo: "/clients/dreamprice.png" },
   ];
 
   return (

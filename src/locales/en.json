@@ -97,7 +97,7 @@
       "description": "Instant communication and operational control ensure optimal management of points of sale.",
       "stat1Label": "speed in executing store actions",
       "stat2Label": "errors related to paper processes",
-      "stat3Label": "staff satisfaction",
+      "stat3Label": "Brand image improvement",
       "stat4Label": "improvement in customer experience relevance"
     },
     "quiksilver": {
@@ -130,8 +130,8 @@
   },
   "whyUs": {
     "title": "Why us",
-    "subtitle": "Digitalization adapted to your reality",
-    "description": "Aetos Technology helps companies digitize their operations with simple, fast solutions designed for the business needs of the field.",
+    "subtitle": "What we bring to your business",
+    "description": "Aetos Technology supports companies in the digitalization of their operations by offering simple, fast solutions perfectly adapted to their business needs.",
     "imageAlt": "Collaboration handshake illustration",
     "reasons": {
       "simplicity": {
@@ -139,8 +139,8 @@
         "description": "A concrete understanding of your challenges to create truly useful solutions."
       },
       "speed": {
-        "title": "Proven Technology",
-        "description": "Reliable tools that improve performance and reduce operational errors."
+        "title": "Innovative Solutions",
+        "description": "Reliable solutions that improve performance and reduce operational errors."
       },
       "support": {
         "title": "Customer Proximity",
@@ -155,7 +155,7 @@
     "imageAlt": "Call to action illustration"
   },
   "clients": {
-    "title": "Clients that trust us",
+    "title": "They trust us",
     "logoAlt": "Client company logo"
   },
   "faq": {
@@ -253,13 +253,13 @@
     },
     "list": {
       "title": "Our Trusted Partners",
-      "quantumLeap": {
-        "name": "Quantum Leap",
-        "description": "Quantum Leap is a consulting and digital transformation firm specializing in innovative technology solutions. With their expertise in emerging technologies, they help businesses modernize their infrastructure and adopt cutting-edge tools for sustainable growth."
-      },
       "smartVolarity": {
-        "name": "Smart Volarity",
-        "description": "Smart Volarity is a technology partner specializing in intelligent automation and data analytics solutions. They enable businesses to harness the power of AI and machine learning to optimize operations and make data-driven decisions."
+        "name": "Smart Volarity | Morocco",
+        "description": "Smart Volarity is a strategic partner based in Morocco. Thanks to their market knowledge and mastery of our solutions, they guarantee quality support and a close presence for our clients."
+      },
+      "quantumLeap": {
+        "name": "Quantum Leap | Algeria",
+        "description": "Since 2006, Quantum Leap Evolution SARL has been supporting the digital transformation of businesses in Algeria thanks to its expertise in information systems and ERP solution integration. Today, the company also distributes the FlowUp solution on the Algerian market, offering organizations a modern and efficient tool to optimize their operations."
       }
     },
     "collaboration": {
@@ -287,7 +287,7 @@
     "cta": {
       "title": "Interested in collaborating with us?",
       "description": "We will help you reach your business goal",
-      "button": "Contact us",
+      "button": "Request a demo",
       "imageAlt": "Partnership opportunity"
     },
     "testimonials": {
@@ -299,7 +299,7 @@
   "flowUp": {
     "hero": {
       "title": "FlowUp",
-      "subtitle": "Effortless efficiency",
+      "subtitle": "A more efficient team, a more profitable business.",
       "imageAlt": "FlowUp platform interface"
     },
     "cta": {
@@ -311,7 +311,7 @@
     "modules": {
       "supervisor": {
         "title": "SuperVisor",
-        "description": "SuperVisor optimizes field operations with smart checklists, streamlined schedules, and real-time reports. Designed for multi-site teams, it accelerates daily work, improves execution, and facilitates better decision-making.",
+        "description": "SuperVisor is a comprehensive module designed to optimize field operations through intelligent checklists, streamlined visit scheduling, and real-time reporting. Built for multi-site teams, it accelerates daily work, improves execution, and facilitates better decision-making.",
         "id": "supervisor"
       },
       "visualMerchandising": {
@@ -361,7 +361,7 @@
     "hero": {
       "fashionBoutiques": {
         "title": "FlowUp for Fashion & Luxury Retailers",
-        "description": "Boost your in-store customer experience with smooth, seamless organization."
+        "description": "Boost your in-store customer experience with a smooth and seamless organization."
       },
       "retail": {
         "title": "FlowUp for Supermarkets: Your Operations Simplified",
@@ -383,9 +383,9 @@
     "cta": {
       "title": "Ready to take action?",
       "description": "We design reliable solutions tailored to your business needs, and support you every step of the way for lasting results.",
-      "button": "Contact us"
+      "button": "Request a demo"
     },
-    "retail": {
+    "fashionBoutiques": {
       "title": "An effective retail network requires total visibility and perfect execution.",
       "imageAlt": "Retail sector",
       "advantages": {
@@ -421,7 +421,7 @@
         }
       }
     },
-    "fashionBoutiques": {
+    "retail": {
       "title": "The most successful supermarkets focus on",
       "imageAlt": "Fashion boutiques sector",
       "advantages": {
@@ -533,7 +533,7 @@
       "sections": [
         {
           "title": "Centralize your operations, align your teams, and save time every day.",
-          "imageSrc": "/sectors/fashion-boutiques/1.png",
+          "imageSrc": "/sectors/fashion-boutiques/11.png",
           "imageAlt": "Operations centralization",
           "items": [
             {
@@ -560,7 +560,7 @@
         },
         {
           "title": "Window and in-store space organization and monitoring",
-          "imageSrc": "/sectors/fashion-boutiques/2.png",
+          "imageSrc": "/sectors/fashion-boutiques/22.png",
           "imageAlt": "Window management",
           "items": [
             {
@@ -639,8 +639,7 @@
           "imageSrc": "/sectors/fashion-boutiques/5.png",
           "imageAlt": "AI optimization",
           "floatingImages": {
-            "topLeft": "/sectors/fashion-boutiques/5tl.png",
-            "bottomRight": "/sectors/fashion-boutiques/5br.png"
+            "bottomRight": "/sectors/fashion-boutiques/5brr.png"
           },
           "items": [
             {
@@ -665,7 +664,7 @@
       "sections": [
         {
           "title": "Manage your hotel operations in real-time: housekeeping, maintenance, quality, and services, everything is centralized and perfectly coordinated.",
-          "imageSrc": "/sectors/hospitality/1.png",
+          "imageSrc": "/sectors/hospitality/11.png",
           "imageAlt": "Hotel operations",
           "items": [
             {
@@ -713,8 +712,9 @@
           "title": "Deliver the right information at the right time and train your teams continuously in just minutes.",
           "imageSrc": "/sectors/hospitality/3.png",
           "imageAlt": "Communication and training",
-          "floatingImages": {
-            "topRight": "/sectors/hospitality/3tr.png"
+           "floatingImages": {
+            "topRight": "/sectors/hospitality/3trr.png",
+            "bottomLeft": "/sectors/hospitality/4bl.png"
           },
           "items": [
             {
@@ -743,11 +743,8 @@
       "sections": [
         {
           "title": "Boost your shelf impact and transform your stores into real sales drivers with FlowUp",
-          "imageSrc": "/sectors/retail/1.png",
+          "imageSrc": "/sectors/retail/11.png",
           "imageAlt": "Visual merchandising",
-          "floatingImages": {
-            "bottomRight": "/sectors/retail/1br.png"
-          },
           "items": [
             {
               "title": "Maximize key product visibility",
@@ -769,7 +766,7 @@
         },
         {
           "title": "Product and shelf quality tracking",
-          "imageSrc": "/sectors/retail/2.png",
+          "imageSrc": "/sectors/retail/22.png",
           "imageAlt": "Quality and control",
           "items": [
             {
@@ -794,8 +791,9 @@
           "title": "Optimal organization of in-store rotations",
           "imageSrc": "/sectors/retail/3.png",
           "imageAlt": "Team planning",
-          "floatingImages": {
-            "bottomRight": "/sectors/retail/3br.png"
+           "floatingImages": {
+            "topRight": "/sectors/retail/3tr.png",
+            "bottomLeft": "/sectors/retail/3bl.png"
           },
           "items": [
             {
@@ -824,7 +822,7 @@
       "sections": [
         {
           "title": "Quality control on the production line",
-          "imageSrc": "/sectors/industry-production/1.png",
+          "imageSrc": "/sectors/industry-production/11.png",
           "imageAlt": "Quality control",
           "items": [
             {
@@ -849,9 +847,6 @@
           "title": "Team planning by position and line",
           "imageSrc": "/sectors/industry-production/2.png",
           "imageAlt": "Production planning",
-          "floatingImages": {
-            "bottomRight": "/sectors/industry-production/2br.png"
-          },
           "items": [
             {
               "title": "Team planning by position and line",
@@ -875,9 +870,6 @@
           "title": "Instant transmission of production instructions",
           "imageSrc": "/sectors/industry-production/3.png",
           "imageAlt": "Workshop communication",
-          "floatingImages": {
-            "bottomRight": "/sectors/industry-production/3br.png"
-          },
           "items": [
             {
               "title": "Instant transmission of production instructions",
@@ -916,14 +908,14 @@
     "companyDescription": "An engineering company that designs and deploys technological solutions aimed at improving the productivity, profitability and responsiveness of businesses.",
     "sectors": {
       "title": "Sectors",
-      "fashionBoutiques": "Fashion & Clothing Boutiques",
+      "fashionBoutiques": "Mass Retail",
       "retail": "Retail",
       "hospitality": "Hospitality",
       "industryProduction": "Industry & Production",
       "audit": "Audit"
     },
     "contact": {
-      "title": "Contact us",
+      "title": "Request a demo",
       "client": "Client",
       "partner": "Partner",
       "joinUs": "Join Us"
@@ -931,7 +923,7 @@
     "social": {
       "follow": "Follow us to stay informed of our news."
     },
-    "copyright": "Copyright Aetos technology 2025"
+    "copyright": "© Copyright Aetos technology"
   },
   "common": {
     "menu": "Menu",

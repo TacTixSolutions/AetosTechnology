@@ -98,7 +98,7 @@
       "description": "Une communication instantanée et un contrôle opérationnel qui garantissent une gestion optimale des points de vente.",
       "stat1Label": "de rapidité dans l'exécution des actions magasin",
       "stat2Label": "d'erreurs liées aux processus papier",
-      "stat3Label": "de satisfaction du staff",
+      "stat3Label": "Amélioration image marque",
       "stat4Label": "d'amélioration de la pertinence de l'expérience client"
     },
     "quiksilver": {
@@ -131,8 +131,8 @@
   },
   "whyUs": {
     "title": "Pourquoi nous",
-    "subtitle": "Digitalisation adaptée à votre réalité",
-    "description": "Aetos Technology aide les entreprises à digitaliser leurs opérations avec des solutions simples, rapides et conçues pour les besoins métier du terrain.",
+    "subtitle": "Ce que nous apportons à votre business",
+    "description": "Aetos Technology accompagne les entreprises dans la digitalisation de leurs opérations en proposant des solutions simples, rapides et parfaitement adaptées à leurs besoins métiers.",
     "imageAlt": "Illustration de collaboration",
     "reasons": {
       "simplicity": {
@@ -140,8 +140,8 @@
         "description": "Une compréhension concrète de vos défis pour créer des solutions réellement utiles."
       },
       "speed": {
-        "title": "Technologie éprouvée",
-        "description": "Des outils fiables qui améliorent les performances et réduisent les erreurs opérationnelles."
+        "title": "Solutions Innovantes",
+        "description": "Des solutions fiables qui améliorent les performances et réduisent les erreurs opérationnelles."
       },
       "support": {
         "title": "Proximité client",
@@ -156,7 +156,7 @@
     "imageAlt": "Illustration d'appel à l'action"
   },
   "clients": {
-    "title": "Clients qui nous font confiance",
+    "title": "Ils nous font confiance",
     "logoAlt": "Logo de l'entreprise cliente"
   },
   "faq": {
@@ -254,14 +254,15 @@
     },
     "list": {
       "title": "Nos Partenaires de Confiance",
-      "quantumLeap": {
-        "name": "Quantum Leap",
-        "description": "Quantum Leap est un cabinet de conseil et de transformation digitale spécialisé dans les solutions technologiques innovantes. Avec leur expertise dans les technologies émergentes, ils aident les entreprises à moderniser leur infrastructure et à adopter des outils de pointe pour une croissance durable."
-      },
       "smartVolarity": {
-        "name": "Smart Volarity",
-        "description": "Smart Volarity est un partenaire technologique spécialisé dans l'automatisation intelligente et les solutions d'analyse de données. Ils permettent aux entreprises d'exploiter la puissance de l'IA et du machine learning pour optimiser les opérations et prendre des décisions basées sur les données."
+        "name": "Smart Volarity | Maroc",
+        "description": " Smart Volarity est un partenaire stratégique basé au Maroc, Grâce à leur connaissance du marché et leur maitrise de nos solutions , ils garantissent un accompagnement de qualité et une présence de proximité pour nos clients."
+      },
+      "quantumLeap": {
+        "name": "Quantum Leap | Algérie",
+        "description": "Depuis 2006, SARL Quantum Leap Evolution accompagne la transformation digitale des entreprises en Algérie grâce à son expertise en systèmes d’information et en intégration de solutions ERP. Aujourd’hui, l’entreprise distribue également la solution FlowUp sur le marché algérien, offrant aux organisations un outil moderne et performant pour optimiser leurs opérations."
       }
+      
     },
     "collaboration": {
       "title": "Pourquoi collaborer avec nous?",
@@ -288,7 +289,7 @@
     "cta": {
       "title": "Intéressé par une collaboration avec nous?",
       "description": "Nous vous aiderons à atteindre vos objectifs commerciaux",
-      "button": "Contactez-nous",
+      "button": "Demandez une démonstration",
       "imageAlt": "Opportunité de partenariat"
     },
     "testimonials": {
@@ -300,7 +301,7 @@
   "flowUp": {
     "hero": {
       "title": "FlowUp",
-      "subtitle": "L'efficacité sans effort",
+      "subtitle": "Une équipe plus efficace, un business plus rentable.",
       "imageAlt": "Interface de la plateforme FlowUp"
     },
     "cta": {
@@ -312,7 +313,7 @@
     "modules": {
       "supervisor": {
         "title": "SuperVisor",
-        "description": "SuperVisor optimise les opérations terrain grâce à des checklists intelligentes, des plannings rationalisés et des rapports en temps réel. Conçu pour les équipes multisites, il accélère le travail quotidien, améliore l'exécution et facilite une meilleure prise de décision.",
+        "description": "SuperVisor est un module complet pensé pour optimiser les opérations terrain grâce à des checklists intelligentes, des plannings des visites optimisés et des rapports en temps réel. Conçu pour les équipes multisites, il accélère le travail quotidien, améliore l'exécution et facilite une meilleure prise de décision.",
         "id": "supervisor"
       },
       "visualMerchandising": {
@@ -362,7 +363,7 @@
     "hero": {
       "fashionBoutiques": {
         "title": "FlowUp pour les Retailers Mode & Luxe",
-        "description": "Boostez votre expérience client en magasin avec une organisation fluide et sans accroc."
+        "description": "Boostez l'expérience de vos clients en magasin grâce à une organisation fluide et sans faille."
       },
       "retail": {
         "title": "FlowUp pour les Supermarchés : vos opérations simplifiées",
@@ -384,9 +385,9 @@
     "cta": {
       "title": "Prêts à passer à l'action ?",
       "description": "Nous concevons des solutions fiables, adaptées à vos besoins métier, et vous accompagnons à chaque étape pour un résultat durable.",
-      "button": "Contactez-nous"
+      "button": "Demandez une démonstration"
     },
-    "retail": {
+    "fashionBoutiques": {
       "title": "Un réseau retail efficace exige visibilité totale et exécution parfaite.",
       "imageAlt": "Retail sector",
       "advantages": {
@@ -422,7 +423,7 @@
         }
       }
     },
-    "fashionBoutiques": {
+    "retail": {
       "title": "Les supermarchés les plus performants se concentrent sur",
       "imageAlt": "Fashion boutiques sector",
       "advantages": {
@@ -533,7 +534,7 @@
       "titleHighlight": "temps chaque jour.",
       "sections": [
         {
-          "imageSrc": "/sectors/fashion-boutiques/1.png",
+          "imageSrc": "/sectors/fashion-boutiques/11.png",
           "imageAlt": "Centralisation des opérations",
           "items": [
             {
@@ -560,7 +561,7 @@
         },
         {
           "title": "Organisation et suivi des vitrines et des espaces en boutique",
-          "imageSrc": "/sectors/fashion-boutiques/2.png",
+          "imageSrc": "/sectors/fashion-boutiques/22.png",
           "imageAlt": "Gestion des vitrines",
           "items": [
             {
@@ -639,8 +640,7 @@
           "imageSrc": "/sectors/fashion-boutiques/5.png",
           "imageAlt": "Optimisation IA",
           "floatingImages": {
-            "topLeft": "/sectors/fashion-boutiques/5tl.png",
-            "bottomRight": "/sectors/fashion-boutiques/5br.png"
+            "bottomRight": "/sectors/fashion-boutiques/5brr.png"
           },
           "items": [
             {
@@ -665,7 +665,7 @@
       "sections": [
         {
           "title": "Gérez vos opérations hôtelières en temps réel : housekeeping, maintenance, qualité et services, tout est centralisé et parfaitement coordonné.",
-          "imageSrc": "/sectors/hospitality/1.png",
+          "imageSrc": "/sectors/hospitality/11.png",
           "imageAlt": "Opérations hôtelières",
           "items": [
             {
@@ -714,7 +714,8 @@
           "imageSrc": "/sectors/hospitality/3.png",
           "imageAlt": "Communication et formation",
           "floatingImages": {
-            "topRight": "/sectors/hospitality/3tr.png"
+            "topRight": "/sectors/hospitality/3trr.png",
+            "bottomLeft": "/sectors/hospitality/4bl.png"
           },
           "items": [
             {
@@ -743,11 +744,8 @@
       "sections": [
         {
           "title": "Boostez l'impact de vos rayons et transformez vos magasins en véritables moteurs de ventes grâce à FlowUp",
-          "imageSrc": "/sectors/retail/1.png",
+          "imageSrc": "/sectors/retail/11.png",
           "imageAlt": "Visual merchandising",
-          "floatingImages": {
-            "bottomRight": "/sectors/retail/1br.png"
-          },
           "items": [
             {
               "title": "Maximisez la visibilité des produits clés",
@@ -769,7 +767,7 @@
         },
         {
           "title": "Suivi de la qualité des produits et des rayons",
-          "imageSrc": "/sectors/retail/2.png",
+          "imageSrc": "/sectors/retail/22.png",
           "imageAlt": "Qualité et contrôle",
           "items": [
             {
@@ -794,8 +792,9 @@
           "title": "Organisation optimale des rotations en magasin",
           "imageSrc": "/sectors/retail/3.png",
           "imageAlt": "Planning équipes",
-          "floatingImages": {
-            "bottomRight": "/sectors/retail/3br.png"
+            "floatingImages": {
+            "topRight": "/sectors/retail/3tr.png",
+            "bottomLeft": "/sectors/retail/3bl.png"
           },
           "items": [
             {
@@ -824,7 +823,7 @@
       "sections": [
         {
           "title": "Contrôle qualité sur la ligne de production",
-          "imageSrc": "/sectors/industry-production/1.png",
+          "imageSrc": "/sectors/industry-production/11.png",
           "imageAlt": "Contrôle qualité",
           "items": [
             {
@@ -849,9 +848,6 @@
           "title": "Planification des équipes par poste et par ligne",
           "imageSrc": "/sectors/industry-production/2.png",
           "imageAlt": "Planning production",
-          "floatingImages": {
-            "bottomRight": "/sectors/industry-production/2br.png"
-          },
           "items": [
             {
               "title": "Planification des équipes par poste et par ligne",
@@ -875,9 +871,6 @@
           "title": "Transmission instantanée des consignes de production",
           "imageSrc": "/sectors/industry-production/3.png",
           "imageAlt": "Communication atelier",
-          "floatingImages": {
-            "bottomRight": "/sectors/industry-production/3br.png"
-          },
           "items": [
             {
               "title": "Transmission instantanée des consignes de production",
@@ -916,14 +909,14 @@
     "companyDescription": "Société d'ingénierie qui conçoit et déploie des solutions technologiques destinées à améliorer la productivité, la rentabilité et la réactivité des entreprises.",
     "sectors": {
       "title": "Secteurs",
-      "fashionBoutiques": "Boutiques de Mode & d'Habillement",
+      "fashionBoutiques": "Grande Distribution",
       "retail": "Retail",
       "hospitality": "Hospitalité",
       "industryProduction": "Industrie & Production",
       "audit": "Audit"
     },
     "contact": {
-      "title": "Contactez-nous",
+      "title": "Demandez une démonstration",
       "client": "Client",
       "partner": "Partenaire",
       "joinUs": "Nous Rejoindre"
@@ -931,7 +924,7 @@
     "social": {
       "follow": "Suivez-nous pour rester informé de nos actualités."
     },
-    "copyright": "Copyright Aetos technology 2025"
+    "copyright": "© Copyright Aetos technology"
   },
   "common": {
     "menu": "Menu",

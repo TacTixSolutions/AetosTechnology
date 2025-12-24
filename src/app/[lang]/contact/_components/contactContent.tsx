@@ -123,7 +123,11 @@ export default function ContactContent({
 
       const query = `*[_type == "testimonial" && type == $type] | order(_createdAt desc)`;
       const data = await client.fetch(query, { type: typeMap[activeTab] });
-      setTestimonials([...data, ...data]);
+      if (data.length > 2) {
+        setTestimonials([...data, ...data]); // duplicate ONLY when looping
+      } else {
+        setTestimonials(data); // no duplication
+      }
     };
 
     fetchTestimonials();
@@ -137,7 +141,7 @@ export default function ContactContent({
       setCurrent(api.selectedScrollSnap());
     });
   }, [api]);
-
+  const shouldLoop = testimonials.length > 2;
   return (
     <>
       <div className="bg-[#f3f8fa] py-24 w-9/10 mx-auto rounded-xl">
@@ -227,7 +231,11 @@ export default function ContactContent({
       </div>
       {/* testimonials section */}
       {testimonials.length > 0 && (
-        <div className="w-full md:w-9/10 xl:w-9/10 2xl:w-8/10 mx-auto pb-16 pt-8 relative">
+        <div
+          className={`w-full md:w-9/10 xl:w-9/10 2xl:w-8/10 mx-auto pt-8 relative ${
+            shouldLoop ? "pb-16" : "pb-0"
+          }`}
+        >
           <div
             id="goopman"
             className="absolute top-1/2 left-1/2 bg-blue-300 blur-[120px] -translate-x-1/2 -translate-y-1/2 w-7/10 h-24 z-0"
@@ -243,13 +251,15 @@ export default function ContactContent({
           <Carousel
             setApi={setApi}
             opts={{
-              align: "center",
-              loop: true,
+              align: shouldLoop ? "center" : "start",
+              loop: shouldLoop,
             }}
-            plugins={[plugin.current]}
+            plugins={shouldLoop ? [plugin.current] : []}
             className="w-full"
           >
-            <CarouselContent>
+            <CarouselContent
+              className={shouldLoop ? "" : "flex justify-center gap-5"}
+            >
               {testimonials.map((testimonial, index) => (
                 <TestimonialCard
                   key={index}
@@ -266,9 +276,13 @@ export default function ContactContent({
             </CarouselContent>
 
             {/* Custom indicators */}
-            <div className="flex justify-center items-center gap-2 -mt-12">
-              {Array.from({ length: testimonials.length / 2 }).map(
-                (_, index) => (
+            {shouldLoop && (
+              <div className="flex justify-center items-center gap-2 -mt-12">
+                {Array.from({
+                  length: shouldLoop
+                    ? testimonials.length / 2
+                    : testimonials.length,
+                }).map((_, index) => (
                   <button
                     key={index}
                     onClick={() => {
@@ -282,9 +296,9 @@ export default function ContactContent({
                     }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
-                )
-              )}
-            </div>
+                ))}
+              </div>
+            )}
           </Carousel>
         </div>
       )}
