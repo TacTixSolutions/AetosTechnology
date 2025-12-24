@@ -39,7 +39,7 @@ function ClientsCarousel({ dict }: ClientsCarouselProps) {
   ];
 
   return (
-    <div className="w-full py-16 relative">
+    <div className="w-full py-6 md:py-16 relative">
       {/* Background Image */}
       <div className="absolute hidden md:block w-9/10 mx-auto inset-0 -z-10">
         <Image
@@ -50,8 +50,8 @@ function ClientsCarousel({ dict }: ClientsCarouselProps) {
         />
       </div>
 
-      <div className="w-full md:w-9/10 bg-[#fefefe] md:bg-transparent mx-auto">
-        <h2 className="text-center font-space text-[#73779C] text-xl">
+      <div className="w-full md:w-9/10 bg-gray-50 md:bg-transparent mx-auto">
+        <h2 className="text-center font-space text-[#73779C] text-xl py-3 md:py0">
           {dict.title}
         </h2>
 
