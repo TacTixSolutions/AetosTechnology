@@ -4,8 +4,15 @@ import { i18n } from "@/lib/i18n-config";
 
 const LOCALE_COOKIE = "NEXT_LOCALE";
 
+const PUBLIC_FILES = ["/sitemap.xml", "/robots.txt"];
+
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+
+  //bypass i18n for sitemap & robots
+  if (PUBLIC_FILES.includes(pathname)) {
+    return NextResponse.next();
+  }
 
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
@@ -45,6 +52,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next, api, static files)
-    "/((?!api|_next/static|_next/image|favicon.ico|.*\\..*|fonts).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)",
   ],
 };
