@@ -99,7 +99,7 @@ function Footer({ dict, lang }: FooterProps) {
             <ul className="space-y-3 font-medium text-white/90 font-roboto text-[16px]">
               <li>
                 <Link
-                  href={`/${lang}/solutions/sectors/retail`}
+                  href={`/${lang}/solutions/sectors/fashion-boutiques`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.retail}
@@ -107,7 +107,7 @@ function Footer({ dict, lang }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href={`/${lang}/solutions/sectors/fashion-boutiques`}
+                  href={`/${lang}/solutions/sectors/retail`}
                   className="hover:text-white/80 transition-colors"
                 >
                   {dict.sectors.fashionBoutiques}

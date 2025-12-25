@@ -38,7 +38,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         className="w-full max-w-[600px] relative flex items-center justify-center mt-4"
         style={{ zIndex: 1000 }}
       >
-        <div className="absolute font-isotek -top-16 w-full h-auto flex items-center justify-start flex-col gap-2">
+        <div className="absolute font-isotek -top-13 w-full h-auto flex items-center justify-start flex-col gap-2">
           <div className="flex items-center justify-center w-20 h-20 card-shadow shrink-0 rounded-full bg-white">
             <Image
               src={testimonial.logo}
@@ -49,7 +49,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
             />
           </div>
           <p className="font-semibold">{testimonial.name}</p>
-          <p className="w-1/2 mx-auto text-center">
+          <p className="w-2/3 mx-auto text-center">
             {testimonial.role.length <= 1
               ? ""
               : `${testimonial.role}  ${testimonial.company}`}

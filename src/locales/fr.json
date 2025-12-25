@@ -77,8 +77,8 @@
   },
   "brandCarousel": {
     "title": "Notre succès avec ",
-    "kiabi": {
-      "brand": "Kiabi",
+    "jules": {
+      "brand": "Jules",
       "description": "Une meilleure exécution en magasin grâce à un suivi clair, structuré et harmonisé sur l’ensemble du réseau",
       "stat1Label": "de temps perdu sur les reporting manuels",
       "stat2Label": "de rapidité dans la résolution des incidents",
@@ -339,7 +339,7 @@
       },
       "flowHR": {
         "title": "FlowHR",
-        "description": "HRFlow est un module complet et intuitif qui centralise le suivi RH quotidien. Il gère les absences, les congés, les présences, les évaluations et les parcours employés tout en fournissant des informations claires et à jour. Un outil simple et structuré pour soutenir les équipes et la prise de décision RH.",
+        "description": "FlowHR est un module complet et intuitif qui centralise le suivi RH quotidien. Il gère les absences, les congés, les présences, les évaluations et les parcours employés tout en fournissant des informations claires et à jour. Un outil simple et structuré pour soutenir les équipes et la prise de décision RH.",
         "id": "flowhr",
         "attendanceRate": "Taux de présence"
       },
@@ -374,7 +374,7 @@
         "description": "Centralisez vos équipes, vos plannings et vos standards, et offrez à vos clients une meilleure expérience."
       },
       "industryProduction": {
-        "title": "FlowUp pour des Ateliers Plus Performants",
+        "title": "FlowUp pour des Site de production Plus Performants",
         "description": "La solution qui digitalise vos contrôles, garantit la conformité et améliore la performance de vos ateliers au quotidien."
       },
       "audit": {
@@ -411,11 +411,11 @@
       "advantages": {
         "constantControl": {
           "title": "Un contrôle terrain constant",
-          "description": "Des équipes alignées en temps réel grâce à une communication instantanée et des tâches parfaitement réparties."
+          "description": "Un contrôle qualité constant, avec des inspections digitalisées et des plans d'action rapides."
         },
         "organizedTeams": {
           "title": "Des équipes organisées et réactives",
-          "description": "Un contrôle qualité constant, avec des inspections digitalisées et des plans d'action rapides."
+          "description": "Des équipes alignées en temps réel grâce à une communication instantanée et des tâches parfaitement réparties."
         },
         "fluidProcedures": {
           "title": "Une transmission fluide des procédures",
@@ -428,15 +428,15 @@
       "imageAlt": "Fashion boutiques sector",
       "advantages": {
         "constantControl": {
-          "title": "Un contrôle terrain constant :",
+          "title": "Un contrôle terrain constant",
           "description": "Un contrôle précis et constant des rayons et de l'expérience client."
         },
         "organizedTeams": {
-          "title": "Des équipes organisées et réactives :",
+          "title": "Des équipes organisées et réactives",
           "description": "Des plannings solides et une coordination fluide à chaque instant."
         },
         "fluidProcedures": {
-          "title": "Une transmission fluide des procédures :",
+          "title": "Une transmission fluide des procédures",
           "description": "Des consignes claires, comprises et appliquées rapidement."
         }
       }
@@ -455,7 +455,7 @@
         },
         "totalTraceability": {
           "title": "Traçabilité totale & décisions plus rapides :",
-          "description": "L'historique digital des contrôles et actions accélère les audits, renforce la conformité et améliore la performance de l'atelier."
+          "description": "L’historique digital des contrôles, incidents, actions correctives et audits améliore la conformité et renforce la performance globale de production."
         }
       }
     },

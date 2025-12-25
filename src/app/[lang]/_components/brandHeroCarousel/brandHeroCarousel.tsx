@@ -24,7 +24,7 @@ interface BrandSlide {
 
 interface BrandHeroCarouselDict {
   title: string;
-  kiabi: {
+  jules: {
     brand: string;
     description: string;
     stat1Label: string;
@@ -150,29 +150,29 @@ function BrandHeroCarousel({ dict }: BrandHeroCarouselProps) {
     },
 
     {
-      brand: dict.kiabi.brand,
-      backgroundImage: "/brandHeroCarousel/kiabiBg.png",
+      brand: dict.jules.brand,
+      backgroundImage: "/brandHeroCarousel/julesBg.webp",
       title: dict.title,
-      description: dict.kiabi.description,
+      description: dict.jules.description,
       stats: [
         {
           percentage: "+42%",
-          description: dict.kiabi.stat3Label,
+          description: dict.jules.stat3Label,
           isPositive: true,
         },
         {
           percentage: "-35%",
-          description: dict.kiabi.stat1Label,
+          description: dict.jules.stat1Label,
           isPositive: true,
         },
         {
           percentage: "+28%",
-          description: dict.kiabi.stat2Label,
+          description: dict.jules.stat2Label,
           isPositive: true,
         },
         {
           percentage: "+30%",
-          description: dict.kiabi.stat4Label,
+          description: dict.jules.stat4Label,
           isPositive: true,
         },
       ],

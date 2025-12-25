@@ -170,7 +170,7 @@ export const getInfoCards = (modules: ModulesDict) => [
     id: modules.optiStock.id,
     title: modules.optiStock.title,
     description: modules.optiStock.description,
-    imageSrc: "/flowup/infosection7.png",
+    imageSrc: "/flowup/infosection8.png",
     imageAlt: modules.optiStock.title,
     floatingComponentOne: (
       <div className="bg-white rounded-2xl px-6 py-4 shadow-lg flex items-center gap-3 animate-float">

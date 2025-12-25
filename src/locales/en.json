@@ -76,8 +76,8 @@
   },
   "brandCarousel": {
     "title": "Our Success with ",
-    "kiabi": {
-      "brand": "Kiabi",
+    "jules": {
+      "brand": "Jules",
       "description": "Better in-store execution thanks to clear, structured, and harmonized tracking across the entire network.",
       "stat1Label": "time wasted on manual reporting",
       "stat2Label": "speed in incident resolution",
@@ -337,7 +337,7 @@
       },
       "flowHR": {
         "title": "FlowHR",
-        "description": "HRFlow is a comprehensive and intuitive module that centralizes daily HR tracking. It manages absences, leaves, attendance, evaluations, and employee journeys while providing clear and up-to-date information. A simple and structured tool to support teams and HR decision-making.",
+        "description": "FlowHR is a comprehensive and intuitive module that centralizes daily HR tracking. It manages absences, leaves, attendance, evaluations, and employee journeys while providing clear and up-to-date information. A simple and structured tool to support teams and HR decision-making.",
         "id": "flowhr",
         "attendanceRate": "Attendance rate"
       },
@@ -372,7 +372,7 @@
         "description": "Centralize your teams, schedules and standards, and deliver a better customer experience."
       },
       "industryProduction": {
-        "title": "FlowUp for Higher-Performing Workshops",
+        "title": "FlowUp for More Efficient Production Sites",
         "description": "The solution that digitalizes your controls, ensures compliance and improves your workshop performance daily."
       },
       "audit": {
@@ -426,15 +426,15 @@
       "imageAlt": "Fashion boutiques sector",
       "advantages": {
         "constantControl": {
-          "title": "Constant field control:",
+          "title": "Constant field control",
           "description": "Precise and constant control of shelves and customer experience."
         },
         "organizedTeams": {
-          "title": "Organized and responsive teams:",
+          "title": "Organized and responsive teams",
           "description": "Solid schedules and fluid coordination at every moment."
         },
         "fluidProcedures": {
-          "title": "Fluid procedure transmission:",
+          "title": "Fluid procedure transmission",
           "description": "Clear instructions, understood and applied quickly."
         }
       }
@@ -453,7 +453,7 @@
         },
         "totalTraceability": {
           "title": "Total traceability & faster decisions:",
-          "description": "Digital history of controls and actions accelerates audits, strengthens compliance, and improves workshop performance."
+          "description": "The digital history of controls, incidents, corrective actions and audits improves compliance and strengthens overall production performance."
         }
       }
     },

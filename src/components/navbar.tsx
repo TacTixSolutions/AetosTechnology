@@ -209,13 +209,13 @@ function Navbar({ dict, lang }: NavbarProps) {
                                       height={28}
                                     />
                                   </div>
-                                  <div>
+                                  <div className="self-center">
                                     <h4 className="font-semibold text-sm text-gray-900">
                                       {dict.products.flowup}
                                     </h4>
-                                    <p className="text-xs text-gray-500">
+                                    {/* <p className="text-xs text-gray-500">
                                       {dict.products.flowupDescription}
-                                    </p>
+                                    </p> */}
                                   </div>
                                 </div>
                               </Link>
@@ -389,13 +389,13 @@ function Navbar({ dict, lang }: NavbarProps) {
                               height={28}
                             />
                           </div>
-                          <div>
+                          <div className="self-center">
                             <h4 className="font-semibold text-gray-900">
                               {dict.products.flowup}
                             </h4>
-                            <p className="text-sm text-gray-500">
+                            {/* <p className="text-sm text-gray-500">
                               {dict.products.flowupDescription}
-                            </p>
+                            </p> */}
                           </div>
                         </div>
                       </Link>
