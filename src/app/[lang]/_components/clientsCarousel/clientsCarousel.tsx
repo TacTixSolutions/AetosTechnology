@@ -25,7 +25,7 @@ function ClientsCarousel({ dict }: ClientsCarouselProps) {
     { name: "armani", logo: "/clients/armani.png" },
     { name: "diesel", logo: "/clients/diesel.png" },
     { name: "quick silver", logo: "/clients/quicksilver.png" },
-    { name: "islandhaze", logo: "/clients/islandHaze.png" },
+    { name: "islandhaze", logo: "/clients/islandhazee.png" },
     { name: "bodynsoul", logo: "/clients/bodynsoul.png" },
     { name: "joliesse", logo: "/clients/joliesse.png" },
     { name: "strass", logo: "/clients/strass.png" },
@@ -35,7 +35,7 @@ function ClientsCarousel({ dict }: ClientsCarouselProps) {
     { name: "jules", logo: "/clients/jules.png" },
     { name: "les galets", logo: "/clients/lesgalets.png" },
     { name: "bondin", logo: "/clients/bondin.png" },
-    { name: "dreamprice", logo: "/clients/dreamPrice.png" },
+    { name: "dreamprice", logo: "/clients/dreampricee.png" },
   ];
 
   return (
