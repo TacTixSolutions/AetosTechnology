@@ -100,7 +100,7 @@ export async function sendContactEmail(formData: {
         </html>
       `;
     } else if (type === "partner") {
-      subject = `New Partner Inquiry from ${data.prenom} ${data.nom}`;
+      subject = `New Partner Inquiry from ${data.firstName} ${data.lastName}`;
       htmlContent = `
         <!DOCTYPE html>
         <html>
@@ -136,19 +136,19 @@ export async function sendContactEmail(formData: {
               <div class="info-card">
                 <div class="info-row">
                   <span class="info-label">Nom</span>
-                  <span class="info-value">${data.nom}</span>
+                  <span class="info-value">${data.firstName} </span>
                 </div>
                 <div class="info-row">
                   <span class="info-label">Prénom</span>
-                  <span class="info-value">${data.prenom}</span>
+                  <span class="info-value">${data.lastName}</span>
                 </div>
                 <div class="info-row">
                   <span class="info-label">Entreprise</span>
-                  <span class="info-value">${data.entreprise}</span>
+                  <span class="info-value">${data.company}</span>
                 </div>
                 <div class="info-row">
                   <span class="info-label">Pays</span>
-                  <span class="info-value">${data.pays}</span>
+                  <span class="info-value">${data.country}</span>
                 </div>
                 <div class="info-row">
                   <span class="info-label">Téléphone</span>
@@ -164,7 +164,7 @@ export async function sendContactEmail(formData: {
                 </div>
                 <div class="info-row">
                   <span class="info-label">Secteur d'activité</span>
-                  <span class="info-value">${data.secteur}</span>
+                  <span class="info-value">${data.sector}</span>
                 </div>
                 <div class="info-row">
                   <span class="info-label">Clients intéressés</span>
