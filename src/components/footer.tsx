@@ -45,7 +45,7 @@ function Footer({ dict, lang }: FooterProps) {
         />
       </div>
 
-      <div className="w-9/10 mx-auto pt-24 pb-6">
+      <div className="w-9/10 mx-auto pt-24 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-11 gap-8">
           {/* Logo and Description */}
           <div className="col-span-1 xl:col-span-3 w-full lg:w-9/10 text-center  md:text-center lg:text-left flex flex-col items-center md:items-center lg:items-start">
